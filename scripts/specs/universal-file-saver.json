@@ -1,0 +1,42 @@
+{
+  "id": "universal-file-saver",
+  "slug": "universal-file-saver",
+  "name": "Universal File Saver",
+  "category": "utilities",
+  "categoryName": "Utilities",
+  "icon": "💾",
+  "description": "Turn any pasted text, code or config snippet into a real downloadable file — pick a category, pick an extension, and download in one click.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"categorySelect\">What kind of file is this?</label>\n        <select id=\"categorySelect\">\n          <option value=\"code\">Code</option>\n          <option value=\"documents\">Documents</option>\n          <option value=\"data\">Data &amp; Config</option>\n          <option value=\"web\">Web</option>\n          <option value=\"other\">Other</option>\n        </select>\n      </div>\n      <div class=\"field\">\n        <label for=\"extSelect\">File extension</label>\n        <select id=\"extSelect\"></select>\n      </div>\n      <div class=\"field\">\n        <label for=\"fileNameInput\">File name</label>\n        <input type=\"text\" id=\"fileNameInput\" placeholder=\"my-file\" value=\"my-file\">\n      </div>\n      <div class=\"field\">\n        <label for=\"templateSelect\" style=\"display:block;margin-bottom:8px;\">Or start from a template</label>\n        <div style=\"display:flex;gap:8px;flex-wrap:wrap;\">\n          <button class=\"btn btn-secondary btn-sm\" data-tpl=\"html\">HTML boilerplate</button>\n          <button class=\"btn btn-secondary btn-sm\" data-tpl=\"readme\">README</button>\n          <button class=\"btn btn-secondary btn-sm\" data-tpl=\"json\">JSON skeleton</button>\n          <button class=\"btn btn-secondary btn-sm\" data-tpl=\"env\">.env template</button>\n          <button class=\"btn btn-secondary btn-sm\" data-tpl=\"css\">CSS reset</button>\n          <button class=\"btn btn-secondary btn-sm\" data-tpl=\"python\">Python script</button>\n        </div>\n      </div>\n      <div class=\"field\">\n        <label for=\"contentInput\">File content</label>\n        <textarea id=\"contentInput\" rows=\"12\" placeholder=\"Paste your text, code or config here...\" style=\"font-family:var(--font-mono);font-size:.85rem;\"></textarea>\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"saveBtn\">💾 Download file</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Preview</h3>\n      <div class=\"output-box\" id=\"previewBox\" style=\"max-height:420px;\">Your file content will preview here.</div>\n      <div class=\"copy-row\">\n        <button class=\"btn btn-secondary btn-sm\" id=\"copyBtn\">Copy content</button>\n      </div>\n    </div>\n  </div>",
+  "howto": [
+    "Pick the category that matches your file type — the extension list updates automatically.",
+    "Choose the exact extension (or type a custom one with the <strong>Other</strong> category).",
+    "Give the file a name and paste in your content, or load a starter template.",
+    "Preview the content on the right to double-check it.",
+    "Click <strong>Download file</strong> to save it with the correct extension."
+  ],
+  "features": [
+    "Category-grouped extension picker — Code, Documents, Data &amp; Config, Web and Other",
+    "Six starter templates: HTML, README, JSON, .env, CSS reset and Python",
+    "Live content preview while you type",
+    "Copy-to-clipboard for the content",
+    "100% local — nothing is uploaded anywhere"
+  ],
+  "faq": [
+    {
+      "q": "What file types can I save?",
+      "a": "Any text-based file: source code, config, markdown, data, scripts, documents. If it is plain text, this tool can save it. For binary files (images, video), use the dedicated image or file tools instead."
+    },
+    {
+      "q": "Where does my content go?",
+      "a": "Nowhere. Everything is processed in your browser and the file is created locally with the Blob API. Nothing is uploaded to a server."
+    },
+    {
+      "q": "Can I save files without an extension?",
+      "a": "Yes. Choose the Other category and leave the extension field empty, or type any custom extension you need."
+    },
+    {
+      "q": "Do the templates contain anything proprietary?",
+      "a": "No. The templates are plain public boilerplate that anyone can write — simple HTML, markdown README, JSON, .env, CSS reset and a basic Python script."
+    }
+  ]
+}

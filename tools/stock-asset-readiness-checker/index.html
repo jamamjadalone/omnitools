@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stock Asset Readiness Checker — Free Online Tool | OmniTools</title>
+<meta name="description" content="Upload an image and auto-check resolution, format, transparency, aspect ratio and size against Adobe Stock, Shutterstock, Freepik or Envato requirements.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/stock-asset-readiness-checker/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Stock Asset Readiness Checker — OmniTools">
+<meta property="og:description" content="Upload an image and auto-check resolution, format, transparency, aspect ratio and size against Adobe Stock, Shutterstock, Freepik or Envato requirements.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/stock-asset-readiness-checker/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Stock Asset Readiness Checker",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Upload an image and auto-check resolution, format, transparency, aspect ratio and size against Adobe Stock, Shutterstock, Freepik or Envato requirements."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Image Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/image-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "Stock Asset Readiness Checker", "item": "https://jamamjadalone.github.io/omnitools/tools/stock-asset-readiness-checker/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="stock-asset-readiness-checker" data-category-of-tool="image-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/image-tools.html">Image Tools</a><span>/</span>
+    <span>Stock Asset Readiness Checker</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">✅</span>
+    <div>
+      <h1>Stock Asset Readiness Checker</h1>
+      <p class="tool-sub">Upload an image and auto-check resolution, format, transparency, aspect ratio and size against Adobe Stock, Shutterstock, Freepik or Envato requirements.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="platformSelect">Submission platform</label>
+        <select id="platformSelect">
+          <option value="adobe">Adobe Stock</option>
+          <option value="shutterstock">Shutterstock</option>
+          <option value="freepik">Freepik</option>
+          <option value="envato">Envato</option>
+        </select>
+      </div>
+      <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Upload an image to check">
+        <div class="dz-icon" aria-hidden="true">🖼️</div>
+        <p>Drop your image here or click to browse</p>
+        <p class="dz-hint">JPG, PNG or WebP — processed 100% in your browser</p>
+        <input type="file" id="fileInput" accept="image/*" hidden>
+      </div>
+      <div class="field" id="presetNoteWrap" style="margin-top:14px;display:none;">
+        <p class="alert alert-warning" id="presetNote" style="font-size:.85rem;"></p>
+      </div>
+    </div>
+    <div class="tool-panel">
+      <div id="resultsEmpty">
+        <p style="color:var(--text-faint);text-align:center;">Upload an image to see its readiness report.</p>
+      </div>
+      <div id="results" style="display:none;">
+        <div class="stat-row">
+          <div class="stat"><b id="statResolution">—</b><span>Resolution</span></div>
+          <div class="stat"><b id="statAspect">—</b><span>Aspect ratio</span></div>
+          <div class="stat"><b id="statSize">—</b><span>File size</span></div>
+          <div class="stat"><b id="statScore">—</b><span>Auto score</span></div>
+        </div>
+        <div id="autoChecks" style="margin-top:20px;display:grid;gap:10px;"></div>
+        <h3 style="margin:22px 0 10px;">Manual checklist</h3>
+        <div id="manualChecklist" style="display:grid;gap:8px;"></div>
+        <div id="summaryNote" class="alert" style="margin-top:16px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>__ABOUT__</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+            <li>Pick the stock platform you are submitting to from the dropdown.</li>
+      <li>Upload your image with the dropzone or file picker.</li>
+      <li>Read the automatic checks — each one shows pass, warning or fail with the exact requirement.</li>
+      <li>Work through the manual checklist for things only you can verify (logos, faces, watermarks).</li>
+      <li>Use the summary note to fix any failing check before submitting.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+            <li>Platform presets for Adobe Stock, Shutterstock, Freepik and Envato</li>
+      <li>Automatic resolution, format, transparency, aspect ratio and size checks</li>
+      <li>Clear pass / warning / fail status with the specific requirement shown</li>
+      <li>Manual submission checklist for non-automatable rules</li>
+      <li>Overall score plus a summary note that lists exactly what to fix</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Which resolution do the major stock platforms require? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Adobe Stock, Shutterstock and Envato accept a 4 megapixel (MP) minimum — Adobe also caps uploads at 45MP and 20MB. Freepik asks for at least 1000px on the longest side. The preset dropdown applies the exact numbers for each platform.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Does this tool upload my image anywhere? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. Every check runs locally in your browser using the image's own data. Your file never leaves your device.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Why does it warn about transparency? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Adobe Stock does not accept transparent-background images unless you have an approved transparent template. If a PNG has an alpha channel and you are submitting a regular photo, convert it to JPEG first.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Can this tool guarantee my image will be accepted? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. It only verifies the technical requirements you can measure (dimensions, format, transparency, size) and reminds you of the content rules. Reviewers also judge quality, composition and legal releases.</p></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

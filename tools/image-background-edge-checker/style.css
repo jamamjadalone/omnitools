@@ -1,0 +1,13 @@
+.preview-stage{
+  width: 100%;
+  min-height: 220px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow: auto;
+  max-height: 500px;
+}
+.preview-stage img{ display: block; max-width: none; }

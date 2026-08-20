@@ -1,0 +1,2 @@
+#outputBox{ white-space: pre-wrap; }
+.checkbox-field{ display: flex; align-items: flex-start; gap: 8px; }

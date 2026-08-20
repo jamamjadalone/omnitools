@@ -1,0 +1,42 @@
+{
+  "id": "ai-image-disclosure-helper",
+  "slug": "ai-image-disclosure-helper",
+  "name": "AI Image Disclosure Helper",
+  "category": "image-tools",
+  "categoryName": "Image Tools",
+  "icon": "🤖",
+  "description": "Generate the correct AI-generated / AI-assisted disclosure note for Adobe Stock, Shutterstock or Freepik so you never miss the checkbox or caption requirement.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"platformSelect\">Which platform are you submitting to?</label>\n        <select id=\"platformSelect\">\n          <option value=\"adobe\">Adobe Stock</option>\n          <option value=\"shutterstock\">Shutterstock</option>\n          <option value=\"freepik\">Freepik</option>\n        </select>\n      </div>\n      <div class=\"field\">\n        <label>How was the image created?</label>\n        <div class=\"radio-field\" style=\"margin-bottom:10px;\">\n          <label class=\"checkbox-field\"><input type=\"radio\" name=\"genType\" value=\"fully\" checked> Fully AI-generated</label>\n        </div>\n        <div class=\"radio-field\" style=\"margin-bottom:10px;\">\n          <label class=\"checkbox-field\"><input type=\"radio\" name=\"genType\" value=\"assisted\"> AI-assisted (edited with AI tools)</label>\n        </div>\n        <div class=\"radio-field\">\n          <label class=\"checkbox-field\"><input type=\"radio\" name=\"genType\" value=\"none\"> No AI used</label>\n        </div>\n      </div>\n      <div class=\"field\">\n        <label for=\"notesInput\">Optional: add your own notes (appended to the note)</label>\n        <textarea id=\"notesInput\" rows=\"3\" placeholder=\"e.g. Midjourney + Photoshop retouch, model composite\"></textarea>\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"generateBtn\">Generate disclosure note</button>\n      <p class=\"alert alert-warning\" style=\"margin-top:16px;font-size:.8rem;\">Platform policies change — verify the current rules on the platform before submitting.</p>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Disclosure note</h3>\n      <div class=\"output-box\" id=\"outputBox\" style=\"max-height:300px;\">Select options and click generate to see the required disclosure text.</div>\n      <div class=\"copy-row\" style=\"justify-content:flex-start;margin-top:10px;\"><button class=\"btn btn-secondary btn-sm\" id=\"copyBtn\">Copy note</button></div>\n      <h3 style=\"margin:24px 0 12px;\">Checklist</h3>\n      <div id=\"checklistBox\" style=\"display:grid;gap:8px;\"></div>\n    </div>\n  </div>",
+  "howto": [
+    "Choose the platform you are submitting to.",
+    "Select how the image was created — fully AI-generated, AI-assisted, or no AI.",
+    "Optionally add your own notes describing the AI tools used.",
+    "Click <strong>Generate disclosure note</strong> to get the exact phrasing for that platform.",
+    "Copy the note into the disclosure field of your submission and tick the disclosure checkbox if required."
+  ],
+  "features": [
+    "Platform-specific disclosure phrasing for Adobe Stock, Shutterstock and Freepik",
+    "Separate handling for fully generated vs AI-assisted images",
+    "Custom notes appended to the disclosure",
+    "A checklist of the disclosure requirements each platform expects",
+    "Runs 100% in your browser"
+  ],
+  "faq": [
+    {
+      "q": "Does every platform require AI disclosure?",
+      "a": "Yes, all major stock platforms require you to disclose AI-generated or AI-assisted content. Failing to do so can lead to rejection or account suspension, so it is safer to always disclose when AI was used in any significant way."
+    },
+    {
+      "q": "What is the difference between AI-generated and AI-assisted?",
+      "a": "Fully AI-generated means the core image was produced by an AI generator. AI-assisted means a real photograph or artwork was edited or enhanced with AI tools. The platforms treat these slightly differently, and this tool reflects those differences."
+    },
+    {
+      "q": "Is this note what the platform will show buyers?",
+      "a": "No. The note is the disclosure text you attach to your submission metadata. It informs reviewers and buyers that AI was used — it is not the same as the caption buyers see."
+    },
+    {
+      "q": "Can I rely on this tool for legal advice?",
+      "a": "No. It is a practical helper based on common platform rules. Platform policies change frequently — always double-check the current rules before submitting."
+    }
+  ]
+}

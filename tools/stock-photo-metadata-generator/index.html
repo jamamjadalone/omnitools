@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stock Photo Metadata Generator — Free Online Tool | OmniTools</title>
+<meta name="description" content="Paste a short description of your photo and get a platform-ready title, description and keyword list for Adobe Stock, Shutterstock or Freepik submissions.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/stock-photo-metadata-generator/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Stock Photo Metadata Generator — OmniTools">
+<meta property="og:description" content="Paste a short description of your photo and get a platform-ready title, description and keyword list for Adobe Stock, Shutterstock or Freepik submissions.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/stock-photo-metadata-generator/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Stock Photo Metadata Generator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Paste a short description of your photo and get a platform-ready title, description and keyword list for Adobe Stock, Shutterstock or Freepik submissions."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Image Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/image-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "Stock Photo Metadata Generator", "item": "https://jamamjadalone.github.io/omnitools/tools/stock-photo-metadata-generator/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="stock-photo-metadata-generator" data-category-of-tool="image-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/image-tools.html">Image Tools</a><span>/</span>
+    <span>Stock Photo Metadata Generator</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">🏷️</span>
+    <div>
+      <h1>Stock Photo Metadata Generator</h1>
+      <p class="tool-sub">Paste a short description of your photo and get a platform-ready title, description and keyword list for Adobe Stock, Shutterstock or Freepik submissions.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="platformSelect">Submission platform</label>
+        <select id="platformSelect">
+          <option value="adobe">Adobe Stock</option>
+          <option value="shutterstock">Shutterstock</option>
+          <option value="freepik">Freepik</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="descInput">Describe your photo in one or two sentences</label>
+        <textarea id="descInput" rows="4" placeholder="e.g. A young woman drinking coffee at a wooden table in a bright cafe on a sunny morning, smiling at the camera, shallow depth of field"></textarea>
+      </div>
+      <button class="btn btn-primary btn-block" id="generateBtn">✨ Generate metadata</button>
+      <p class="alert alert-warning" id="disclaimer" style="margin-top:16px;font-size:.8rem;">Starter draft — always review and edit before submitting to any platform. Generated entirely in your browser.</p>
+    </div>
+    <div class="tool-panel">
+      <div class="field">
+        <label for="titleOutput">Title</label>
+        <textarea id="titleOutput" rows="2" readonly></textarea>
+        <div class="copy-row" style="justify-content:flex-start;"><button class="btn btn-secondary btn-sm" data-copy="titleOutput">Copy</button></div>
+      </div>
+      <div class="field">
+        <label for="descOutput">Description</label>
+        <textarea id="descOutput" rows="6" readonly></textarea>
+        <div class="copy-row" style="justify-content:flex-start;"><button class="btn btn-secondary btn-sm" data-copy="descOutput">Copy</button></div>
+      </div>
+      <div class="field">
+        <label for="keywordsOutput">Keywords (comma-separated)</label>
+        <textarea id="keywordsOutput" rows="6" readonly></textarea>
+        <div class="copy-row" style="justify-content:flex-start;"><button class="btn btn-secondary btn-sm" data-copy="keywordsOutput">Copy</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>__ABOUT__</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+            <li>Pick the platform you are submitting to — it adjusts title and description length to the platform's guidelines.</li>
+      <li>Paste a plain, factual description of the photo — subjects, action, setting, lighting, mood.</li>
+      <li>Click <strong>Generate metadata</strong>.</li>
+      <li>Review the title, description and keywords in the right panel.</li>
+      <li>Edit anything that is inaccurate, then copy each field into your submission form.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+            <li>Platform-aware title, description and keyword generation</li>
+      <li>Title kept to 10–12 words and description to 40–55 words for Adobe Stock</li>
+      <li>50-keyword suggestion list built from your description text</li>
+      <li>Copy buttons for each field</li>
+      <li>Runs entirely on-device — no AI API calls, no uploads</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Is this using AI to write my metadata? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. It is a smart template and word-relevance engine running entirely in your browser. It expands your description into a structured title, description and keyword list using dictionaries of common stock-photo words. It is a starting draft — not a guarantee of acceptance.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Why is the title truncated at 12 words? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Adobe Stock recommends titles under 100 characters (about 12 words) and Shutterstock has similar limits. The tool trims your description to the most relevant opening words to stay inside those guidelines.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Where do the keywords come from? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>From the words in your description plus a small built-in dictionary of common photographic terms (e.g. "photo", "lifestyle", "outdoor", "colorful"). You should add any specific keywords it misses.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Will following this tool guarantee my image is accepted? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. Metadata is only one part of a submission. Reviewers also judge technical quality, composition, releases and content policy. The tool only automates the metadata-writing step.</p></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

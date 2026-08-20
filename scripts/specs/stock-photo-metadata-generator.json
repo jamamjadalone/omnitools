@@ -1,0 +1,42 @@
+{
+  "id": "stock-photo-metadata-generator",
+  "slug": "stock-photo-metadata-generator",
+  "name": "Stock Photo Metadata Generator",
+  "category": "image-tools",
+  "categoryName": "Image Tools",
+  "icon": "🏷️",
+  "description": "Paste a short description of your photo and get a platform-ready title, description and keyword list for Adobe Stock, Shutterstock or Freepik submissions.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"platformSelect\">Submission platform</label>\n        <select id=\"platformSelect\">\n          <option value=\"adobe\">Adobe Stock</option>\n          <option value=\"shutterstock\">Shutterstock</option>\n          <option value=\"freepik\">Freepik</option>\n        </select>\n      </div>\n      <div class=\"field\">\n        <label for=\"descInput\">Describe your photo in one or two sentences</label>\n        <textarea id=\"descInput\" rows=\"4\" placeholder=\"e.g. A young woman drinking coffee at a wooden table in a bright cafe on a sunny morning, smiling at the camera, shallow depth of field\"></textarea>\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"generateBtn\">✨ Generate metadata</button>\n      <p class=\"alert alert-warning\" id=\"disclaimer\" style=\"margin-top:16px;font-size:.8rem;\">Starter draft — always review and edit before submitting to any platform. Generated entirely in your browser.</p>\n    </div>\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"titleOutput\">Title</label>\n        <textarea id=\"titleOutput\" rows=\"2\" readonly></textarea>\n        <div class=\"copy-row\" style=\"justify-content:flex-start;\"><button class=\"btn btn-secondary btn-sm\" data-copy=\"titleOutput\">Copy</button></div>\n      </div>\n      <div class=\"field\">\n        <label for=\"descOutput\">Description</label>\n        <textarea id=\"descOutput\" rows=\"6\" readonly></textarea>\n        <div class=\"copy-row\" style=\"justify-content:flex-start;\"><button class=\"btn btn-secondary btn-sm\" data-copy=\"descOutput\">Copy</button></div>\n      </div>\n      <div class=\"field\">\n        <label for=\"keywordsOutput\">Keywords (comma-separated)</label>\n        <textarea id=\"keywordsOutput\" rows=\"6\" readonly></textarea>\n        <div class=\"copy-row\" style=\"justify-content:flex-start;\"><button class=\"btn btn-secondary btn-sm\" data-copy=\"keywordsOutput\">Copy</button></div>\n      </div>\n    </div>\n  </div>",
+  "howto": [
+    "Pick the platform you are submitting to — it adjusts title and description length to the platform's guidelines.",
+    "Paste a plain, factual description of the photo — subjects, action, setting, lighting, mood.",
+    "Click <strong>Generate metadata</strong>.",
+    "Review the title, description and keywords in the right panel.",
+    "Edit anything that is inaccurate, then copy each field into your submission form."
+  ],
+  "features": [
+    "Platform-aware title, description and keyword generation",
+    "Title kept to 10–12 words and description to 40–55 words for Adobe Stock",
+    "50-keyword suggestion list built from your description text",
+    "Copy buttons for each field",
+    "Runs entirely on-device — no AI API calls, no uploads"
+  ],
+  "faq": [
+    {
+      "q": "Is this using AI to write my metadata?",
+      "a": "No. It is a smart template and word-relevance engine running entirely in your browser. It expands your description into a structured title, description and keyword list using dictionaries of common stock-photo words. It is a starting draft — not a guarantee of acceptance."
+    },
+    {
+      "q": "Why is the title truncated at 12 words?",
+      "a": "Adobe Stock recommends titles under 100 characters (about 12 words) and Shutterstock has similar limits. The tool trims your description to the most relevant opening words to stay inside those guidelines."
+    },
+    {
+      "q": "Where do the keywords come from?",
+      "a": "From the words in your description plus a small built-in dictionary of common photographic terms (e.g. \"photo\", \"lifestyle\", \"outdoor\", \"colorful\"). You should add any specific keywords it misses."
+    },
+    {
+      "q": "Will following this tool guarantee my image is accepted?",
+      "a": "No. Metadata is only one part of a submission. Reviewers also judge technical quality, composition, releases and content policy. The tool only automates the metadata-writing step."
+    }
+  ]
+}

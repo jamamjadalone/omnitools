@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Background Edge Checker — Free Online Tool | OmniTools</title>
+<meta name="description" content="Preview a PNG with transparency over solid colors and a checkerboard to catch halos, fringe and messy cut-out edges before you submit or publish it.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/image-background-edge-checker/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Image Background Edge Checker — OmniTools">
+<meta property="og:description" content="Preview a PNG with transparency over solid colors and a checkerboard to catch halos, fringe and messy cut-out edges before you submit or publish it.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/image-background-edge-checker/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Image Background Edge Checker",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Preview a PNG with transparency over solid colors and a checkerboard to catch halos, fringe and messy cut-out edges before you submit or publish it."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Image Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/image-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "Image Background Edge Checker", "item": "https://jamamjadalone.github.io/omnitools/tools/image-background-edge-checker/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="image-background-edge-checker" data-category-of-tool="image-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/image-tools.html">Image Tools</a><span>/</span>
+    <span>Image Background Edge Checker</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">🖼️</span>
+    <div>
+      <h1>Image Background Edge Checker</h1>
+      <p class="tool-sub">Preview a PNG with transparency over solid colors and a checkerboard to catch halos, fringe and messy cut-out edges before you submit or publish it.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Upload a PNG image to check its edges">
+        <div class="dz-icon" aria-hidden="true">🖼️</div>
+        <p>Drop a PNG with transparency here or click to browse</p>
+        <p class="dz-hint">Processed locally — nothing is uploaded</p>
+        <input type="file" id="fileInput" accept="image/png,image/webp" hidden>
+      </div>
+      <div class="field" style="margin-top:16px;">
+        <label for="zoomRange">Zoom: <span id="zoomValue" class="range-value">100%</span></label>
+        <input type="range" id="zoomRange" min="25" max="400" value="100">
+      </div>
+      <div class="field">
+        <label for="bgSelect">Background color</label>
+        <select id="bgSelect">
+          <option value="checker">Checkerboard</option>
+          <option value="white">White</option>
+          <option value="black">Black</option>
+          <option value="red">Red (halo catcher)</option>
+          <option value="green">Green (halo catcher)</option>
+          <option value="blue">Blue (halo catcher)</option>
+        </select>
+      </div>
+      <p class="alert alert-warning" id="alphaWarning" style="display:none;margin-top:16px;font-size:.85rem;">No transparency detected — this checker is designed for images with alpha channels. Try a PNG with transparent areas.</p>
+    </div>
+    <div class="tool-panel">
+      <h3 style="margin-bottom:12px;">Preview</h3>
+      <div class="result-preview">
+        <div class="preview-stage" id="previewStage">
+          <img id="previewImg" alt="Preview of your image over the selected background">
+        </div>
+        <div class="stat-row">
+          <div class="stat"><b id="statSize">—</b><span>Dimensions</span></div>
+          <div class="stat"><b id="statMode">—</b><span>Color mode</span></div>
+          <div class="stat"><b id="statAlpha">—</b><span>Transparency</span></div>
+        </div>
+      </div>
+      <div class="content-block" style="margin-top:20px;">
+        <h3 style="margin-bottom:10px;">Edge check tips</h3>
+        <ul style="display:grid;gap:8px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+          <li>Zoom to 200–400% and look along the edges for a light or dark outline (halo).</li>
+          <li>Switch between red, green and blue — a colored fringe usually shows leftover background.</li>
+          <li>Check hair, fur and complex edges — they hide fringe the most.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>__ABOUT__</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+            <li>Upload a PNG (or WebP) with transparency using the dropzone.</li>
+      <li>Switch between the checkerboard and solid color backgrounds to inspect the edges.</li>
+      <li>Use the zoom slider to inspect edges up close.</li>
+      <li>Watch for halos, colored fringes or leftover background chunks along the outline.</li>
+      <li>Fix the cut-out in your editor, re-upload and re-check before submitting.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+            <li>Checkerboard plus white, black, red, green and blue backgrounds</li>
+      <li>Zoom slider for close edge inspection</li>
+      <li>Color mode and transparency stats for your image</li>
+      <li>Warns you when an image has no transparency</li>
+      <li>Runs entirely in the browser</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What is a halo in a PNG? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>A halo is a light or dark outline around the subject that remains after a rough background removal. It is the most common reason a cut-out looks unprofessional and a frequent cause of stock rejections.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Why do colored backgrounds help catch bad edges? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>White and black can hide thin halos. Strong red, green or blue backgrounds make even a faint fringe visible, because leftover background pixels are almost never the same color as the backdrop.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Does this tool fix my image edges? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. It is a checker, not an editor. It shows you the problem so you can fix it in your image editor, then re-check here.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What is the best background for the final export? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>For stock submissions, export on a transparent background with a checkerboard preview so reviewers can see the true edges. The checkerboard pattern is the industry standard for judging cut-outs.</p></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

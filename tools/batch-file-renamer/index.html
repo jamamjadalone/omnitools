@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Batch File Renamer — Free Online Tool | OmniTools</title>
+<meta name="description" content="Rename or change the extension of many files at once — prefix, suffix, sequence numbers or find/replace — then download them all as a ZIP.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/batch-file-renamer/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Batch File Renamer — OmniTools">
+<meta property="og:description" content="Rename or change the extension of many files at once — prefix, suffix, sequence numbers or find/replace — then download them all as a ZIP.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/batch-file-renamer/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Batch File Renamer",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Rename or change the extension of many files at once — prefix, suffix, sequence numbers or find/replace — then download them all as a ZIP."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Utilities", "item": "https://jamamjadalone.github.io/omnitools/categories/utilities.html" },
+    { "@type": "ListItem", "position": 3, "name": "Batch File Renamer", "item": "https://jamamjadalone.github.io/omnitools/tools/batch-file-renamer/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="batch-file-renamer" data-category-of-tool="utilities">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/utilities.html">Utilities</a><span>/</span>
+    <span>Batch File Renamer</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">📁</span>
+    <div>
+      <h1>Batch File Renamer</h1>
+      <p class="tool-sub">Rename or change the extension of many files at once — prefix, suffix, sequence numbers or find/replace — then download them all as a ZIP.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="modeSelect">What do you want to do?</label>
+        <select id="modeSelect">
+          <option value="extension">Change file extension</option>
+          <option value="pattern">Rename with a pattern</option>
+          <option value="findreplace">Find &amp; replace in names</option>
+        </select>
+      </div>
+
+      <div class="field" id="extWrap">
+        <label for="newExtInput">New extension (without the dot)</label>
+        <input type="text" id="newExtInput" value="jpg" placeholder="jpg, png, pdf, zip...">
+      </div>
+
+      <div class="field" id="patternWrap" style="display:none;">
+        <label for="patternInput">Name pattern</label>
+        <input type="text" id="patternInput" placeholder="vacation_">
+      </div>
+
+      <div class="field" id="findReplaceWrap" style="display:none;">
+        <div class="field-row">
+          <div>
+            <label for="findInput">Find</label>
+            <input type="text" id="findInput" placeholder="e.g. IMG_">
+          </div>
+          <div>
+            <label for="replaceInput">Replace with</label>
+            <input type="text" id="replaceInput" placeholder="e.g. photo_">
+          </div>
+        </div>
+      </div>
+
+      <div class="checkbox-field" style="margin-bottom:18px;">
+        <input type="checkbox" id="keepExtCheck">
+        <label for="keepExtCheck">Keep original extension (rename base name only)</label>
+      </div>
+
+      <div class="checkbox-field" style="margin-bottom:18px;">
+        <input type="checkbox" id="caseCheck">
+        <label for="caseCheck">Lowercase all filenames</label>
+      </div>
+
+      <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Select files or a folder to rename">
+        <div class="dz-icon" aria-hidden="true">📂</div>
+        <p>Click to select files or a whole folder</p>
+        <p class="dz-hint">Everything stays in your browser</p>
+        <input type="file" id="fileInput" multiple webkitdirectory hidden>
+      </div>
+
+      <button class="btn btn-primary btn-block" id="downloadBtn" style="margin-top:16px;" disabled>Download renamed files (ZIP)</button>
+    </div>
+    <div class="tool-panel">
+      <h3 style="margin-bottom:12px;">Files (loaded: <span id="fileCount">0</span>)</h3>
+      <div class="output-box" id="fileList" style="max-height:420px;">No files selected yet.</div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>__ABOUT__</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+            <li>Pick a mode: change the extension, apply a name pattern, or find/replace text in names.</li>
+      <li>Select one or more files (or an entire folder) with the dropzone.</li>
+      <li>Configure the options for the chosen mode — prefix, suffix, numbering or the find/replace pair.</li>
+      <li>Preview the new filenames in the panel on the right.</li>
+      <li>Click <strong>Download renamed files</strong> to receive everything in a single ZIP.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+            <li>Three modes: extension change, pattern rename, find/replace</li>
+      <li>Sequence numbering with custom prefix/suffix and zero-padding</li>
+      <li>Option to keep the original extension while renaming the base</li>
+      <li>Live preview of every new filename before you download</li>
+      <li>One-click ZIP export of all renamed files using JSZip</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Are my files uploaded to a server? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. All files are processed locally in your browser using the File API. They never leave your device.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Does changing an extension convert the file? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. Renaming an extension only changes the label — it does not change the actual file format. Use the File Type Detector tool to confirm a file's real type, then convert it with the right tool if needed.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Can I rename files inside subfolders? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Yes. When you select a folder, files in subfolders are included, and their relative paths are preserved inside the ZIP.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What if two renamed files end up with the same name? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>The tool automatically appends a number suffix (like _1, _2) to keep every filename unique.</p></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+  <script src="../../assets/js/vendor/jszip.min.js"></script>
+  <script src="../../assets/js/vendor/filesaver.min.js"></script>
+  <script src="../../assets/js/helpers/zip-export.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

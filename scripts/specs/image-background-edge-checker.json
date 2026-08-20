@@ -1,0 +1,42 @@
+{
+  "id": "image-background-edge-checker",
+  "slug": "image-background-edge-checker",
+  "name": "Image Background Edge Checker",
+  "category": "image-tools",
+  "categoryName": "Image Tools",
+  "icon": "🖼️",
+  "description": "Preview a PNG with transparency over solid colors and a checkerboard to catch halos, fringe and messy cut-out edges before you submit or publish it.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"dropzone\" id=\"dropzone\" tabindex=\"0\" role=\"button\" aria-label=\"Upload a PNG image to check its edges\">\n        <div class=\"dz-icon\" aria-hidden=\"true\">🖼️</div>\n        <p>Drop a PNG with transparency here or click to browse</p>\n        <p class=\"dz-hint\">Processed locally — nothing is uploaded</p>\n        <input type=\"file\" id=\"fileInput\" accept=\"image/png,image/webp\" hidden>\n      </div>\n      <div class=\"field\" style=\"margin-top:16px;\">\n        <label for=\"zoomRange\">Zoom: <span id=\"zoomValue\" class=\"range-value\">100%</span></label>\n        <input type=\"range\" id=\"zoomRange\" min=\"25\" max=\"400\" value=\"100\">\n      </div>\n      <div class=\"field\">\n        <label for=\"bgSelect\">Background color</label>\n        <select id=\"bgSelect\">\n          <option value=\"checker\">Checkerboard</option>\n          <option value=\"white\">White</option>\n          <option value=\"black\">Black</option>\n          <option value=\"red\">Red (halo catcher)</option>\n          <option value=\"green\">Green (halo catcher)</option>\n          <option value=\"blue\">Blue (halo catcher)</option>\n        </select>\n      </div>\n      <p class=\"alert alert-warning\" id=\"alphaWarning\" style=\"display:none;margin-top:16px;font-size:.85rem;\">No transparency detected — this checker is designed for images with alpha channels. Try a PNG with transparent areas.</p>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Preview</h3>\n      <div class=\"result-preview\">\n        <div class=\"preview-stage\" id=\"previewStage\">\n          <img id=\"previewImg\" alt=\"Preview of your image over the selected background\">\n        </div>\n        <div class=\"stat-row\">\n          <div class=\"stat\"><b id=\"statSize\">—</b><span>Dimensions</span></div>\n          <div class=\"stat\"><b id=\"statMode\">—</b><span>Color mode</span></div>\n          <div class=\"stat\"><b id=\"statAlpha\">—</b><span>Transparency</span></div>\n        </div>\n      </div>\n      <div class=\"content-block\" style=\"margin-top:20px;\">\n        <h3 style=\"margin-bottom:10px;\">Edge check tips</h3>\n        <ul style=\"display:grid;gap:8px;color:var(--text-dim);list-style:disc;padding-left:20px;\">\n          <li>Zoom to 200–400% and look along the edges for a light or dark outline (halo).</li>\n          <li>Switch between red, green and blue — a colored fringe usually shows leftover background.</li>\n          <li>Check hair, fur and complex edges — they hide fringe the most.</li>\n        </ul>\n      </div>\n    </div>\n  </div>",
+  "howto": [
+    "Upload a PNG (or WebP) with transparency using the dropzone.",
+    "Switch between the checkerboard and solid color backgrounds to inspect the edges.",
+    "Use the zoom slider to inspect edges up close.",
+    "Watch for halos, colored fringes or leftover background chunks along the outline.",
+    "Fix the cut-out in your editor, re-upload and re-check before submitting."
+  ],
+  "features": [
+    "Checkerboard plus white, black, red, green and blue backgrounds",
+    "Zoom slider for close edge inspection",
+    "Color mode and transparency stats for your image",
+    "Warns you when an image has no transparency",
+    "Runs entirely in the browser"
+  ],
+  "faq": [
+    {
+      "q": "What is a halo in a PNG?",
+      "a": "A halo is a light or dark outline around the subject that remains after a rough background removal. It is the most common reason a cut-out looks unprofessional and a frequent cause of stock rejections."
+    },
+    {
+      "q": "Why do colored backgrounds help catch bad edges?",
+      "a": "White and black can hide thin halos. Strong red, green or blue backgrounds make even a faint fringe visible, because leftover background pixels are almost never the same color as the backdrop."
+    },
+    {
+      "q": "Does this tool fix my image edges?",
+      "a": "No. It is a checker, not an editor. It shows you the problem so you can fix it in your image editor, then re-check here."
+    },
+    {
+      "q": "What is the best background for the final export?",
+      "a": "For stock submissions, export on a transparent background with a checkerboard preview so reviewers can see the true edges. The checkerboard pattern is the industry standard for judging cut-outs."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "file-type-detector",
+  "slug": "file-type-detector",
+  "name": "File Type Detector",
+  "category": "utilities",
+  "categoryName": "Utilities",
+  "icon": "🔍",
+  "extraScripts": ["../../assets/js/helpers/magic-bytes.js"],
+  "description": "Drop any file and read its real type from the magic bytes — not the extension — and spot mismatches like a .jpg that is actually a PNG.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"dropzone\" id=\"dropzone\" tabindex=\"0\" role=\"button\" aria-label=\"Drop a file to detect its real type\">\n        <div class=\"dz-icon\" aria-hidden=\"true\">🔍</div>\n        <p>Drop any file here or click to browse</p>\n        <p class=\"dz-hint\">Files are read locally — nothing is uploaded</p>\n        <input type=\"file\" id=\"fileInput\" multiple hidden>\n      </div>\n    </div>\n    <div class=\"tool-panel\">\n      <div id=\"emptyState\">\n        <p style=\"color:var(--text-faint);text-align:center;\">Drop a file to see its real type, magic bytes and extension check.</p>\n      </div>\n      <div id=\"results\" style=\"display:none;\"></div>\n    </div>\n  </div>",
+  "howto": [
+    "Drop one or more files onto the dropzone, or click to browse.",
+    "The tool reads the first bytes of each file (the magic number) to identify the real format.",
+    "Compare the detected type against the file extension.",
+    "A mismatch warning means the file was renamed or converted incorrectly — fix it with the right tool before uploading anywhere.",
+    "Re-check each file after converting it to confirm the new extension matches."
+  ],
+  "features": [
+    "Magic-byte detection for 25+ common formats (images, documents, archives, audio, video, executables)",
+    "Extension vs. actual format mismatch detection",
+    "Batch drop and multi-file inspection",
+    "Hex preview of the file signature",
+    "100% client-side — your files never leave your device"
+  ],
+  "faq": [
+    {
+      "q": "What are magic bytes?",
+      "a": "Magic bytes are the first few bytes of a file that identify its true format — for example PNG files start with 89 50 4E 47 and PDFs with 25 50 44 46. They reveal the real type no matter what the filename says."
+    },
+    {
+      "q": "Why would a file extension not match its real type?",
+      "a": "Files get renamed by mistake, downloaded with the wrong extension, or converted without updating the name. This tool catches those cases before you submit or publish them."
+    },
+    {
+      "q": "Can I convert a file with this tool?",
+      "a": "No — it only detects and validates. Use the Batch File Renamer to fix extensions, the Image Format Converter for images, or a dedicated converter for documents and media."
+    },
+    {
+      "q": "Does this work for every file format in the world?",
+      "a": "It covers the most common formats plus a generic fallback. Rare or proprietary formats may show as unknown — in that case the extension and file size are still displayed for reference."
+    }
+  ]
+}

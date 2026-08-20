@@ -1,0 +1,42 @@
+{
+  "id": "stock-asset-readiness-checker",
+  "slug": "stock-asset-readiness-checker",
+  "name": "Stock Asset Readiness Checker",
+  "category": "image-tools",
+  "categoryName": "Image Tools",
+  "icon": "✅",
+  "description": "Upload an image and auto-check resolution, format, transparency, aspect ratio and size against Adobe Stock, Shutterstock, Freepik or Envato requirements.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"platformSelect\">Submission platform</label>\n        <select id=\"platformSelect\">\n          <option value=\"adobe\">Adobe Stock</option>\n          <option value=\"shutterstock\">Shutterstock</option>\n          <option value=\"freepik\">Freepik</option>\n          <option value=\"envato\">Envato</option>\n        </select>\n      </div>\n      <div class=\"dropzone\" id=\"dropzone\" tabindex=\"0\" role=\"button\" aria-label=\"Upload an image to check\">\n        <div class=\"dz-icon\" aria-hidden=\"true\">🖼️</div>\n        <p>Drop your image here or click to browse</p>\n        <p class=\"dz-hint\">JPG, PNG or WebP — processed 100% in your browser</p>\n        <input type=\"file\" id=\"fileInput\" accept=\"image/*\" hidden>\n      </div>\n      <div class=\"field\" id=\"presetNoteWrap\" style=\"margin-top:14px;display:none;\">\n        <p class=\"alert alert-warning\" id=\"presetNote\" style=\"font-size:.85rem;\"></p>\n      </div>\n    </div>\n    <div class=\"tool-panel\">\n      <div id=\"resultsEmpty\">\n        <p style=\"color:var(--text-faint);text-align:center;\">Upload an image to see its readiness report.</p>\n      </div>\n      <div id=\"results\" style=\"display:none;\">\n        <div class=\"stat-row\">\n          <div class=\"stat\"><b id=\"statResolution\">—</b><span>Resolution</span></div>\n          <div class=\"stat\"><b id=\"statAspect\">—</b><span>Aspect ratio</span></div>\n          <div class=\"stat\"><b id=\"statSize\">—</b><span>File size</span></div>\n          <div class=\"stat\"><b id=\"statScore\">—</b><span>Auto score</span></div>\n        </div>\n        <div id=\"autoChecks\" style=\"margin-top:20px;display:grid;gap:10px;\"></div>\n        <h3 style=\"margin:22px 0 10px;\">Manual checklist</h3>\n        <div id=\"manualChecklist\" style=\"display:grid;gap:8px;\"></div>\n        <div id=\"summaryNote\" class=\"alert\" style=\"margin-top:16px;\"></div>\n      </div>\n    </div>\n  </div>",
+  "howto": [
+    "Pick the stock platform you are submitting to from the dropdown.",
+    "Upload your image with the dropzone or file picker.",
+    "Read the automatic checks — each one shows pass, warning or fail with the exact requirement.",
+    "Work through the manual checklist for things only you can verify (logos, faces, watermarks).",
+    "Use the summary note to fix any failing check before submitting."
+  ],
+  "features": [
+    "Platform presets for Adobe Stock, Shutterstock, Freepik and Envato",
+    "Automatic resolution, format, transparency, aspect ratio and size checks",
+    "Clear pass / warning / fail status with the specific requirement shown",
+    "Manual submission checklist for non-automatable rules",
+    "Overall score plus a summary note that lists exactly what to fix"
+  ],
+  "faq": [
+    {
+      "q": "Which resolution do the major stock platforms require?",
+      "a": "Adobe Stock, Shutterstock and Envato accept a 4 megapixel (MP) minimum — Adobe also caps uploads at 45MP and 20MB. Freepik asks for at least 1000px on the longest side. The preset dropdown applies the exact numbers for each platform."
+    },
+    {
+      "q": "Does this tool upload my image anywhere?",
+      "a": "No. Every check runs locally in your browser using the image's own data. Your file never leaves your device."
+    },
+    {
+      "q": "Why does it warn about transparency?",
+      "a": "Adobe Stock does not accept transparent-background images unless you have an approved transparent template. If a PNG has an alpha channel and you are submitting a regular photo, convert it to JPEG first."
+    },
+    {
+      "q": "Can this tool guarantee my image will be accepted?",
+      "a": "No. It only verifies the technical requirements you can measure (dimensions, format, transparency, size) and reminds you of the content rules. Reviewers also judge quality, composition and legal releases."
+    }
+  ]
+}

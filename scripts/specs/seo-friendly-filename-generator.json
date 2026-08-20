@@ -1,0 +1,43 @@
+{
+  "id": "seo-friendly-filename-generator",
+  "slug": "seo-friendly-filename-generator",
+  "name": "SEO-Friendly Filename Generator",
+  "category": "seo-tools",
+  "categoryName": "SEO Tools",
+  "icon": "🔤",
+  "extraScripts": ["../../assets/js/helpers/slugify.js"],
+  "description": "Turn any text into a clean, SEO-friendly filename or URL slug — lowercase, separator options, special-character stripping and instant copy.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"inputText\">Text to convert</label>\n        <textarea id=\"inputText\" rows=\"4\" placeholder=\"Paste any text — a title, a sentence, a messy filename...\"></textarea>\n      </div>\n      <div class=\"field\">\n        <label>Options</label>\n        <div class=\"checkbox-field\" style=\"margin-bottom:10px;\">\n          <input type=\"checkbox\" id=\"lowercaseCheck\" checked>\n          <label for=\"lowercaseCheck\">Lowercase</label>\n        </div>\n        <div class=\"checkbox-field\" style=\"margin-bottom:10px;\">\n          <input type=\"checkbox\" id=\"stripSpecialCheck\" checked>\n          <label for=\"stripSpecialCheck\">Strip special characters</label>\n        </div>\n        <div class=\"field\">\n          <label for=\"separatorSelect\">Word separator</label>\n          <select id=\"separatorSelect\">\n            <option value=\"-\">Hyphen ( - )</option>\n            <option value=\"_\">Underscore ( _ )</option>\n            <option value=\"none\">None (concatenate)</option>\n          </select>\n        </div>\n      </div>\n      <div class=\"field\">\n        <label for=\"outputText\">Result</label>\n        <div class=\"output-box\" id=\"outputText\" style=\"max-height:160px;\">Your SEO-friendly name will appear here.</div>\n      </div>\n      <div class=\"copy-row\" style=\"justify-content:flex-start;margin-top:14px;\">\n        <button class=\"btn btn-primary btn-sm\" id=\"copyBtn\">Copy result</button>\n      </div>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Example conversions</h3>\n      <div class=\"output-box\" id=\"examplesBox\" style=\"max-height:420px;\"></div>\n    </div>\n  </div>",
+  "howto": [
+    "Paste or type the text you want to convert — a title, filename or phrase.",
+    "Adjust the options: lowercase, strip special characters and choose a separator (hyphen, underscore or none).",
+    "The result updates instantly in the panel.",
+    "Click <strong>Copy result</strong> to copy the clean filename or slug.",
+    "Scroll the examples panel to see how different inputs are converted."
+  ],
+  "features": [
+    "Live conversion as you type",
+    "Hyphen, underscore or concatenated output",
+    "Automatic removal of special characters and double separators",
+    "Handles accented characters (é → e, ñ → n, etc.)",
+    "Built-in example conversions for reference"
+  ],
+  "faq": [
+    {
+      "q": "What makes a filename SEO-friendly?",
+      "a": "Short, lowercase names with hyphens or underscores between words, no spaces, and no special characters. Search engines and file systems both handle these reliably and they describe the content at a glance."
+    },
+    {
+      "q": "Hyphen or underscore — which should I use?",
+      "a": "For URLs, hyphens are the standard — Google treats them as word separators. Underscores are common for file names on some platforms. The tool lets you choose either."
+    },
+    {
+      "q": "Does this rename my files for me?",
+      "a": "No — it generates the clean name. To rename actual files in bulk, use the Batch File Renamer tool."
+    },
+    {
+      "q": "Will this work for non-English text?",
+      "a": "Basic Latin accents are converted to their plain letters. Characters outside the Latin alphabet are kept only if they are alphanumeric; everything else is stripped or converted to the separator."
+    }
+  ]
+}
