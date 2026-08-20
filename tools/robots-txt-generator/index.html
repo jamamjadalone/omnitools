@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robots.txt Generator — Free Online Tool | OmniTools</title>
+<meta name="description" content="Generate a robots.txt file with custom rules for search engine crawlers.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/robots-txt-generator/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Robots.txt Generator — OmniTools">
+<meta property="og:description" content="Generate a robots.txt file with custom rules for search engine crawlers.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/robots-txt-generator/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Robots.txt Generator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Generate a robots.txt file with custom rules for search engine crawlers."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "SEO Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/seo-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "Robots.txt Generator", "item": "https://jamamjadalone.github.io/omnitools/tools/robots-txt-generator/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="robots-txt-generator" data-category-of-tool="seo-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/seo-tools.html">SEO Tools</a><span>/</span>
+    <span>Robots.txt Generator</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">🤖</span>
+    <div>
+      <h1>Robots.txt Generator</h1>
+      <p class="tool-sub">Generate a robots.txt file with custom rules for search engine crawlers.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label>Sitemap URL (optional)</label>
+        <input type="url" id="sitemapUrl" placeholder="https://example.com/sitemap.xml" style="width:100%;padding:10px;border-radius:8px;border:1px solid var(--border);background:var(--bg-card);color:var(--text);font-size:1rem;">
+      </div>
+      <div class="field">
+        <label>Disallowed paths (one per line)</label>
+        <textarea id="disallowPaths" rows="5" placeholder="/admin/&#10;/private/&#10;/tmp/"></textarea>
+      </div>
+      <div class="field">
+        <label>Additional rules (raw text)</label>
+        <textarea id="customRules" rows="4" class="mono" placeholder="User-agent: Googlebot&#10;Disallow: /no-google/"></textarea>
+      </div>
+      <div class="field-row">
+        <button class="btn btn-primary" id="generateBtn">Generate</button>
+      </div>
+    </div>
+    <div class="tool-panel">
+      <div class="output-box mono" id="txtOutput" style="white-space:pre;"># Generate your robots.txt above.</div>
+      <div class="copy-row">
+        <button class="btn btn-secondary btn-sm" id="copyBtn">Copy</button>
+        <button class="btn btn-secondary btn-sm" id="downloadBtn">Download</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>Generate a properly formatted robots.txt file for your website. Block all crawlers, restrict specific paths, add a sitemap reference, and include custom rules for specific bots.</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Enter paths you want to block (one per line, e.g. /admin/).</li>
+      <li>Add your sitemap URL if you have one.</li>
+      <li>Add any custom rules for specific user agents.</li>
+      <li>Click <strong>Generate</strong>, then copy or download the file.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>Blocks all crawlers by default with custom disallow paths</li>
+      <li>Optional sitemap reference</li>
+      <li>Support for custom per-bot rules</li>
+      <li>Download as robots.txt file</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Where should I put robots.txt? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>In the root directory of your website (e.g. https://example.com/robots.txt).</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Does robots.txt guarantee pages won't be indexed? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>It's a request, not a command. Respectful crawlers follow it, but malicious bots may ignore it.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

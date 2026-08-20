@@ -1,0 +1,6 @@
+.tip-item-row { display: flex; gap: 6px; margin-bottom: 6px; align-items: center; }
+.tip-item-row input { padding: 6px; border-radius: 4px; border: 1px solid var(--border); background: var(--bg); color: var(--text); font-size: 0.85rem; flex: 1; }
+.tip-item-row input[type="number"] { width: 80px; flex: none; }
+.tip-item-row button { padding: 4px 8px; }
+.tip-result-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+.tip-result-total { font-size: 1.3rem; font-weight: 700; padding: 12px 0; text-align: center; }

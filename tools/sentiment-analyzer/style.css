@@ -1,0 +1,31 @@
+.sentiment-result {
+  text-align: center;
+  padding: 24px;
+  border-radius: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+}
+.sentiment-label {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.sentiment-label.positive { color: #27ae60; }
+.sentiment-label.negative { color: #e74c3c; }
+.sentiment-label.neutral { color: #f39c12; }
+.sentiment-score { color: var(--text-dim); margin-bottom: 12px; }
+.sentiment-bar-wrap {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--bg);
+  overflow: hidden;
+}
+.sentiment-bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s, background 0.3s;
+}
+.sentiment-bar.positive { background: #27ae60; }
+.sentiment-bar.negative { background: #e74c3c; }
+.sentiment-bar.neutral { background: #f39c12; }

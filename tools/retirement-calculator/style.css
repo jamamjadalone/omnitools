@@ -1,0 +1,7 @@
+.result-box { margin-top: 16px; }
+.result-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.result-row span { color: var(--text-dim); }
+.table-wrap { max-height: 420px; overflow: auto; border: 1px solid var(--border); border-radius: 8px; }
+.table-wrap table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.table-wrap th, .table-wrap td { padding: 8px 12px; text-align: right; border-bottom: 1px solid var(--border); }
+.table-wrap th { position: sticky; top: 0; background: var(--bg); color: var(--text-dim); font-weight: 600; }

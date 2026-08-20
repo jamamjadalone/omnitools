@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>URL Encoder/Decoder — Free Online Tool | OmniTools</title>
+<meta name="description" content="Encode and decode URL strings with one click.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/url-encoder/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="URL Encoder/Decoder — OmniTools">
+<meta property="og:description" content="Encode and decode URL strings with one click.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/url-encoder/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "URL Encoder/Decoder",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Encode and decode URL strings with one click."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Converters", "item": "https://jamamjadalone.github.io/omnitools/categories/converters.html" },
+    { "@type": "ListItem", "position": 3, "name": "URL Encoder/Decoder", "item": "https://jamamjadalone.github.io/omnitools/tools/url-encoder/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="url-encoder" data-category-of-tool="converters">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/converters.html">Converters</a><span>/</span>
+    <span>URL Encoder/Decoder</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">🔗%</span>
+    <div>
+      <h1>URL Encoder/Decoder</h1>
+      <p class="tool-sub">Encode and decode URL strings with one click.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="urlInput">Input String</label>
+        <textarea id="urlInput" rows="8" placeholder="e.g. https://example.com/path?key=hello world&lang=en"></textarea>
+      </div>
+      <div class="field-row">
+        <button class="btn btn-primary" id="encodeBtn">Encode</button>
+        <button class="btn btn-secondary" id="decodeBtn">Decode</button>
+      </div>
+      <div id="urlError" class="alert alert-danger" style="display:none;margin-top:14px;"></div>
+    </div>
+    <div class="tool-panel">
+      <div class="output-box" id="urlOutput">Result will appear here.</div>
+      <div class="copy-row">
+        <button class="btn btn-secondary btn-sm" id="copyBtn">Copy</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>Encode special characters in URLs to make them safe for transmission, or decode percent-encoded strings back to readable text.</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Paste a URL or string into the input area.</li>
+      <li>Click <strong>Encode</strong> to percent-encode it, or <strong>Decode</strong> to decode it.</li>
+      <li>Copy the result.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>Standard URI encoding (RFC 3986)</li>
+      <li>Encodes spaces, special chars, and non-ASCII characters</li>
+      <li>One-click encode and decode</li>
+      <li>Works with full URLs or query strings</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What's the difference between encodeURI and encodeURIComponent? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>This tool uses encodeURIComponent-style encoding, which encodes all special characters including colons and slashes.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Can I encode just part of a URL? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>Yes, paste just the portion you want to encode (like a query parameter value).</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

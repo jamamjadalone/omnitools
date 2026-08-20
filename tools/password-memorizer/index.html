@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Memorizer — Free Online Tool | OmniTools</title>
+<meta name="description" content="Generate memorable passwords from word combinations. Easy to remember, hard to guess.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/password-memorizer/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Password Memorizer — OmniTools">
+<meta property="og:description" content="Generate memorable passwords from word combinations.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/password-memorizer/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Password Memorizer",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Generate memorable passwords from word combinations."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Text Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/text-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "Password Memorizer", "item": "https://jamamjadalone.github.io/omnitools/tools/password-memorizer/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="password-memorizer" data-category-of-tool="text-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/text-tools.html">Text Tools</a><span>/</span>
+    <span>Password Memorizer</span>
+  </nav>
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">🧠</span>
+    <div>
+      <h1>Password Memorizer</h1>
+      <p class="tool-sub">Generate memorable passwords from word lists that are easy to remember.</p>
+    </div>
+  </div>
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="wordCount">Number of words: <span id="wordCountVal">4</span></label>
+        <input type="range" id="wordCount" min="2" max="8" value="4">
+      </div>
+      <div class="field">
+        <label for="separator">Separator</label>
+        <select id="separator" style="width:100%;padding:8px;border-radius:6px;border:1px solid var(--border);background:var(--bg);color:var(--text);">
+          <option value="-">Hyphen (-)</option>
+          <option value=".">Period (.)</option>
+          <option value="_">Underscore (_)</option>
+          <option value=" ">Space</option>
+          <option value="">None</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="capitalize">Capitalization</label>
+        <select id="capitalize" style="width:100%;padding:8px;border-radius:6px;border:1px solid var(--border);background:var(--bg);color:var(--text);">
+          <option value="first">Capitalize first letter</option>
+          <option value="all">Capitalize all words</option>
+          <option value="none">Lowercase</option>
+        </select>
+      </div>
+      <div class="checkbox-field" style="margin-bottom:10px;">
+        <input type="checkbox" id="addNumbers" checked>
+        <label for="addNumbers" style="margin:0;">Append number</label>
+      </div>
+      <div class="checkbox-field" style="margin-bottom:10px;">
+        <input type="checkbox" id="addSymbol">
+        <label for="addSymbol" style="margin:0;">Append symbol</label>
+      </div>
+      <button class="btn btn-primary btn-block" id="generateBtn">Generate Password</button>
+    </div>
+    <div class="tool-panel">
+      <div class="output-box mono" id="memOutput" style="font-size:1.1rem;text-align:center;word-break:break-all;">—</div>
+      <div class="copy-row">
+        <button class="btn btn-secondary btn-sm" id="copyBtn">Copy</button>
+      </div>
+    </div>
+  </div>
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>Creates memorable yet strong passwords by combining random words from a curated word list. These passphrase-style passwords are easier to remember than random strings while remaining highly secure.</p>
+  </div>
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Choose how many words to include (2-8).</li>
+      <li>Select a separator and capitalization style.</li>
+      <li>Optionally add a number or symbol at the end.</li>
+      <li>Click <strong>Generate Password</strong> and copy the result.</li>
+    </ol>
+  </div>
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>Word list of 500+ common English words</li>
+      <li>Customizable separator and capitalization</li>
+      <li>Option to append numbers and symbols</li>
+      <li>Cryptographically secure randomness</li>
+    </ul>
+  </div>
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Are these passwords secure? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>Yes! Passphrase-style passwords with 4+ words have extremely high entropy. Even with a smaller word list, the combinations are astronomically large.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How many words should I use? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>4 words is recommended for most accounts. Use 6+ words for high-security accounts like email or banking.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

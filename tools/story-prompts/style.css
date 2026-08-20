@@ -1,0 +1,4 @@
+.prompt-box { line-height: 1.8; white-space: pre-wrap; }
+.prompt-item { padding: 10px 0; border-bottom: 1px solid var(--border); }
+.prompt-item:last-child { border-bottom: none; }
+.prompt-genre { font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); margin-bottom: 4px; }

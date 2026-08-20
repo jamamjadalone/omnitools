@@ -1,0 +1,25 @@
+.unit-results-grid {
+  display: grid;
+  gap: 8px;
+}
+.unit-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: monospace;
+}
+.unit-row.active {
+  border-color: var(--accent, #6c5ce7);
+  background: rgba(108, 92, 231, 0.08);
+}
+.unit-label {
+  font-weight: 600;
+  color: var(--text-dim);
+}
+.unit-value {
+  font-size: 0.95rem;
+}

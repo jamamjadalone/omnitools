@@ -1,0 +1,23 @@
+.palette-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+}
+.swatch {
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.15s;
+  border: 1px solid var(--border);
+}
+.swatch:hover { transform: scale(1.05); }
+.swatch-color { height: 80px; }
+.swatch-label {
+  padding: 8px 6px;
+  text-align: center;
+  font-size: 0.75rem;
+  font-family: monospace;
+  color: var(--text-main);
+  background: var(--bg-surface);
+  word-break: break-all;
+}

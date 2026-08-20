@@ -1,0 +1,42 @@
+.quick-roll { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+.dice-quick { flex: 1; min-width: 60px; }
+.dice-result { text-align: center; padding: 20px; }
+.dice-total {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin-bottom: 10px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dice-breakdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.die-chip {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-main);
+  animation: diePop 0.3s ease;
+}
+@keyframes diePop { from { transform: scale(0.5); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.roll-history {
+  margin-top: 16px;
+  max-height: 200px;
+  overflow-y: auto;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+.roll-history-item {
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+.roll-history-item:last-child { border-bottom: none; }

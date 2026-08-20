@@ -1,0 +1,7 @@
+.freq-chart { display: grid; gap: 6px; }
+.freq-empty { color: var(--text-faint); text-align: center; padding: 60px 0; }
+.freq-row { display: flex; align-items: center; gap: 10px; }
+.freq-label { width: 36px; text-align: right; font-family: var(--font-mono); font-size: .85rem; color: var(--text-dim); }
+.freq-bar-wrap { flex: 1; height: 22px; background: var(--bg-elev-2); border-radius: 6px; overflow: hidden; }
+.freq-bar { height: 100%; border-radius: 6px; background: var(--accent); transition: width .25s; }
+.freq-count { font-size: .78rem; font-family: var(--font-mono); color: var(--text-dim); min-width: 60px; }

@@ -1,0 +1,48 @@
+.cron-output-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.cron-display {
+  flex: 1;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 10px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-align: center;
+}
+.cron-fields {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.cron-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.cron-field label {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+.cron-range {
+  font-size: 0.75rem;
+  opacity: 0.6;
+}
+.cron-presets {
+  margin-top: 6px;
+}
+.cron-presets label {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+  display: block;
+}
+.preset-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}

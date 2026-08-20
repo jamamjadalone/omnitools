@@ -1,0 +1,5 @@
+.strike-preview { font-size: 1.1rem; }
+.strike-tabs { display: flex; gap: 8px; margin-bottom: 12px; }
+.strike-tab { flex: 1; padding: 12px 14px; border: 1px solid var(--border); border-radius: 10px; background: var(--bg-elev-1); cursor: pointer; text-align: center; font-family: var(--font-mono); font-size: .82rem; color: var(--text-dim); transition: .2s; }
+.strike-tab.active { border-color: var(--accent); color: var(--text); background: var(--bg-elev-2); }
+.strike-tab-label { font-size: .72rem; color: var(--text-faint); display: block; margin-top: 4px; }

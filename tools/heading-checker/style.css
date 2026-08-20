@@ -1,0 +1,30 @@
+.heading-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+.heading-item.issue { border-color: #e74c3c; }
+.heading-item.ok { border-color: #27ae60; }
+.heading-level {
+  font-weight: 700;
+  min-width: 30px;
+  color: var(--accent);
+}
+.heading-indent {
+  padding-left: 16px;
+}
+.heading-summary {
+  padding: 10px 12px;
+  border-radius: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+.heading-summary strong { color: var(--text); }

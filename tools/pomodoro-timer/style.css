@@ -1,0 +1,31 @@
+.timer-display {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 30px 20px;
+  font-family: 'Courier New', monospace;
+  color: var(--text-main);
+  background: var(--bg-surface);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  margin: 10px 0;
+  letter-spacing: 4px;
+}
+.timer-controls { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.timer-controls .btn { min-width: 80px; }
+.pomo-phase {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding: 6px;
+  color: var(--accent, #22c55e);
+  text-transform: uppercase;
+}
+.pomo-phase.break-phase { color: #3b82f6; }
+.pomo-session {
+  text-align: center;
+  margin-top: 10px;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}

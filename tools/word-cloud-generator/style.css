@@ -1,0 +1,2 @@
+#wcCloud .wc-word { display: inline-block; padding: 2px 6px; font-weight: 600; transition: transform 0.2s; }
+#wcCloud .wc-word:hover { transform: scale(1.1); }

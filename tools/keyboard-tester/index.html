@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keyboard Tester — Free Online Tool | OmniTools</title>
+<meta name="description" content="Test your keyboard with a visual keyboard layout. See which keys register when pressed.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/keyboard-tester/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Keyboard Tester — OmniTools">
+<meta property="og:description" content="Test your keyboard with a visual keyboard layout.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/keyboard-tester/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Keyboard Tester",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Test your keyboard with a visual keyboard layout."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Utilities", "item": "https://jamamjadalone.github.io/omnitools/categories/utilities.html" },
+    { "@type": "ListItem", "position": 3, "name": "Keyboard Tester", "item": "https://jamamjadalone.github.io/omnitools/tools/keyboard-tester/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="keyboard-tester" data-category-of-tool="utilities">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/utilities.html">Utilities</a><span>/</span>
+    <span>Keyboard Tester</span>
+  </nav>
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">⌨️</span>
+    <div>
+      <h1>Keyboard Tester</h1>
+      <p class="tool-sub">Press any key to see it highlighted on the virtual keyboard.</p>
+    </div>
+  </div>
+  <div class="tool-body">
+    <div id="keyboardContainer" class="keyboard-wrapper"></div>
+    <div style="margin-top:16px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;">
+      <div style="font-size:0.85rem;color:var(--text-dim);">Last key: <span id="lastKey" class="mono" style="color:var(--accent);">None</span></div>
+      <div style="font-size:0.85rem;color:var(--text-dim);">Key code: <span id="keyCode" class="mono" style="color:var(--accent);">—</span></div>
+      <button class="btn btn-secondary btn-sm" id="resetBtn">Reset</button>
+    </div>
+  </div>
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>A visual keyboard tester that highlights keys as you press them. Useful for checking if all keys on your keyboard are working correctly.</p>
+  </div>
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Click anywhere on the page to focus it.</li>
+      <li>Press any key on your physical keyboard.</li>
+      <li>The corresponding virtual key lights up.</li>
+      <li>Check the last key and key code display.</li>
+    </ol>
+  </div>
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>Full QWERTY keyboard layout</li>
+      <li>Real-time key highlighting</li>
+      <li>Shows key name and code</li>
+      <li>Reset button to clear highlights</li>
+    </ul>
+  </div>
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Does this test mouse buttons? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>No, this tool tests keyboard keys only. Mouse buttons are not captured by keyboard events.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Will this detect stuck keys? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>Yes, if a key appears stuck (stays highlighted after release), it may indicate a hardware issue.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

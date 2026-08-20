@@ -1,0 +1,4 @@
+.ov-date-row { display: flex; justify-content: space-between; align-items: center; padding: 10px; border: 1px solid var(--border); border-radius: 6px; margin-bottom: 6px; }
+.ov-date-label { color: var(--text-dim); font-size: 0.85rem; }
+.ov-date-value { font-weight: 600; }
+.ov-highlight { border-color: var(--accent, #3b82f6); background: rgba(59,130,246,0.05); }

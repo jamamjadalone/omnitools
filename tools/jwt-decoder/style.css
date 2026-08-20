@@ -1,0 +1,9 @@
+.jwt-parts {
+  display: grid;
+  gap: 14px;
+}
+.jwt-part h3 {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+}

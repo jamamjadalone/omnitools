@@ -1,0 +1,10 @@
+.tree-node { margin-left: 18px; }
+.tree-key { color: #9cdcfe; }
+.tree-string { color: #ce9178; }
+.tree-number { color: #b5cea8; }
+.tree-boolean { color: #569cd6; }
+.tree-null { color: #569cd6; font-style: italic; }
+.tree-toggle { cursor: pointer; user-select: none; }
+.tree-toggle:hover { opacity: 0.8; }
+.tree-bracket { color: var(--text-dim); }
+.tree-preview { color: var(--text-dim); font-style: italic; font-size: 0.85rem; }

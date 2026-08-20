@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YAML to JSON Converter — Free Online Tool | OmniTools</title>
+<meta name="description" content="Parse YAML documents and convert them to JSON.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/yaml-to-json/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="YAML to JSON Converter — OmniTools">
+<meta property="og:description" content="Parse YAML documents and convert them to JSON.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/yaml-to-json/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "YAML to JSON Converter",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Parse YAML documents and convert them to JSON."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Converters", "item": "https://jamamjadalone.github.io/omnitools/categories/converters.html" },
+    { "@type": "ListItem", "position": 3, "name": "YAML to JSON Converter", "item": "https://jamamjadalone.github.io/omnitools/tools/yaml-to-json/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="yaml-to-json" data-category-of-tool="converters">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/converters.html">Converters</a><span>/</span>
+    <span>YAML to JSON Converter</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">Y→{ }</span>
+    <div>
+      <h1>YAML to JSON Converter</h1>
+      <p class="tool-sub">Parse YAML documents and convert them to JSON.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="yamlInput">YAML Input</label>
+        <textarea id="yamlInput" rows="14" class="mono" placeholder="name: example&#10;version: 1.0&#10;features:&#10;  - fast&#10;  - free"></textarea>
+      </div>
+      <div class="field-row">
+        <button class="btn btn-primary" id="convertBtn">Convert to JSON</button>
+      </div>
+      <div id="yamlError" class="alert alert-danger" style="display:none;margin-top:14px;"></div>
+    </div>
+    <div class="tool-panel">
+      <div class="output-box" id="jsonOutput">Your JSON output will appear here.</div>
+      <div class="copy-row">
+        <button class="btn btn-secondary btn-sm" id="copyBtn">Copy</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>Paste YAML text and convert it to formatted JSON. Supports standard YAML features including nested objects, arrays, strings, numbers, booleans, and null values.</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Paste your YAML into the input box.</li>
+      <li>Click <strong>Convert to JSON</strong>.</li>
+      <li>Copy the resulting JSON.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>Handles nested maps and sequences</li>
+      <li>Preserves data types (strings, numbers, booleans, null)</li>
+      <li>Formatted JSON output</li>
+      <li>Client-side processing</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Does it support multi-line strings? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>Yes, block scalar styles (| and >) are supported.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Can I convert JSON back to YAML? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>This tool converts YAML to JSON. For the reverse, check our other converter tools.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Is my data uploaded anywhere? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>No, everything stays in your browser.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

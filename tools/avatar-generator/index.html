@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avatar Generator — Free Online Tool | OmniTools</title>
+<meta name="description" content="Generate avatar images from initials with custom colors.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/avatar-generator/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Avatar Generator — OmniTools">
+<meta property="og:description" content="Generate avatar images from initials with custom colors.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/avatar-generator/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Avatar Generator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Generate avatar images from initials with custom colors."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Image Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/image-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "Avatar Generator", "item": "https://jamamjadalone.github.io/omnitools/tools/avatar-generator/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="avatar-generator" data-category-of-tool="image-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/image-tools.html">Image Tools</a><span>/</span>
+    <span>Avatar Generator</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">👤</span>
+    <div>
+      <h1>Avatar Generator</h1>
+      <p class="tool-sub">Generate avatar images from initials with custom colors.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="nameInput">Name or Initials</label>
+        <input type="text" id="nameInput" placeholder="e.g. John Doe or JD" maxlength="3" style="width:100%;padding:10px;border-radius:8px;border:1px solid var(--border);background:var(--bg-card);color:var(--text);font-size:1rem;">
+      </div>
+      <div class="field">
+        <label for="bgColor">Background Color</label>
+        <input type="color" id="bgColor" value="#6366f1" style="width:100%;height:40px;border:none;border-radius:8px;cursor:pointer;">
+      </div>
+      <div class="field">
+        <label for="fgColor">Text Color</label>
+        <input type="color" id="fgColor" value="#ffffff" style="width:100%;height:40px;border:none;border-radius:8px;cursor:pointer;">
+      </div>
+      <div class="field">
+        <label for="sizeSelect">Size</label>
+        <select id="sizeSelect" style="width:100%;padding:10px;border-radius:8px;border:1px solid var(--border);background:var(--bg-card);color:var(--text);font-size:1rem;">
+          <option value="128">128×128</option>
+          <option value="256" selected>256×256</option>
+          <option value="512">512×512</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="shapeSelect">Shape</label>
+        <select id="shapeSelect" style="width:100%;padding:10px;border-radius:8px;border:1px solid var(--border);background:var(--bg-card);color:var(--text);font-size:1rem;">
+          <option value="circle">Circle</option>
+          <option value="square">Rounded Square</option>
+        </select>
+      </div>
+      <div class="field-row">
+        <button class="btn btn-primary" id="generateBtn">Generate</button>
+        <button class="btn btn-secondary" id="downloadBtn">Download PNG</button>
+      </div>
+    </div>
+    <div class="tool-panel" style="text-align:center;">
+      <canvas id="avatarCanvas" width="256" height="256" style="border-radius:50%;max-width:100%;"></canvas>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>Create placeholder avatars from initials with custom background and text colors. Perfect for user profiles, placeholder images, and team directories.</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Enter a name (first letters become initials) or type initials directly.</li>
+      <li>Pick background and text colors.</li>
+      <li>Choose size and shape, then click <strong>Generate</strong>.</li>
+      <li>Download the result as PNG.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>Auto-extracts initials from full names</li>
+      <li>Custom background and text colors</li>
+      <li>Circle or rounded square shapes</li>
+      <li>Download as PNG at multiple sizes</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How are initials extracted? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>The first letter of each word is used. "John Doe" becomes "JD".</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Can I use this for real user avatars? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>These are designed as placeholders. Use them until users upload their own photos.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

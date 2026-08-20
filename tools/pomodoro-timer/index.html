@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pomodoro Timer — Free Online Tool | OmniTools</title>
+<meta name="description" content="Classic Pomodoro timer: 25 minutes of focused work followed by a 5-minute break.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/pomodoro-timer/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pomodoro Timer — OmniTools">
+<meta property="og:description" content="Classic Pomodoro timer with configurable work and break intervals.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/pomodoro-timer/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Pomodoro Timer",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Classic Pomodoro timer with configurable work and break intervals."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Utilities", "item": "https://jamamjadalone.github.io/omnitools/categories/utilities.html" },
+    { "@type": "ListItem", "position": 3, "name": "Pomodoro Timer", "item": "https://jamamjadalone.github.io/omnitools/tools/pomodoro-timer/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="pomodoro-timer" data-category-of-tool="utilities">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/utilities.html">Utilities</a><span>/</span>
+    <span>Pomodoro Timer</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">🍅</span>
+    <div>
+      <h1>Pomodoro Timer</h1>
+      <p class="tool-sub">25 minutes of focused work, then a 5-minute break. Repeat.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field-row">
+        <div class="field">
+          <label for="workMins">Work (min)</label>
+          <input type="number" id="workMins" min="1" max="120" value="25">
+        </div>
+        <div class="field">
+          <label for="breakMins">Break (min)</label>
+          <input type="number" id="breakMins" min="1" max="60" value="5">
+        </div>
+      </div>
+      <div class="pomo-phase" id="pomoPhase">WORK</div>
+      <div class="timer-display" id="timerDisplay">25:00</div>
+      <div class="timer-controls">
+        <button class="btn btn-primary" id="startBtn">Start</button>
+        <button class="btn btn-secondary" id="pauseBtn" disabled>Pause</button>
+        <button class="btn btn-secondary" id="resetBtn">Reset</button>
+        <button class="btn btn-secondary" id="skipBtn">Skip</button>
+      </div>
+      <div class="pomo-session" id="pomoSession">Session: 1</div>
+    </div>
+    <div class="tool-panel">
+      <div class="output-box" id="timerOutput" style="text-align:center;font-size:1.1rem;color:var(--text-dim);">
+        <p>Pomodoro Technique: work in focused intervals with short breaks.</p>
+        <p style="margin-top:10px;" id="pomoStatus">Ready to start.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>The Pomodoro Technique is a time management method developed by Francesco Cirillo. It uses a timer to break work into intervals (typically 25 minutes), separated by short breaks. This helps maintain focus and prevent burnout.</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Adjust work and break durations if desired (defaults are 25/5).</li>
+      <li>Click <strong>Start</strong> to begin the first work session.</li>
+      <li>When work ends, a break starts automatically.</li>
+      <li>Use <strong>Skip</strong> to jump to the next phase, or <strong>Pause</strong>/<strong>Reset</strong> as needed.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>Configurable work and break durations</li>
+      <li>Automatic phase switching between work and break</li>
+      <li>Session counter to track your progress</li>
+      <li>Sound notification when each phase ends</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What is the Pomodoro Technique? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>A time management method that uses timed intervals (traditionally 25 minutes) of focused work, followed by short breaks.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Why is it called Pomodoro? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>"Pomodoro" is Italian for "tomato." Francesco Cirillo named it after the tomato-shaped kitchen timer he used as a student.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Can I customize the durations? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>Yes, adjust the work and break minute values before starting. Changes take effect on the next session.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+.battery-detail-item { display: flex; justify-content: space-between; gap: 12px; }
+.battery-detail-label { color: var(--text-dim); }
+.battery-detail-value { font-weight: 600; }

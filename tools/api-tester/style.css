@@ -1,0 +1,25 @@
+.api-status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.status-code {
+  font-family: monospace;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+.status-ok {
+  background: rgba(0, 200, 120, 0.15);
+  color: #00c878;
+}
+.status-err {
+  background: rgba(255, 60, 60, 0.15);
+  color: #ff3c3c;
+}
+.status-time {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Git Commit Message Generator — Free Online Tool | OmniTools</title>
+<meta name="description" content="Generate conventional commit messages for your git commits. Supports feat, fix, chore, and more.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/git-commit-msg/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Git Commit Message Generator — OmniTools">
+<meta property="og:description" content="Generate conventional commit messages for git.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/git-commit-msg/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Git Commit Message Generator",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Generate conventional commit messages for your git commits."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Developer Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/developer-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "Git Commit Message Generator", "item": "https://jamamjadalone.github.io/omnitools/tools/git-commit-msg/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="git-commit-msg" data-category-of-tool="developer-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/developer-tools.html">Developer Tools</a><span>/</span>
+    <span>Git Commit Message Generator</span>
+  </nav>
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">📝</span>
+    <div>
+      <h1>Git Commit Message Generator</h1>
+      <p class="tool-sub">Generate conventional commit messages following best practices.</p>
+    </div>
+  </div>
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="commitType">Type</label>
+        <select id="commitType" style="width:100%;padding:8px;border-radius:6px;border:1px solid var(--border);background:var(--bg);color:var(--text);">
+          <option value="feat">feat (new feature)</option>
+          <option value="fix">fix (bug fix)</option>
+          <option value="docs">docs (documentation)</option>
+          <option value="style">style (formatting)</option>
+          <option value="refactor">refactor (code restructuring)</option>
+          <option value="perf">perf (performance)</option>
+          <option value="test">test (adding tests)</option>
+          <option value="chore">chore (maintenance)</option>
+          <option value="ci">ci (CI/CD)</option>
+          <option value="build">build (build system)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="commitScope">Scope (optional)</label>
+        <input type="text" id="commitScope" placeholder="e.g. auth, api, ui" style="width:100%;padding:8px;border-radius:6px;border:1px solid var(--border);background:var(--bg);color:var(--text);">
+      </div>
+      <div class="field">
+        <label for="commitDesc">Description</label>
+        <input type="text" id="commitDesc" placeholder="Short description of the change" style="width:100%;padding:8px;border-radius:6px;border:1px solid var(--border);background:var(--bg);color:var(--text);">
+      </div>
+      <div class="field">
+        <label for="commitBody">Body (optional)</label>
+        <textarea id="commitBody" rows="3" placeholder="Detailed explanation" style="font-family:var(--font-mono);font-size:0.85rem;"></textarea>
+      </div>
+      <div class="checkbox-field" style="margin-bottom:10px;">
+        <input type="checkbox" id="commitBreaking">
+        <label for="commitBreaking" style="margin:0;">Breaking change</label>
+      </div>
+      <button class="btn btn-primary btn-block" id="generateBtn">Generate Message</button>
+    </div>
+    <div class="tool-panel">
+      <div class="output-box mono" id="commitOutput" style="font-size:0.9rem;white-space:pre-wrap;">Commit message will appear here.</div>
+      <div class="copy-row">
+        <button class="btn btn-secondary btn-sm" id="copyBtn">Copy</button>
+      </div>
+    </div>
+  </div>
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>Generates git commit messages following the Conventional Commits specification. Helps maintain clean, readable, and machine-parseable commit histories.</p>
+  </div>
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Select a commit type (feat, fix, etc.).</li>
+      <li>Optionally add a scope.</li>
+      <li>Write a short description of the change.</li>
+      <li>Click <strong>Generate Message</strong> and copy the result.</li>
+    </ol>
+  </div>
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>Follows Conventional Commits spec</li>
+      <li>Supports all standard commit types</li>
+      <li>Optional scope and body fields</li>
+      <li>Breaking change indicator</li>
+    </ul>
+  </div>
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What is Conventional Commits? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>A specification for adding human and machine readable meaning to commit messages. It enables automatic changelog generation and semantic versioning.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">When should I use a breaking change? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>Use breaking changes when the commit introduces incompatible API changes that would require a major version bump.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

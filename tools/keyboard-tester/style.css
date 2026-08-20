@@ -1,0 +1,9 @@
+.keyboard-wrapper { display: flex; flex-direction: column; gap: 4px; align-items: center; padding: 16px; overflow-x: auto; }
+.kb-row { display: flex; gap: 4px; }
+.kb-key { width: 52px; height: 46px; border: 1px solid var(--border); border-radius: 6px; background: var(--bg); color: var(--text-dim); display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-family: var(--font-mono); cursor: default; transition: all 0.15s; user-select: none; }
+.kb-key.active { background: var(--accent, #3b82f6); color: #fff; border-color: var(--accent, #3b82f6); transform: scale(1.05); }
+.kb-key.wide { width: 80px; }
+.kb-key.wider { width: 100px; }
+.kb-key.widest { width: 260px; }
+.kb-key.space { width: 320px; }
+.kb-key.fn-key { width: 42px; height: 38px; font-size: 0.6rem; }

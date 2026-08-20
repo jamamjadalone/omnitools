@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Area Calculator — Free Online Tool | OmniTools</title>
+<meta name="description" content="Calculate the area of rectangles, circles, and triangles.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/area-calculator/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Area Calculator — OmniTools">
+<meta property="og:description" content="Calculate the area of rectangles, circles, and triangles.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/area-calculator/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Area Calculator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Calculate the area of rectangles, circles, and triangles."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Calculators", "item": "https://jamamjadalone.github.io/omnitools/categories/calculators.html" },
+    { "@type": "ListItem", "position": 3, "name": "Area Calculator", "item": "https://jamamjadalone.github.io/omnitools/tools/area-calculator/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="area-calculator" data-category-of-tool="calculators">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/calculators.html">Calculators</a><span>/</span>
+    <span>Area Calculator</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">Area</span>
+    <div>
+      <h1>Area Calculator</h1>
+      <p class="tool-sub">Calculate the area of rectangles, circles, and triangles.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="areaShape">Shape</label>
+        <select id="areaShape">
+          <option value="rectangle" selected>Rectangle</option>
+          <option value="circle">Circle</option>
+          <option value="triangle">Triangle</option>
+        </select>
+      </div>
+
+      <div id="rectFields">
+        <div class="field-row">
+          <div class="field"><label for="rectWidth">Width</label><input type="number" id="rectWidth" value="10" min="0" step="0.1"></div>
+          <div class="field"><label for="rectHeight">Height</label><input type="number" id="rectHeight" value="5" min="0" step="0.1"></div>
+        </div>
+      </div>
+
+      <div id="circleFields" hidden>
+        <div class="field">
+          <label for="circleRadius">Radius</label>
+          <input type="number" id="circleRadius" value="5" min="0" step="0.1">
+        </div>
+      </div>
+
+      <div id="triFields" hidden>
+        <div class="field">
+          <label for="triBase">Base</label>
+          <input type="number" id="triBase" value="10" min="0" step="0.1">
+        </div>
+        <div class="field">
+          <label for="triHeight">Height</label>
+          <input type="number" id="triHeight" value="6" min="0" step="0.1">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="areaUnit">Unit</label>
+        <select id="areaUnit">
+          <option value="units">Units</option>
+          <option value="m">Meters (m)</option>
+          <option value="cm">Centimeters (cm)</option>
+          <option value="ft">Feet (ft)</option>
+          <option value="in">Inches (in)</option>
+          <option value="yd">Yards (yd)</option>
+          <option value="km">Kilometers (km)</option>
+          <option value="mi">Miles (mi)</option>
+        </select>
+      </div>
+
+      <button class="btn btn-primary" id="calcAreaBtn">Calculate Area</button>
+      <div id="areaResult" class="result-box" hidden>
+        <div class="result-row"><span>Area</span><strong id="areaValue"></strong></div>
+        <div class="result-row"><span>Perimeter</span><strong id="areaPerimeter"></strong></div>
+      </div>
+    </div>
+
+    <div class="tool-panel">
+      <div id="areaInfo" class="result-preview"><p class="tool-sub">Select a shape and enter the dimensions to calculate area and perimeter.</p></div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>This area calculator supports three common geometric shapes: rectangles (length &times; width), circles (&pi;r&sup2;), and triangles (&frac12; &times; base &times; height). It also calculates the perimeter for each shape.</p>
+  </div>
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Select the shape you want to calculate.</li>
+      <li>Enter the required dimensions (width/height, radius, or base/height).</li>
+      <li>Choose a unit of measurement if desired.</li>
+      <li>Click <strong>Calculate Area</strong> to see the result.</li>
+    </ol>
+  </div>
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>Supports rectangles, circles, and triangles</li>
+      <li>Calculates both area and perimeter</li>
+      <li>Multiple unit options</li>
+      <li>Precise calculations with decimal support</li>
+      <li>Instant results</li>
+    </ul>
+  </div>
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What formulas are used? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>Rectangle: A = w &times; h, Circle: A = &pi;r&sup2;, Triangle: A = &frac12; &times; b &times; h.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Does the unit matter for calculation? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>The unit is just a label for display. The calculation uses the numeric values you enter. Just make sure all dimensions use the same unit.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.regex-input-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.regex-input-row input#regexPattern {
+  flex: 1;
+}
+.regex-input-row input.regex-flags {
+  width: 60px;
+  flex: 0 0 60px;
+}
+.regex-slash {
+  color: var(--text-dim);
+  font-family: monospace;
+  font-size: 1.1rem;
+}
+.regex-match {
+  background: var(--accent, #6c5ce7);
+  color: #fff;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+.match-info {
+  margin-top: 14px;
+}
+.group-entry {
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+.group-entry:last-child {
+  border-bottom: none;
+}
+.group-list {
+  padding-left: 16px;
+  margin-top: 4px;
+}
+.group-item {
+  font-size: 0.85rem;
+  padding: 2px 0;
+  color: var(--text-dim);
+}
+#groupOutput {
+  margin-top: 14px;
+}

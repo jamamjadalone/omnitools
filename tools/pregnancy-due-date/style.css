@@ -1,0 +1,5 @@
+.preg-info-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 0.95rem; }
+.preg-info-label { color: var(--text-dim); }
+.preg-info-value { font-weight: 600; }
+.preg-progress { width: 100%; height: 12px; background: var(--border); border-radius: 6px; overflow: hidden; margin: 12px 0; }
+.preg-progress-bar { height: 100%; background: var(--accent, #3b82f6); border-radius: 6px; transition: width 0.5s; }

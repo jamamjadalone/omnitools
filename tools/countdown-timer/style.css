@@ -1,0 +1,17 @@
+.timer-display {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 30px 20px;
+  font-family: 'Courier New', monospace;
+  color: var(--text-main);
+  background: var(--bg-surface);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  margin-bottom: 16px;
+  letter-spacing: 4px;
+}
+.timer-display.warning { color: #f59e0b; }
+.timer-display.done { color: #ef4444; }
+.timer-controls { display: flex; gap: 10px; justify-content: center; }
+.timer-controls .btn { min-width: 100px; }

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Retirement Calculator — Free Online Tool | OmniTools</title>
+<meta name="description" content="Estimate how much you need to save for retirement with monthly contributions and compound growth.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/retirement-calculator/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Retirement Calculator — OmniTools">
+<meta property="og:description" content="Estimate how much you need to save for retirement with monthly contributions and compound growth.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/retirement-calculator/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Retirement Calculator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Estimate how much you need to save for retirement with monthly contributions and compound growth."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Calculators", "item": "https://jamamjadalone.github.io/omnitools/categories/calculators.html" },
+    { "@type": "ListItem", "position": 3, "name": "Retirement Calculator", "item": "https://jamamjadalone.github.io/omnitools/tools/retirement-calculator/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="retirement-calculator" data-category-of-tool="calculators">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/calculators.html">Calculators</a><span>/</span>
+    <span>Retirement Calculator</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">Ret</span>
+    <div>
+      <h1>Retirement Calculator</h1>
+      <p class="tool-sub">See how much your savings will grow by the time you retire.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="retAge">Current Age</label>
+        <input type="number" id="retAge" value="30" min="1" max="100">
+      </div>
+      <div class="field">
+        <label for="retRetireAge">Retirement Age</label>
+        <input type="number" id="retRetireAge" value="65" min="1" max="100">
+      </div>
+      <div class="field">
+        <label for="retSavings">Current Savings ($)</label>
+        <input type="number" id="retSavings" value="25000" min="0" step="1000">
+      </div>
+      <div class="field">
+        <label for="retMonthly">Monthly Contribution ($)</label>
+        <input type="number" id="retMonthly" value="500" min="0" step="50">
+      </div>
+      <div class="field">
+        <label for="retRate">Expected Annual Return (%)</label>
+        <input type="number" id="retRate" value="7" min="0" step="0.1">
+      </div>
+      <button class="btn btn-primary" id="calcRetBtn">Calculate</button>
+      <div id="retResult" class="result-box" hidden>
+        <div class="result-row"><span>Projected Savings at Retirement</span><strong id="retProjected"></strong></div>
+        <div class="result-row"><span>Total Contributions</span><strong id="retContrib"></strong></div>
+        <div class="result-row"><span>Total Interest Earned</span><strong id="retInterest"></strong></div>
+      </div>
+    </div>
+
+    <div class="tool-panel">
+      <div id="retGrowthWrap" hidden>
+        <h3 style="margin-bottom:10px;">Growth Over Time</h3>
+        <div class="table-wrap">
+          <table><thead><tr><th>Age</th><th>Balance</th><th>Contributions</th></tr></thead>
+          <tbody id="retGrowthBody"></tbody></table>
+        </div>
+      </div>
+      <div id="retEmpty" class="result-preview"><p class="tool-sub">Enter your details and click Calculate to project your retirement savings.</p></div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>This retirement calculator projects your future savings based on your current age, retirement age, existing savings, monthly contributions, and expected annual return rate. It accounts for compound growth on both lump sums and regular contributions.</p>
+  </div>
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Enter your current age and desired retirement age.</li>
+      <li>Input your current savings and how much you contribute monthly.</li>
+      <li>Set an expected annual return rate (7% is a common historical average for stocks).</li>
+      <li>Click <strong>Calculate</strong> to see your projected nest egg.</li>
+    </ol>
+  </div>
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>Projects savings with compound growth</li>
+      <li>Accounts for both lump sum and monthly contributions</li>
+      <li>Shows year-by-year growth breakdown</li>
+      <li>Calculates total contributions vs. interest earned</li>
+      <li>Quick retirement planning overview</li>
+    </ul>
+  </div>
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What return rate should I use? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>The S&P 500 has historically returned about 10% annually before inflation. A conservative estimate is 6-8% for a diversified portfolio.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Does this account for inflation? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>No, this shows nominal values. For a more conservative estimate, subtract 2-3% from your expected return rate to approximate real returns.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

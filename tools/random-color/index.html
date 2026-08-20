@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Color Generator — Free Online Tool | OmniTools</title>
+<meta name="description" content="Generate random colors and build a palette you can export as CSS, JSON, or an image.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/random-color/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Random Color Generator — OmniTools">
+<meta property="og:description" content="Generate random colors and export palettes.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/random-color/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Random Color Generator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Generate random colors and build a palette you can export."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Utilities", "item": "https://jamamjadalone.github.io/omnitools/categories/utilities.html" },
+    { "@type": "ListItem", "position": 3, "name": "Random Color Generator", "item": "https://jamamjadalone.github.io/omnitools/tools/random-color/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="random-color" data-category-of-tool="utilities">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/utilities.html">Utilities</a><span>/</span>
+    <span>Random Color Generator</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">🎨</span>
+    <div>
+      <h1>Random Color Generator</h1>
+      <p class="tool-sub">Generate random colors and build a palette you can export.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="colorCount">Colors in palette</label>
+        <input type="number" id="colorCount" min="1" max="20" value="5">
+      </div>
+      <div class="field">
+        <label for="formatSelect">Export format</label>
+        <select id="formatSelect">
+          <option value="hex">HEX</option>
+          <option value="rgb">RGB</option>
+          <option value="hsl">HSL</option>
+        </select>
+      </div>
+      <button class="btn btn-primary btn-block" id="generateBtn">Generate Palette</button>
+      <div style="margin-top:12px;">
+        <button class="btn btn-secondary btn-block" id="copyBtn">Copy Palette</button>
+      </div>
+      <div style="margin-top:8px;">
+        <button class="btn btn-secondary btn-block" id="cssBtn">Copy as CSS Variables</button>
+      </div>
+    </div>
+    <div class="tool-panel">
+      <div id="palette" class="palette-grid"></div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>Generate a palette of random colors for design inspiration. Click any color to copy its value. Export the whole palette as a list or CSS custom properties.</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Set the number of colors you want in your palette.</li>
+      <li>Choose the format: HEX, RGB, or HSL.</li>
+      <li>Click <strong>Generate Palette</strong> to create new colors.</li>
+      <li>Click any swatch to copy its value, or use the export buttons.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>Generate up to 20 random colors at once</li>
+      <li>HEX, RGB, and HSL format support</li>
+      <li>Click a swatch to copy its color value</li>
+      <li>Export as CSS custom properties for easy use</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Can I lock a color I like while regenerating? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>This version generates an entirely new palette each time. You can copy colors you like before regenerating.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Are the colors random or curated? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>The colors are fully random, generated using the Web Crypto API for true randomness across the entire color space.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metronome — Free Online Tool | OmniTools</title>
+<meta name="description" content="Audio metronome with adjustable BPM, time signature, and accent beats.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/metronome/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Metronome — OmniTools">
+<meta property="og:description" content="Audio metronome with adjustable BPM and time signatures.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/metronome/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Metronome",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Audio metronome with adjustable BPM, time signature, and accent beats."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Utilities", "item": "https://jamamjadalone.github.io/omnitools/categories/utilities.html" },
+    { "@type": "ListItem", "position": 3, "name": "Metronome", "item": "https://jamamjadalone.github.io/omnitools/tools/metronome/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="metronome" data-category-of-tool="utilities">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/utilities.html">Utilities</a><span>/</span>
+    <span>Metronome</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">🎵</span>
+    <div>
+      <h1>Metronome</h1>
+      <p class="tool-sub">Audio metronome with adjustable BPM and time signature.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="bpm-display" id="bpmDisplay">120</div>
+      <div class="field">
+        <label for="bpmSlider">BPM: <span id="bpmValue">120</span></label>
+        <input type="range" id="bpmSlider" min="20" max="300" value="120">
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="beatsSelect">Beats per bar</label>
+          <select id="beatsSelect">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4" selected>4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="soundSelect">Sound</label>
+          <select id="soundSelect">
+            <option value="click">Click</option>
+            <option value="wood">Wood block</option>
+          </select>
+        </div>
+      </div>
+      <div class="beat-dots" id="beatDots"></div>
+      <div class="metro-controls">
+        <button class="btn btn-primary btn-lg" id="playBtn">▶ Start</button>
+      </div>
+      <div class="bpm-presets">
+        <button class="btn btn-sm btn-secondary bpm-preset" data-bpm="60">60</button>
+        <button class="btn btn-sm btn-secondary bpm-preset" data-bpm="80">80</button>
+        <button class="btn btn-sm btn-secondary bpm-preset" data-bpm="100">100</button>
+        <button class="btn btn-sm btn-secondary bpm-preset" data-bpm="120">120</button>
+        <button class="btn btn-sm btn-secondary bpm-preset" data-bpm="140">140</button>
+        <button class="btn btn-sm btn-secondary bpm-preset" data-bpm="160">160</button>
+      </div>
+    </div>
+    <div class="tool-panel">
+      <div class="output-box" id="metroOutput" style="text-align:center;font-size:1rem;color:var(--text-dim);min-height:60px;">
+        Adjust BPM and press Start.
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>A browser-based metronome that generates precise click sounds using the Web Audio API. Set your tempo, choose a time signature, and practice with a reliable beat.</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Set the BPM using the slider or preset buttons.</li>
+      <li>Choose a time signature (beats per bar).</li>
+      <li>Click <strong>Start</strong> to begin the metronome.</li>
+      <li>The beat dots light up to show the current beat in the bar.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>BPM range from 20 to 300</li>
+      <li>Multiple time signatures (2/4 through 7/4)</li>
+      <li>Visual beat indicator</li>
+      <li>Two sound options: click and wood block</li>
+      <li>Precise timing using Web Audio API scheduling</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Why use Web Audio API instead of setInterval? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>The Web Audio API provides sample-accurate timing, while JavaScript timers are imprecise and affected by main-thread congestion.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What BPM range is supported? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>From 20 BPM (very slow) to 300 BPM (extremely fast), covering all practical musical tempos.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

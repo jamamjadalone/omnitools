@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Metadata Viewer — Free Online Tool | OmniTools</title>
+<meta name="description" content="View EXIF and other metadata from uploaded images.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/image-metadata-viewer/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Image Metadata Viewer — OmniTools">
+<meta property="og:description" content="View EXIF and other metadata from uploaded images.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/image-metadata-viewer/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Image Metadata Viewer",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "View EXIF and other metadata from uploaded images."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Image Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/image-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "Image Metadata Viewer", "item": "https://jamamjadalone.github.io/omnitools/tools/image-metadata-viewer/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="image-metadata-viewer" data-category-of-tool="image-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/image-tools.html">Image Tools</a><span>/</span>
+    <span>Image Metadata Viewer</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">📷</span>
+    <div>
+      <h1>Image Metadata Viewer</h1>
+      <p class="tool-sub">View EXIF and other metadata from uploaded images.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="fileInput">Upload Image</label>
+        <input type="file" id="fileInput" accept="image/*" style="width:100%;padding:10px;border-radius:8px;border:1px solid var(--border);background:var(--bg-card);color:var(--text);">
+      </div>
+      <div id="imagePreview" style="margin-top:12px;text-align:center;">
+        <img id="previewImg" style="max-width:100%;border-radius:8px;display:none;">
+      </div>
+    </div>
+    <div class="tool-panel">
+      <div id="metaResults" style="display:grid;gap:6px;">
+        <div class="heading-summary">Upload an image to view its metadata.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>Upload any image to view its embedded metadata including dimensions, file size, format, and any available EXIF data like camera model, date taken, and GPS coordinates.</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Upload an image using the file picker.</li>
+      <li>View the metadata displayed on the right.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>Displays image dimensions, file size, and format</li>
+      <li>Reads basic EXIF data from JPEG files</li>
+      <li>Image preview</li>
+      <li>No data uploaded — runs in browser</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Does it show GPS data? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>If the image contains GPS EXIF data, the coordinates will be displayed.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Why don't I see camera info? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>Many apps and services strip EXIF data. Screenshots and edited images typically don't contain camera metadata.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

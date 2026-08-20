@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mortgage Calculator — Free Online Tool | OmniTools</title>
+<meta name="description" content="Calculate monthly mortgage payments, total interest, and see the full amortization schedule.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/mortgage-calculator/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mortgage Calculator — OmniTools">
+<meta property="og:description" content="Calculate monthly mortgage payments, total interest, and see the full amortization schedule.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/mortgage-calculator/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Mortgage Calculator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Calculate monthly mortgage payments, total interest, and see the full amortization schedule."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Calculators", "item": "https://jamamjadalone.github.io/omnitools/categories/calculators.html" },
+    { "@type": "ListItem", "position": 3, "name": "Mortgage Calculator", "item": "https://jamamjadalone.github.io/omnitools/tools/mortgage-calculator/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="mortgage-calculator" data-category-of-tool="calculators">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/calculators.html">Calculators</a><span>/</span>
+    <span>Mortgage Calculator</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">House</span>
+    <div>
+      <h1>Mortgage Calculator</h1>
+      <p class="tool-sub">Estimate your monthly mortgage payment and total cost of homeownership.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="mortPrice">Home Price ($)</label>
+        <input type="number" id="mortPrice" value="350000" min="1" step="1000">
+      </div>
+      <div class="field">
+        <label for="mortDown">Down Payment ($)</label>
+        <input type="number" id="mortDown" value="70000" min="0" step="1000">
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="mortRate">Interest Rate (%)</label>
+          <input type="number" id="mortRate" value="6.5" min="0" step="0.1">
+        </div>
+        <div class="field">
+          <label for="mortTerm">Loan Term (years)</label>
+          <select id="mortTerm">
+            <option value="30" selected>30 years</option>
+            <option value="20">20 years</option>
+            <option value="15">15 years</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn btn-primary" id="calcMortBtn">Calculate</button>
+      <div id="mortResult" class="result-box" hidden>
+        <div class="result-row"><span>Monthly Payment</span><strong id="mortMonthly"></strong></div>
+        <div class="result-row"><span>Loan Amount</span><strong id="mortLoan"></strong></div>
+        <div class="result-row"><span>Total Interest</span><strong id="mortInterest"></strong></div>
+        <div class="result-row"><span>Total Cost</span><strong id="mortTotal"></strong></div>
+      </div>
+    </div>
+
+    <div class="tool-panel">
+      <div id="mortAmortWrap" hidden>
+        <h3 style="margin-bottom:10px;">Amortization Schedule (Yearly Summary)</h3>
+        <div class="table-wrap">
+          <table><thead><tr><th>Year</th><th>Principal</th><th>Interest</th><th>Balance</th></tr></thead>
+          <tbody id="mortAmortBody"></tbody></table>
+        </div>
+      </div>
+      <div id="mortEmpty" class="result-preview"><p class="tool-sub">Enter home details and click Calculate to see your mortgage breakdown.</p></div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>This mortgage calculator computes your fixed monthly payment using the standard amortization formula, factoring in home price, down payment, interest rate, and loan term. It also generates a year-by-year amortization summary.</p>
+  </div>
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Enter the home price and your down payment amount.</li>
+      <li>Set the interest rate (APR) and choose a loan term.</li>
+      <li>Click <strong>Calculate</strong> to see your monthly payment and total costs.</li>
+    </ol>
+  </div>
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>Calculates monthly P&I payment</li>
+      <li>Shows total interest over the life of the loan</li>
+      <li>Supports 15, 20, and 30-year terms</li>
+      <li>Yearly amortization summary</li>
+      <li>100% client-side calculations</li>
+    </ul>
+  </div>
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Does this include property taxes and insurance? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>No, this calculates principal and interest only. Property taxes, homeowner's insurance, and HOA fees are additional costs.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What is a good down payment amount? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>A 20% down payment is traditional and helps you avoid PMI (Private Mortgage Insurance), but many loans allow less.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

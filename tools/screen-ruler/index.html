@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Screen Ruler — Free Online Tool | OmniTools</title>
+<meta name="description" content="On-screen pixel ruler overlay to measure elements on your display.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/screen-ruler/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Screen Ruler — OmniTools">
+<meta property="og:description" content="On-screen pixel ruler overlay for measuring elements.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/screen-ruler/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Screen Ruler",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "On-screen pixel ruler overlay to measure elements on your display."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Utilities", "item": "https://jamamjadalone.github.io/omnitools/categories/utilities.html" },
+    { "@type": "ListItem", "position": 3, "name": "Screen Ruler", "item": "https://jamamjadalone.github.io/omnitools/tools/screen-ruler/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="screen-ruler" data-category-of-tool="utilities">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/utilities.html">Utilities</a><span>/</span>
+    <span>Screen Ruler</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">📏</span>
+    <div>
+      <h1>Screen Ruler</h1>
+      <p class="tool-sub">On-screen pixel ruler overlay to measure elements on your display.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="orientationSelect">Ruler orientation</label>
+        <select id="orientationSelect">
+          <option value="horizontal" selected>Horizontal</option>
+          <option value="vertical">Vertical</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="colorSelect">Ruler color</label>
+        <select id="colorSelect">
+          <option value="green" selected>Green</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="yellow">Yellow</option>
+        </select>
+      </div>
+      <button class="btn btn-primary btn-block" id="showRuler">Show Ruler</button>
+      <div style="margin-top:10px;">
+        <button class="btn btn-secondary btn-block" id="hideRuler">Hide Ruler</button>
+      </div>
+      <div class="field" style="margin-top:14px;">
+        <label for="manualWidth">Manual measurement (px)</label>
+        <input type="number" id="manualWidth" min="1" max="5000" value="200" step="1">
+      </div>
+      <button class="btn btn-secondary btn-block" id="drawManual" style="margin-top:8px;">Draw Manual Ruler</button>
+    </div>
+    <div class="tool-panel">
+      <div class="output-box" id="rulerInfo" style="text-align:center;font-size:1.1rem;color:var(--text-dim);min-height:60px;">
+        Click "Show Ruler" to display an overlay ruler, or enter a pixel value to draw a fixed-width ruler.
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>A pixel ruler overlay you can drag around your screen to measure elements. The ruler stays on top of the page content so you can visually measure widths and heights of any element.</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Choose the orientation (horizontal or vertical) and color.</li>
+      <li>Click <strong>Show Ruler</strong> to display the overlay.</li>
+      <li>Drag the ruler by clicking and dragging on it.</li>
+      <li>Or enter a pixel value and click <strong>Draw Manual Ruler</strong> to see a ruler of exact width.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>Horizontal and vertical ruler modes</li>
+      <li>Draggable overlay that stays on top</li>
+      <li>Pixel markings at 10px intervals</li>
+      <li>Multiple color options for visibility</li>
+      <li>Manual measurement mode for exact pixel values</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How accurate is the ruler? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>The ruler measures in CSS pixels. Accuracy depends on your display's pixel density. On standard displays, 1 CSS pixel equals 1 physical pixel.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Can I measure across multiple elements? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>Yes, drag the ruler to position it over the elements you want to measure. The pixel markings help you align with the edges.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

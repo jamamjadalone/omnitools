@@ -1,0 +1,7 @@
+.result-box { margin-top: 16px; }
+.result-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.result-row span { color: var(--text-dim); }
+.timeline { display: flex; flex-direction: column; gap: 12px; }
+.tl-item { display: flex; align-items: flex-start; gap: 12px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; }
+.tl-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+.tl-range { color: var(--text-dim); font-size: 0.85rem; }

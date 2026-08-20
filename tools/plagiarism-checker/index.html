@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plagiarism Checker — Free Online Tool | OmniTools</title>
+<meta name="description" content="Check text similarity between two inputs. Basic plagiarism detection using word overlap analysis.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/plagiarism-checker/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Plagiarism Checker — OmniTools">
+<meta property="og:description" content="Check text similarity between two inputs.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/plagiarism-checker/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Plagiarism Checker",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Check text similarity between two inputs using word overlap analysis."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "AI Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/ai-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "Plagiarism Checker", "item": "https://jamamjadalone.github.io/omnitools/tools/plagiarism-checker/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="plagiarism-checker" data-category-of-tool="ai-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/ai-tools.html">AI Tools</a><span>/</span>
+    <span>Plagiarism Checker</span>
+  </nav>
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">🔍</span>
+    <div>
+      <h1>Plagiarism Checker</h1>
+      <p class="tool-sub">Compare two texts for similarity using word overlap analysis.</p>
+    </div>
+  </div>
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="plagText1">Original text</label>
+        <textarea id="plagText1" rows="8" placeholder="Paste the original text here..."></textarea>
+      </div>
+      <div class="field">
+        <label for="plagText2">Text to compare</label>
+        <textarea id="plagText2" rows="8" placeholder="Paste the text to check..."></textarea>
+      </div>
+      <button class="btn btn-primary btn-block" id="plagCheckBtn">Check Similarity</button>
+    </div>
+    <div class="tool-panel">
+      <div id="plagResults" style="padding:16px;">
+        <p style="color:var(--text-dim);">Paste two texts and click Check Similarity.</p>
+      </div>
+    </div>
+  </div>
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>Compares two texts for similarity using word overlap (Jaccard index) and longest common subsequence analysis. Provides a similarity score and highlights matching content.</p>
+  </div>
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Paste the original text in the first box.</li>
+      <li>Paste the text to compare in the second box.</li>
+      <li>Click <strong>Check Similarity</strong>.</li>
+      <li>Review the similarity score and analysis.</li>
+    </ol>
+  </div>
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>Jaccard similarity index</li>
+      <li>Longest common subsequence ratio</li>
+      <li>Shared word count and percentage</li>
+      <li>Word frequency comparison</li>
+    </ul>
+  </div>
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How accurate is this? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>This is a basic similarity check using word overlap. It does not detect paraphrasing or semantic similarity. For professional plagiarism detection, use dedicated services.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Does this check against the internet? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>No, this tool only compares the two texts you provide. It does not search the internet or databases.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

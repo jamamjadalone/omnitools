@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>String Hash Generator — Free Online Tool | OmniTools</title>
+<meta name="description" content="Generate MD5, SHA-1, SHA-256, and SHA-512 hashes from any string input.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/string-hash-generator/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="String Hash Generator — OmniTools">
+<meta property="og:description" content="Generate MD5, SHA-1, SHA-256, and SHA-512 hashes from any string.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/string-hash-generator/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "String Hash Generator",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Generate MD5, SHA-1, SHA-256, and SHA-512 hashes from any string."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Developer Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/developer-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "String Hash Generator", "item": "https://jamamjadalone.github.io/omnitools/tools/string-hash-generator/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="string-hash-generator" data-category-of-tool="developer-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/developer-tools.html">Developer Tools</a><span>/</span>
+    <span>String Hash Generator</span>
+  </nav>
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">#️⃣</span>
+    <div>
+      <h1>String Hash Generator</h1>
+      <p class="tool-sub">Generate MD5, SHA-1, SHA-256, and SHA-512 hashes from any string.</p>
+    </div>
+  </div>
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="hashInput">Input string</label>
+        <textarea id="hashInput" rows="4" placeholder="Enter text to hash..." style="font-family:var(--font-mono);font-size:0.85rem;"></textarea>
+      </div>
+      <button class="btn btn-primary btn-block" id="hashBtn">Generate Hashes</button>
+    </div>
+    <div class="tool-panel">
+      <div id="hashResults" style="display:flex;flex-direction:column;gap:10px;">
+        <p style="color:var(--text-dim);">Enter text and click Generate.</p>
+      </div>
+    </div>
+  </div>
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>Generates cryptographic hashes of your input string using the Web Crypto API. Supports SHA-256, SHA-384, and SHA-512. MD5 and SHA-1 are computed using a JavaScript implementation.</p>
+  </div>
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Enter or paste the text you want to hash.</li>
+      <li>Click <strong>Generate Hashes</strong>.</li>
+      <li>Click any hash to copy it to clipboard.</li>
+    </ol>
+  </div>
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>SHA-256, SHA-384, SHA-512 via Web Crypto API</li>
+      <li>MD5 and SHA-1 via JavaScript implementation</li>
+      <li>Click-to-copy on each hash</li>
+      <li>Instant computation</li>
+    </ul>
+  </div>
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Why no MD5 via Web Crypto? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>Web Crypto API does not support MD5 or SHA-1 for security reasons. These are computed using a JS polyfill.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

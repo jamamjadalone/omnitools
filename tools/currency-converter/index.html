@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currency Converter — Free Online Tool | OmniTools</title>
+<meta name="description" content="Convert between currencies using static exchange rates. Supports 50+ currencies.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/currency-converter/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Currency Converter — OmniTools">
+<meta property="og:description" content="Convert between currencies using static exchange rates.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/currency-converter/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Currency Converter",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Convert between currencies using static exchange rates."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Calculators", "item": "https://jamamjadalone.github.io/omnitools/categories/calculators.html" },
+    { "@type": "ListItem", "position": 3, "name": "Currency Converter", "item": "https://jamamjadalone.github.io/omnitools/tools/currency-converter/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="currency-converter" data-category-of-tool="calculators">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/calculators.html">Calculators</a><span>/</span>
+    <span>Currency Converter</span>
+  </nav>
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">💱</span>
+    <div>
+      <h1>Currency Converter</h1>
+      <p class="tool-sub">Convert between 50+ currencies using static exchange rates.</p>
+    </div>
+  </div>
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="curAmount">Amount</label>
+        <input type="number" id="curAmount" value="1" min="0" step="any" style="width:100%;padding:8px;border-radius:6px;border:1px solid var(--border);background:var(--bg);color:var(--text);">
+      </div>
+      <div class="field">
+        <label for="curFrom">From</label>
+        <select id="curFrom" style="width:100%;padding:8px;border-radius:6px;border:1px solid var(--border);background:var(--bg);color:var(--text);"></select>
+      </div>
+      <div style="text-align:center;margin:8px 0;">
+        <button class="btn btn-secondary btn-sm" id="swapBtn">⇅ Swap</button>
+      </div>
+      <div class="field">
+        <label for="curTo">To</label>
+        <select id="curTo" style="width:100%;padding:8px;border-radius:6px;border:1px solid var(--border);background:var(--bg);color:var(--text);"></select>
+      </div>
+      <button class="btn btn-primary btn-block" id="convertBtn">Convert</button>
+    </div>
+    <div class="tool-panel">
+      <div id="curResult" style="text-align:center;padding:24px;">
+        <div style="font-size:2rem;font-weight:700;" id="curResultValue">—</div>
+        <div style="color:var(--text-dim);margin-top:4px;" id="curResultRate"></div>
+      </div>
+    </div>
+  </div>
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>Convert between 50+ world currencies using approximate static exchange rates based on USD. Rates are for reference only and may not reflect real-time market values.</p>
+  </div>
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Enter the amount to convert.</li>
+      <li>Select the source and target currencies.</li>
+      <li>Click <strong>Convert</strong> or use the Swap button.</li>
+      <li>View the converted amount and exchange rate.</li>
+    </ol>
+  </div>
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>50+ world currencies</li>
+      <li>Quick swap between currencies</li>
+      <li>Shows exchange rate used</li>
+      <li>Instant conversion</li>
+    </ul>
+  </div>
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Are these rates real-time? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>No, these are static approximate rates for reference. For real-time rates, check a financial data provider.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

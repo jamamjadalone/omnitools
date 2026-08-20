@@ -1,0 +1,26 @@
+.whois-results {
+  display: grid;
+  gap: 8px;
+}
+.whois-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 8px 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  gap: 12px;
+}
+.whois-label {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.whois-val {
+  font-family: monospace;
+  font-size: 0.85rem;
+  text-align: right;
+  word-break: break-all;
+}

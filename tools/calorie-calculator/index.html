@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calorie Calculator — Free Online Tool | OmniTools</title>
+<meta name="description" content="Calculate your daily calorie needs based on age, weight, height, and activity level.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/calorie-calculator/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calorie Calculator — OmniTools">
+<meta property="og:description" content="Calculate your daily calorie needs based on age, weight, height, and activity level.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/calorie-calculator/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Calorie Calculator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Calculate your daily calorie needs based on age, weight, height, and activity level."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Calculators", "item": "https://jamamjadalone.github.io/omnitools/categories/calculators.html" },
+    { "@type": "ListItem", "position": 3, "name": "Calorie Calculator", "item": "https://jamamjadalone.github.io/omnitools/tools/calorie-calculator/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="calorie-calculator" data-category-of-tool="calculators">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/calculators.html">Calculators</a><span>/</span>
+    <span>Calorie Calculator</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">Cal</span>
+    <div>
+      <h1>Calorie Calculator</h1>
+      <p class="tool-sub">Find out how many calories you need per day based on your stats and activity level.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field-row">
+        <div class="field">
+          <label for="calGender">Gender</label>
+          <select id="calGender">
+            <option value="male" selected>Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="calAge">Age</label>
+          <input type="number" id="calAge" value="30" min="1" max="120">
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="calWeight">Weight (kg)</label>
+          <input type="number" id="calWeight" value="70" min="1" step="0.1">
+        </div>
+        <div class="field">
+          <label for="calHeight">Height (cm)</label>
+          <input type="number" id="calHeight" value="175" min="1" step="0.1">
+        </div>
+      </div>
+      <div class="field">
+        <label for="calActivity">Activity Level</label>
+        <select id="calActivity">
+          <option value="1.2">Sedentary (little or no exercise)</option>
+          <option value="1.375" selected>Lightly Active (1-3 days/week)</option>
+          <option value="1.55">Moderately Active (3-5 days/week)</option>
+          <option value="1.725">Very Active (6-7 days/week)</option>
+          <option value="1.9">Extra Active (athlete)</option>
+        </select>
+      </div>
+      <button class="btn btn-primary" id="calcCalBtn">Calculate</button>
+      <div id="calResult" class="result-box" hidden>
+        <div class="result-row"><span>Basal Metabolic Rate (BMR)</span><strong id="calBMR"></strong></div>
+        <div class="result-row"><span>Daily Calories (Maintenance)</span><strong id="calTDEE"></strong></div>
+        <div class="result-row"><span>Weight Loss (-500 cal/day)</span><strong id="calLoss"></strong></div>
+        <div class="result-row"><span>Weight Gain (+500 cal/day)</span><strong id="calGain"></strong></div>
+      </div>
+    </div>
+
+    <div class="tool-panel">
+      <div class="result-preview"><p class="tool-sub">Uses the Mifflin-St Jeor equation, widely regarded as the most accurate formula for estimating daily calorie needs.</p></div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>This calorie calculator uses the Mifflin-St Jeor equation to estimate your Basal Metabolic Rate (BMR) and then multiplies it by an activity factor to determine your Total Daily Energy Expenditure (TDEE) &mdash; the number of calories you need to maintain your current weight.</p>
+  </div>
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Select your gender and enter your age.</li>
+      <li>Enter your weight in kilograms and height in centimeters.</li>
+      <li>Choose the activity level that best matches your lifestyle.</li>
+      <li>Click <strong>Calculate</strong> to see your daily calorie needs.</li>
+    </ol>
+  </div>
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>Mifflin-St Jeor equation for accuracy</li>
+      <li>Shows BMR and TDEE</li>
+      <li>Provides calorie targets for weight loss and gain</li>
+      <li>5 activity levels to match your lifestyle</li>
+      <li>Instant calculation</li>
+    </ul>
+  </div>
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What is BMR? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>Basal Metabolic Rate is the number of calories your body burns at complete rest just to maintain basic life functions like breathing and circulation.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Is a 500 calorie deficit safe? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>A 500 cal/day deficit results in about 1 lb (0.45 kg) of weight loss per week, which is considered a safe and sustainable rate.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

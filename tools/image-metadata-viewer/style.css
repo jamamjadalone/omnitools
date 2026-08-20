@@ -1,0 +1,11 @@
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+.meta-key { color: var(--text-dim); }
+.meta-val { color: var(--text); font-weight: 500; text-align: right; max-width: 60%; word-break: break-all; }

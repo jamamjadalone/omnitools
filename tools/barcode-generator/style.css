@@ -1,0 +1,15 @@
+.barcode-preview {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+#barcodeCanvas { max-width: 100%; image-rendering: pixelated; }
+.barcode-text {
+  text-align: center;
+  margin-top: 10px;
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
