@@ -6,6 +6,12 @@
 <title>All Categories — OmniTools</title>
 <meta name="description" content="Browse every OmniTools category: image tools, PDF tools, developer tools, text tools, converters, calculators and more.">
 <link rel="canonical" href="https://jamamjadalone.github.io/omnitools/categories/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="All Categories — OmniTools">
+<meta property="og:description" content="Browse every OmniTools category: image tools, developer tools, text tools, converters and more.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/categories/index.html">
+<meta property="og:image" content="https://jamamjadalone.github.io/omnitools/assets/images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
 <link rel="manifest" href="../manifest.webmanifest">
 <meta name="theme-color" content="#0a0c11">
@@ -13,34 +19,74 @@
 <link rel="stylesheet" href="../assets/css/base.css">
 <link rel="stylesheet" href="../assets/css/components.css">
 <link rel="stylesheet" href="../assets/css/home.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/" },
+    { "@type": "ListItem", "position": 2, "name": "Categories", "item": "https://jamamjadalone.github.io/omnitools/categories/index.html" }
+  ]
+}
+</script>
 </head>
 <body>
 <a href="#main" class="skip-link">Skip to content</a>
 <header id="site-header" class="site-header"></header>
 <main id="main">
-  <div class="container" style="padding-top:40px;">
-    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a><span>/</span><span>Categories</span></nav>
-    <div class="section-head">
+
+  <!-- Hero -->
+  <section class="hero" style="padding-bottom:20px;">
+    <div class="container hero-inner">
       <span class="eyebrow">Browse</span>
       <h1>All categories</h1>
-      <p>Every tool on OmniTools lives inside one of these categories.</p>
+      <p class="lead">Every tool on OmniTools lives inside one of these categories. Pick a category to explore, or scroll down to see everything.</p>
+      <div class="hero-search">
+        <div class="tool-search">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="heroSearchInput" placeholder="Search tools… try &quot;compress image&quot;" aria-label="Search tools">
+          <span class="search-kbd">Ctrl K</span>
+          <div class="search-results" id="heroSearchResults" role="listbox"></div>
+        </div>
+      </div>
     </div>
-  </div>
-  <section class="section" style="padding-top:0;">
+  </section>
+
+  <!-- Categories -->
+  <section class="section">
     <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Explore</span>
+        <h2>Pick a category</h2>
+      </div>
       <div class="grid grid-categories" id="categoriesGrid"></div>
     </div>
   </section>
 
+  <!-- All tools -->
   <section class="section" style="background:var(--bg-elev);">
     <div class="container">
-      <div class="section-head">
+      <div class="section-head reveal">
         <span class="eyebrow">Everything</span>
         <h2>All tools</h2>
+        <p>Browse every tool across all categories.</p>
       </div>
       <div class="grid grid-tools" id="allToolsGrid"></div>
     </div>
   </section>
+
+  <!-- Built by -->
+  <section class="section" style="padding-bottom:0;">
+    <div class="container">
+      <div class="built-by reveal">
+        <a href="https://www.youtube.com/@jamamjadalone" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          Built by Jam Amjad
+        </a>
+      </div>
+    </div>
+  </section>
+
 </main>
 <footer id="site-footer" class="site-footer"></footer>
 <script src="../assets/js/main.js"></script>
