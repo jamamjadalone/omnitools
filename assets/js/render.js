@@ -62,6 +62,10 @@
       // Full "all tools" grid (categories index or a dedicated tools page)
       renderInto("#allToolsGrid", tools, (t) => toolCardHtml(t, root));
 
+      // Live tool count on the homepage hero
+      const toolsLive = document.getElementById("toolsLiveStat");
+      if (toolsLive) toolsLive.textContent = tools.length;
+
       // Ticker on homepage hero
       const ticker = document.getElementById("tickerTrack");
       if (ticker) {

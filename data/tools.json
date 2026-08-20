@@ -121,6 +121,94 @@
       "keywords": ["text case converter", "uppercase lowercase", "camel case", "title case generator"],
       "featured": false,
       "isNew": false
+    },
+    {
+      "id": "stock-asset-readiness-checker",
+      "name": "Stock Asset Readiness Checker",
+      "slug": "stock-asset-readiness-checker",
+      "category": "image-tools",
+      "icon": "✅",
+      "description": "Auto-check resolution, format, transparency, aspect ratio and size against Adobe Stock, Shutterstock, Freepik or Envato requirements.",
+      "keywords": ["stock photo check", "image requirements", "adobe stock checklist", "shutterstock requirements", "asset readiness"],
+      "featured": true,
+      "isNew": true
+    },
+    {
+      "id": "batch-file-renamer",
+      "name": "Batch File Renamer",
+      "slug": "batch-file-renamer",
+      "category": "utilities",
+      "icon": "📁",
+      "description": "Rename or change the extension of many files at once and download them all as a ZIP.",
+      "keywords": ["batch rename files", "change extension", "rename files in folder", "bulk renamer"],
+      "featured": true,
+      "isNew": true
+    },
+    {
+      "id": "universal-file-saver",
+      "name": "Universal File Saver",
+      "slug": "universal-file-saver",
+      "category": "utilities",
+      "icon": "💾",
+      "description": "Turn any pasted text or code into a downloadable file with the right extension.",
+      "keywords": ["save text as file", "download text file", "code snippet to file", "file saver"],
+      "featured": true,
+      "isNew": true
+    },
+    {
+      "id": "seo-friendly-filename-generator",
+      "name": "SEO-Friendly Filename Generator",
+      "slug": "seo-friendly-filename-generator",
+      "category": "seo-tools",
+      "icon": "🔤",
+      "description": "Turn any text into a clean, SEO-friendly filename or URL slug with one click.",
+      "keywords": ["seo filename", "filename generator", "slug generator", "clean file name", "seo friendly url"],
+      "featured": true,
+      "isNew": true
+    },
+    {
+      "id": "stock-photo-metadata-generator",
+      "name": "Stock Photo Metadata Generator",
+      "slug": "stock-photo-metadata-generator",
+      "category": "image-tools",
+      "icon": "🏷️",
+      "description": "Generate a platform-ready title, description and keyword list from a short photo description.",
+      "keywords": ["stock metadata", "photo title generator", "keywords for stock photos", "description generator", "adobe stock metadata"],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "ai-image-disclosure-helper",
+      "name": "AI Image Disclosure Helper",
+      "slug": "ai-image-disclosure-helper",
+      "category": "image-tools",
+      "icon": "🤖",
+      "description": "Generate the correct AI-generated or AI-assisted disclosure note for major stock platforms.",
+      "keywords": ["ai disclosure", "ai generated disclaimer", "stock ai policy", "disclose ai image"],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "image-background-edge-checker",
+      "name": "Image Background Edge Checker",
+      "slug": "image-background-edge-checker",
+      "category": "image-tools",
+      "icon": "🖼️",
+      "description": "Preview a transparent PNG over solid colors to catch halos and messy cut-out edges.",
+      "keywords": ["png edge checker", "background removal check", "halo detection", "transparent image check"],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "file-type-detector",
+      "name": "File Type Detector",
+      "slug": "file-type-detector",
+      "category": "utilities",
+      "icon": "🔍",
+      "description": "Read a file's real type from its magic bytes and spot extension mismatches.",
+      "keywords": ["file type detector", "magic bytes", "file format checker", "real file extension", "file validator"],
+      "featured": false,
+      "isNew": true
     }
   ]
 }
