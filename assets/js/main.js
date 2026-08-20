@@ -182,8 +182,11 @@
   function wireReveal() {
     const items = document.querySelectorAll(".reveal");
     if (!items.length) return;
-    if (!("IntersectionObserver" in window)) {
+    function makeVisible() {
       items.forEach((el) => el.classList.add("in-view"));
+    }
+    if (!("IntersectionObserver" in window)) {
+      makeVisible();
       return;
     }
     const obs = new IntersectionObserver((entries) => {
@@ -195,6 +198,7 @@
       });
     }, { threshold: 0.12 });
     items.forEach((el) => obs.observe(el));
+    makeVisible();
   }
 
   /* ---------- Copy-to-clipboard helper ---------- */
