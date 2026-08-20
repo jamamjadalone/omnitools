@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" data-root="./" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OmniTools — All the online tools you need, in one place</title>
+<meta name="description" content="Free, fast, browser-based tools for images, PDFs, developers, text and more. No sign-up, no uploads to a server — everything runs on your device.">
+<meta name="keywords" content="online tools, free tools, image compressor, qr code generator, json formatter, password generator, developer tools">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/index.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="OmniTools — All the online tools you need, in one place">
+<meta property="og:description" content="Free, fast, browser-based tools for images, PDFs, developers, text and more.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/index.html">
+<meta property="og:image" content="https://jamamjadalone.github.io/omnitools/assets/images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OmniTools — All the online tools you need, in one place">
+<meta name="twitter:description" content="Free, fast, browser-based tools for images, PDFs, developers, text and more.">
+<meta name="twitter:image" content="https://jamamjadalone.github.io/omnitools/assets/images/og-image.png">
+
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+
+<link rel="stylesheet" href="assets/css/variables.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/home.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "OmniTools",
+  "url": "https://jamamjadalone.github.io/omnitools/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://jamamjadalone.github.io/omnitools/categories/index.html?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "OmniTools",
+  "url": "https://jamamjadalone.github.io/omnitools/",
+  "logo": "https://jamamjadalone.github.io/omnitools/assets/icons/favicon.svg"
+}
+</script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <span class="eyebrow">500+ tools, zero uploads</span>
+      <h1>All the online tools you need, in one place.</h1>
+      <p class="lead">OmniTools runs entirely in your browser — compress an image, format JSON, or generate a password without your files ever leaving your device.</p>
+
+      <div class="hero-search">
+        <div class="tool-search">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="heroSearchInput" placeholder="Search 500+ tools… try &quot;compress image&quot;" aria-label="Search tools">
+          <span class="search-kbd">Ctrl K</span>
+          <div class="search-results" id="heroSearchResults" role="listbox"></div>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat"><b>10</b><span>Categories</span></div>
+        <div class="stat"><b>10</b><span>Tools live today</span></div>
+        <div class="stat"><b>0</b><span>Files uploaded to a server</span></div>
+      </div>
+
+      <div class="tool-ticker" aria-hidden="true">
+        <div class="ticker-track" id="tickerTrack"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular tools -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Popular</span>
+        <h2>Most-used tools</h2>
+        <p>Jump straight into the tools people reach for first.</p>
+      </div>
+      <div class="grid grid-tools" id="popularToolsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Featured categories -->
+  <section class="section" style="background:var(--bg-elev);">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Browse</span>
+        <h2>Featured categories</h2>
+        <p>Every tool lives inside a category, and every category can grow without touching this homepage.</p>
+      </div>
+      <div class="grid grid-categories" id="categoriesGrid"></div>
+    </div>
+  </section>
+
+  <!-- Latest tools -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Fresh</span>
+        <h2>Latest additions</h2>
+        <p>New tools ship regularly — here's what just landed.</p>
+      </div>
+      <div class="grid grid-tools" id="latestToolsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Why choose OmniTools -->
+  <section class="section" style="background:var(--bg-elev);">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Why OmniTools</span>
+        <h2>Built to be fast, private and always free</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature reveal">
+          <div class="feat-icon" aria-hidden="true">⚡</div>
+          <h3>Instant, no installs</h3>
+          <p>Every tool loads in a second and works the moment the page opens — no accounts, no plugins.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feat-icon" aria-hidden="true">🔒</div>
+          <h3>Private by design</h3>
+          <p>Processing happens on your device. Your files and text are never sent to a server.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feat-icon" aria-hidden="true">💸</div>
+          <h3>Free, forever</h3>
+          <p>No paywalls, no watermarks, no daily limits on the core tools.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="feat-icon" aria-hidden="true">📱</div>
+          <h3>Works everywhere</h3>
+          <p>Fully responsive, keyboard-friendly, and installable as a lightweight web app.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container" style="max-width:760px;">
+      <div class="section-head reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>Common questions</h2>
+      </div>
+      <div class="reveal">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Is OmniTools really free? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Yes. Every tool on the site is free to use with no sign-up and no hidden limits.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Do my files get uploaded anywhere? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. OmniTools has no backend — every tool runs with client-side JavaScript directly in your browser.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">How often are new tools added? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>New tools are added regularly. Because the homepage and search read from a single data file, new tools appear automatically once they're published.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Can I suggest a tool? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Absolutely — reach out through the <a href="contact/index.html" style="color:var(--accent-2);">contact page</a> with your idea.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section">
+    <div class="container">
+      <div class="newsletter reveal">
+        <h2>Get new tools in your inbox</h2>
+        <p>One short email whenever a useful new tool ships. No spam.</p>
+        <form>
+          <label for="newsletterEmail" class="visually-hidden">Email address</label>
+          <input type="email" id="newsletterEmail" placeholder="you@example.com" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/render.js"></script>
+</body>
+</html>

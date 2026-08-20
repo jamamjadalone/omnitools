@@ -1,0 +1,50 @@
+/* ============ Hero ============ */
+.hero{
+  position: relative; padding: 80px 0 60px; overflow: hidden;
+}
+.hero::before{
+  content: ""; position: absolute; top: -200px; left: 50%; transform: translateX(-50%);
+  width: 900px; height: 500px; background: radial-gradient(closest-side, var(--accent-soft), transparent 70%);
+  pointer-events: none;
+}
+.hero-inner{ position: relative; text-align: center; max-width: 780px; margin: 0 auto; }
+.hero p.lead{ font-size: 1.15rem; max-width: 560px; margin: 0 auto 32px; }
+.hero-search{ max-width: 560px; margin: 0 auto 28px; }
+.hero-stats{ display: flex; gap: 28px; justify-content: center; margin-top: 40px; flex-wrap: wrap; }
+.hero-stats .stat{ text-align: left; }
+.hero-stats .stat b{ display: block; font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; }
+.hero-stats .stat span{ font-size: .78rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: .05em; }
+
+/* Ticker: rotating strip of tool chips, the page's signature motif */
+.tool-ticker{
+  position: relative; margin-top: 46px; overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.ticker-track{ display: flex; gap: 12px; width: max-content; animation: ticker-scroll 34s linear infinite; }
+.tool-ticker:hover .ticker-track{ animation-play-state: paused; }
+.ticker-chip{
+  display: flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px;
+  background: var(--bg-elev); border: 1px solid var(--border); font-size: .85rem; font-weight: 600; color: var(--text-dim);
+  white-space: nowrap;
+}
+@keyframes ticker-scroll{ from{ transform: translateX(0); } to{ transform: translateX(-50%); } }
+
+/* ============ Why choose / features ============ */
+.feature-grid{ display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 24px; }
+.feature{ padding: 24px; border-radius: var(--radius-md); background: var(--bg-elev); border: 1px solid var(--border); }
+.feature .feat-icon{ width: 42px; height: 42px; border-radius: 10px; background: var(--accent-2-soft); color: var(--accent-2); display: flex; align-items: center; justify-content: center; margin-bottom: 14px; font-size: 1.2rem; }
+
+/* ============ Newsletter ============ */
+.newsletter{ background: linear-gradient(135deg, var(--bg-elev), var(--bg-elev-2)); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 48px; text-align: center; }
+.newsletter form{ display: flex; gap: 10px; max-width: 420px; margin: 24px auto 0; }
+.newsletter input{ flex: 1; padding: 13px 16px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg); color: var(--text); }
+
+/* Section reveal animation */
+.reveal{ opacity: 0; transform: translateY(18px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
+.reveal.in-view{ opacity: 1; transform: translateY(0); }
+
+@media (max-width: 700px){
+  .footer-grid{ grid-template-columns: 1fr 1fr; }
+  .newsletter{ padding: 32px 22px; }
+  .newsletter form{ flex-direction: column; }
+}

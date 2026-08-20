@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UUID Generator — Free Online Tool | OmniTools</title>
+<meta name="description" content="Generate RFC 4122 v4 UUIDs in bulk, ready to copy or download.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/uuid-generator/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="UUID Generator — OmniTools">
+<meta property="og:description" content="Generate RFC 4122 v4 UUIDs in bulk, ready to copy or download.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/uuid-generator/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "UUID Generator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Generate RFC 4122 v4 UUIDs in bulk, ready to copy or download."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Developer Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/developer-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "UUID Generator", "item": "https://jamamjadalone.github.io/omnitools/tools/uuid-generator/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="uuid-generator" data-category-of-tool="developer-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/developer-tools.html">Developer Tools</a><span>/</span>
+    <span>UUID Generator</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">#</span>
+    <div>
+      <h1>UUID Generator</h1>
+      <p class="tool-sub">Generate RFC 4122 v4 UUIDs in bulk, ready to copy or download.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="uuidCount">How many UUIDs</label>
+        <input type="number" id="uuidCount" value="5" min="1" max="100">
+      </div>
+      <button class="btn btn-primary btn-block" id="generateBtn">Generate</button>
+    </div>
+    <div class="tool-panel">
+      <div class="output-box mono" id="uuidOutput">Your UUIDs will appear here.</div>
+      <div class="copy-row">
+        <button class="btn btn-secondary btn-sm" id="copyBtn">Copy all</button>
+        <button class="btn btn-secondary btn-sm" id="downloadBtn">Download .txt</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>Generates version 4 (random) UUIDs using the browser's built-in cryptographic random number generator, following the RFC 4122 format used across databases, APIs and distributed systems.</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Choose how many UUIDs you want to generate.</li>
+      <li>Click <strong>Generate</strong>.</li>
+      <li>Copy all of them at once, or click an individual one to copy just that value.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>Generate 1 to 100 UUIDs at a time</li>
+      <li>RFC 4122 version 4 compliant</li>
+      <li>Copy individually or all at once</li>
+      <li>Download as a plain text file</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What is a UUID used for? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>UUIDs are used as unique identifiers for database rows, API resources, session tokens and more, without needing a central authority to avoid collisions.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">How random are these? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Each UUID is generated using <code>crypto.randomUUID()</code> where available, backed by a cryptographically secure random source.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Can two UUIDs ever collide? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>It's astronomically unlikely &mdash; version 4 UUIDs have 122 random bits, making accidental collisions practically impossible.</p></div>
+        </div>
+        
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

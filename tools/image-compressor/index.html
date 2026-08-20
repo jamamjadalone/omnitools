@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Compressor — Free Online Tool | OmniTools</title>
+<meta name="description" content="Shrink JPG, PNG and WebP images in your browser without losing visible quality.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/image-compressor/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Image Compressor — OmniTools">
+<meta property="og:description" content="Shrink JPG, PNG and WebP images in your browser without losing visible quality.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/image-compressor/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Image Compressor",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Shrink JPG, PNG and WebP images in your browser without losing visible quality."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Image Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/image-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "Image Compressor", "item": "https://jamamjadalone.github.io/omnitools/tools/image-compressor/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="image-compressor" data-category-of-tool="image-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/image-tools.html">Image Tools</a><span>/</span>
+    <span>Image Compressor</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">🗜️</span>
+    <div>
+      <h1>Image Compressor</h1>
+      <p class="tool-sub">Shrink JPG, PNG and WebP images in your browser without losing visible quality.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div id="dropzone" class="dropzone" tabindex="0" role="button" aria-label="Upload an image">
+        <div class="dz-icon" aria-hidden="true">📤</div>
+        <p>Drag &amp; drop an image, or click to browse</p>
+        <p class="dz-hint">JPG, PNG or WebP</p>
+        <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" class="visually-hidden">
+      </div>
+
+      <div id="controls" style="display:none;margin-top:22px;">
+        <div class="field">
+          <label for="qualityRange">Quality: <span class="range-value" id="qualityValue">80%</span></label>
+          <input type="range" id="qualityRange" min="10" max="100" value="80">
+        </div>
+        <div class="field">
+          <label for="formatSelect">Output format</label>
+          <select id="formatSelect">
+            <option value="image/jpeg">JPEG</option>
+            <option value="image/webp">WebP</option>
+            <option value="image/png">PNG</option>
+          </select>
+        </div>
+        <button class="btn btn-primary btn-block" id="downloadBtn">Download compressed image</button>
+        <button class="btn btn-ghost btn-block" id="resetBtn" style="margin-top:8px;">Choose a different image</button>
+      </div>
+    </div>
+
+    <div class="tool-panel">
+      <div id="previewEmpty" style="text-align:center;color:var(--text-faint);padding:60px 0;">
+        Your image preview will appear here.
+      </div>
+      <div id="previewResult" class="result-preview" style="display:none;">
+        <img id="previewImg" alt="Compressed image preview">
+        <div class="stat-row">
+          <div class="stat"><b id="originalSize">&mdash;</b><span>Original</span></div>
+          <div class="stat"><b id="compressedSize">&mdash;</b><span>Compressed</span></div>
+          <div class="stat"><b id="savingsPct" style="color:var(--success);">&mdash;</b><span>Saved</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>Image Compressor uses the HTML5 Canvas API to re-encode your photo at a lower quality setting, cutting file size while keeping the image sharp enough for web use. Everything happens locally in your browser tab &mdash; the image is never uploaded anywhere.</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Drag and drop an image onto the drop zone, or click it to choose a file.</li>
+      <li>Adjust the quality slider to balance file size against visual quality.</li>
+      <li>Watch the before/after file size update live in the preview.</li>
+      <li>Click <strong>Download compressed image</strong> to save the result.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>Supports JPG, PNG and WebP input files</li>
+      <li>Live before/after file size comparison</li>
+      <li>Adjustable quality from 10% to 100%</li>
+      <li>100% client-side &mdash; no uploads, no waiting on a server</li>
+      <li>Works offline once the page has loaded</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Will compressing reduce the image dimensions? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No, by default only quality/encoding is changed. Dimensions stay the same unless you lower the quality significantly on formats that don't support fine-grained quality control.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Which file formats can I compress? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>JPG, PNG and WebP images are all supported directly in your browser.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Is there a file size limit? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Very large images may be slow to process depending on your device, but there's no artificial limit imposed by the tool.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Are my images uploaded to a server? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. Compression happens entirely in your browser using the Canvas API; nothing is ever sent anywhere.</p></div>
+        </div>
+        
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+{
+  "categories": [
+    { "id": "image-tools",     "name": "Image Tools",     "icon": "🖼️", "description": "Compress, convert and analyze images entirely in your browser." },
+    { "id": "video-tools",     "name": "Video Tools",     "icon": "🎬", "description": "Utilities for working with video files. More tools coming soon." },
+    { "id": "pdf-tools",       "name": "PDF Tools",       "icon": "📄", "description": "Work with PDF documents quickly and privately." },
+    { "id": "ai-tools",        "name": "AI Tools",        "icon": "🤖", "description": "Lightweight AI-assisted utilities." },
+    { "id": "seo-tools",       "name": "SEO Tools",       "icon": "📈", "description": "Improve visibility and technical SEO health." },
+    { "id": "developer-tools", "name": "Developer Tools", "icon": "🛠️", "description": "Everyday utilities for writing and debugging code." },
+    { "id": "text-tools",      "name": "Text Tools",      "icon": "📝", "description": "Manipulate, clean and generate text." },
+    { "id": "converters",      "name": "Converters",      "icon": "🔄", "description": "Convert data between common formats." },
+    { "id": "calculators",     "name": "Calculators",     "icon": "🧮", "description": "Quick calculators for everyday numbers." },
+    { "id": "utilities",       "name": "Utilities",       "icon": "⚙️", "description": "Generators and small utilities that don't fit elsewhere." }
+  ],
+  "tools": [
+    {
+      "id": "image-compressor",
+      "name": "Image Compressor",
+      "slug": "image-compressor",
+      "category": "image-tools",
+      "icon": "🗜️",
+      "description": "Shrink JPG, PNG and WebP images in your browser without losing visible quality.",
+      "keywords": ["compress image", "reduce image size", "image optimizer", "shrink photo", "jpg compressor", "png compressor"],
+      "featured": true,
+      "isNew": false
+    },
+    {
+      "id": "qr-code-generator",
+      "name": "QR Code Generator",
+      "slug": "qr-code-generator",
+      "category": "image-tools",
+      "icon": "▦",
+      "description": "Turn any link, text or Wi-Fi password into a downloadable QR code.",
+      "keywords": ["qr code", "generate qr", "qr generator", "make qr code"],
+      "featured": true,
+      "isNew": false
+    },
+    {
+      "id": "color-palette-extractor",
+      "name": "Color Palette Extractor",
+      "slug": "color-palette-extractor",
+      "category": "image-tools",
+      "icon": "🎨",
+      "description": "Pull the dominant colors out of any image and copy their hex codes.",
+      "keywords": ["color palette", "extract colors", "dominant color", "image colors", "hex from image"],
+      "featured": true,
+      "isNew": false
+    },
+    {
+      "id": "email-extractor",
+      "name": "Email Extractor",
+      "slug": "email-extractor",
+      "category": "text-tools",
+      "icon": "✉️",
+      "description": "Pull every valid email address out of pasted text in one click.",
+      "keywords": ["extract email", "find emails in text", "email finder", "email scraper text"],
+      "featured": false,
+      "isNew": false
+    },
+    {
+      "id": "json-formatter",
+      "name": "JSON Formatter",
+      "slug": "json-formatter",
+      "category": "developer-tools",
+      "icon": "{ }",
+      "description": "Format, validate and minify JSON with clear error messages.",
+      "keywords": ["json formatter", "json validator", "json beautifier", "json minify", "pretty print json"],
+      "featured": true,
+      "isNew": false
+    },
+    {
+      "id": "base64-encoder-decoder",
+      "name": "Base64 Encoder / Decoder",
+      "slug": "base64-encoder-decoder",
+      "category": "developer-tools",
+      "icon": "⇄",
+      "description": "Encode text to Base64 or decode Base64 back to readable text instantly.",
+      "keywords": ["base64 encode", "base64 decode", "base64 converter"],
+      "featured": false,
+      "isNew": false
+    },
+    {
+      "id": "lorem-ipsum-generator",
+      "name": "Lorem Ipsum Generator",
+      "slug": "lorem-ipsum-generator",
+      "category": "text-tools",
+      "icon": "¶",
+      "description": "Generate placeholder paragraphs, sentences or words for mockups.",
+      "keywords": ["lorem ipsum", "placeholder text", "dummy text generator"],
+      "featured": false,
+      "isNew": false
+    },
+    {
+      "id": "password-generator",
+      "name": "Password Generator",
+      "slug": "password-generator",
+      "category": "utilities",
+      "icon": "🔑",
+      "description": "Create strong, random passwords with full control over length and character sets.",
+      "keywords": ["password generator", "random password", "strong password maker", "secure password"],
+      "featured": true,
+      "isNew": true
+    },
+    {
+      "id": "uuid-generator",
+      "name": "UUID Generator",
+      "slug": "uuid-generator",
+      "category": "developer-tools",
+      "icon": "#",
+      "description": "Generate RFC 4122 v4 UUIDs in bulk, ready to copy or download.",
+      "keywords": ["uuid generator", "guid generator", "generate uuid v4"],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "text-case-converter",
+      "name": "Text Case Converter",
+      "slug": "text-case-converter",
+      "category": "text-tools",
+      "icon": "Aa",
+      "description": "Convert text between UPPERCASE, lowercase, Title Case, camelCase and more.",
+      "keywords": ["text case converter", "uppercase lowercase", "camel case", "title case generator"],
+      "featured": false,
+      "isNew": false
+    }
+  ]
+}

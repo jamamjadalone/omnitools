@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jamamjadalone.github.io/omnitools/sitemap.xml

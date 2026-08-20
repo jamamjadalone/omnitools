@@ -1,0 +1,70 @@
+/* ===================================================================
+   OmniTools Design Tokens
+   Palette: deep space navy + violet primary + cyan secondary
+   Type: Sora (display) / Manrope (body) / JetBrains Mono (data)
+   =================================================================== */
+:root{
+  /* Surfaces */
+  --bg:            #0a0c11;
+  --bg-elev:       #12151d;
+  --bg-elev-2:     #1a1e29;
+  --bg-elev-3:     #232838;
+  --border:        #262b39;
+  --border-soft:   #1b1f2b;
+
+  /* Text */
+  --text:          #eef0f6;
+  --text-dim:      #a4abbd;
+  --text-faint:    #6b7288;
+
+  /* Brand */
+  --accent:        #7c6cf6;
+  --accent-hover:  #9285ff;
+  --accent-soft:   rgba(124,108,246,0.14);
+  --accent-2:      #22d3ee;
+  --accent-2-soft: rgba(34,211,238,0.14);
+
+  /* Semantic */
+  --success:       #34d399;
+  --warning:       #fbbf24;
+  --danger:        #f87171;
+
+  /* Typography */
+  --font-display:  'Sora', system-ui, sans-serif;
+  --font-body:     'Manrope', system-ui, sans-serif;
+  --font-mono:     'JetBrains Mono', 'Courier New', monospace;
+
+  /* Radius / shadow */
+  --radius-sm:     8px;
+  --radius-md:     14px;
+  --radius-lg:     22px;
+  --shadow-sm:     0 2px 8px rgba(0,0,0,0.35);
+  --shadow-md:     0 8px 30px rgba(0,0,0,0.45);
+  --shadow-glow:   0 0 0 1px rgba(124,108,246,0.25), 0 8px 30px rgba(124,108,246,0.15);
+
+  /* Layout */
+  --container:     1280px;
+  --header-h:      72px;
+
+  /* Motion */
+  --ease:          cubic-bezier(.22,1,.36,1);
+  --dur-fast:      150ms;
+  --dur-med:       300ms;
+  --dur-slow:      600ms;
+}
+
+[data-theme="light"]{
+  --bg:            #f7f7fb;
+  --bg-elev:       #ffffff;
+  --bg-elev-2:     #f0f1f7;
+  --bg-elev-3:     #e6e8f2;
+  --border:        #e1e3ee;
+  --border-soft:   #ececf4;
+  --text:          #14161f;
+  --text-dim:      #4c5165;
+  --text-faint:    #8b90a3;
+  --accent-soft:   rgba(124,108,246,0.10);
+  --accent-2-soft: rgba(34,211,238,0.12);
+  --shadow-sm:     0 2px 8px rgba(20,22,31,0.06);
+  --shadow-md:     0 8px 30px rgba(20,22,31,0.10);
+}

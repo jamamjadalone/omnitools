@@ -1,0 +1,2 @@
+.swatch{ cursor: pointer; }
+.swatch:hover{ transform: translateY(-2px); }

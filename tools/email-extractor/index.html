@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email Extractor — Free Online Tool | OmniTools</title>
+<meta name="description" content="Pull every valid email address out of pasted text in one click.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/email-extractor/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Email Extractor — OmniTools">
+<meta property="og:description" content="Pull every valid email address out of pasted text in one click.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/email-extractor/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Email Extractor",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Pull every valid email address out of pasted text in one click."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Text Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/text-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "Email Extractor", "item": "https://jamamjadalone.github.io/omnitools/tools/email-extractor/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="email-extractor" data-category-of-tool="text-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/text-tools.html">Text Tools</a><span>/</span>
+    <span>Email Extractor</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">✉️</span>
+    <div>
+      <h1>Email Extractor</h1>
+      <p class="tool-sub">Pull every valid email address out of pasted text in one click.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="emailInput">Paste your text</label>
+        <textarea id="emailInput" rows="12" placeholder="Paste text containing email addresses here..."></textarea>
+      </div>
+      <button class="btn btn-primary btn-block" id="extractBtn">Extract emails</button>
+    </div>
+    <div class="tool-panel">
+      <div id="resultEmpty" style="text-align:center;color:var(--text-faint);padding:60px 0;">
+        Extracted emails will appear here.
+      </div>
+      <div id="resultBox" style="display:none;">
+        <div class="stat-row" style="margin-bottom:16px;">
+          <div class="stat"><b id="emailCount">0</b><span>Found</span></div>
+        </div>
+        <div class="output-box" id="emailOutput"></div>
+        <div class="copy-row">
+          <button class="btn btn-secondary btn-sm" id="copyAllBtn">Copy all</button>
+          <button class="btn btn-secondary btn-sm" id="downloadBtn">Download .txt</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>Paste any block of text &mdash; an email thread, a webpage's contents, a spreadsheet export &mdash; and this tool scans it for anything that matches a valid email address pattern, then lists each unique match.</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Paste your text into the input box.</li>
+      <li>Click <strong>Extract emails</strong>.</li>
+      <li>Review the de-duplicated list of results.</li>
+      <li>Copy all results or download them as a .txt file.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>De-duplicates repeated addresses automatically</li>
+      <li>Copy all results with one click</li>
+      <li>Download results as a plain text file</li>
+      <li>Runs entirely in your browser</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Does this validate that an email actually exists? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No, it only checks that text matches the structural pattern of an email address; it doesn't verify deliverability.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Is there a text length limit? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No hard limit, though extremely large pastes may take a little longer to scan.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Are duplicate addresses removed? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Yes, the results list only shows each unique address once.</p></div>
+        </div>
+        
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
