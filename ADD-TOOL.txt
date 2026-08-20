@@ -1,0 +1,89 @@
+HOW TO ADD A NEW TOOL TO OMNITOOLS
+===================================
+
+Follow these 4 steps to add any new tool.
+
+
+STEP 1: CREATE THE TOOL FOLDER
+-------------------------------
+Go to the "tools" folder and create a new folder with a kebab-case name.
+
+Example: tools/my-new-tool/
+
+
+STEP 2: CREATE 3 FILES INSIDE IT
+---------------------------------
+Every tool needs exactly 3 files:
+
+  index.html  - the page structure
+  style.css   - tool-specific styles (can be empty if not needed)
+  script.js   - the working JavaScript
+
+
+STEP 3: COPY THE TEMPLATE
+--------------------------
+Copy tools/password-generator/index.html as your starting point.
+Find and replace these placeholders:
+
+  __TOOLNAME__  = Your tool name (e.g. "Word Counter")
+  __SLUG__      = Folder name (e.g. "word-counter")
+  __TOOLID__    = Same as slug (e.g. "word-counter")
+  __CATID__     = Category id (e.g. "text-tools")
+  __CATNAME__   = Category name (e.g. "Text Tools")
+  __ICON__      = An emoji icon (e.g. "🔢")
+  __DESC__      = One-line description of the tool
+  __ABOUT__     = Short paragraph about what the tool does
+
+
+STEP 4: REGISTER IN data/tools.json
+------------------------------------
+Open data/tools.json and add a new entry in the "tools" array:
+
+  {
+    "id": "word-counter",
+    "name": "Word Counter",
+    "slug": "word-counter",
+    "category": "text-tools",
+    "icon": "🔢",
+    "description": "Count words and characters in any text.",
+    "keywords": ["word count", "character count", "text counter"],
+    "featured": false,
+    "isNew": true
+  }
+
+That's it! The homepage, search, category pages, and related tools
+all update automatically.
+
+
+AVAILABLE CATEGORIES
+--------------------
+  image-tools        - Image related tools
+  text-tools         - Text manipulation tools
+  developer-tools    - Coding and dev utilities
+  seo-tools          - SEO related tools
+  utilities          - General utilities
+  calculators        - Calculator tools
+  converters         - Format conversion tools
+  ai-tools           - AI related tools
+  pdf-tools          - PDF tools (coming soon)
+  video-tools        - Video tools (coming soon)
+
+
+FILE STRUCTURE CHEAT SHEET
+---------------------------
+tools/
+  my-tool/
+    index.html    <-- Copy from template, fill placeholders
+    style.css     <-- Add tool-specific styles
+    script.js     <-- Write your tool logic here
+data/
+  tools.json      <-- Add your tool entry here
+
+
+TIPS
+----
+- All processing must be client-side JavaScript (no server needed)
+- Use the existing tools as reference for script.js patterns
+- Keep style.css minimal - most styling comes from shared CSS files
+- Every tool must have: breadcrumb, tool header, about, how-to, features, FAQ, related tools
+- Test by opening tools/my-tool/index.html directly in a browser
