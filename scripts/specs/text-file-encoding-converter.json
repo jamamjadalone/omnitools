@@ -1,0 +1,42 @@
+{
+  "id": "text-file-encoding-converter",
+  "slug": "text-file-encoding-converter",
+  "name": "Text File Encoding Converter",
+  "category": "converters",
+  "categoryName": "Converters",
+  "icon": "🔡",
+  "description": "Convert text files between UTF-8 and UTF-16 with live preview, then re-save with the correct encoding and optional BOM.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"fileInput\">Text file</label>\n        <input type=\"file\" id=\"fileInput\" accept=\".txt,.csv,.json,.md,.xml,.html,.log,.ini,.cfg,.yml,.yaml\">\n      </div>\n      <div class=\"field\">\n        <label for=\"sourceEncoding\">Detected / source encoding</label>\n        <select id=\"sourceEncoding\">\n          <option value=\"utf-8\">UTF-8</option>\n          <option value=\"utf-16le\">UTF-16 LE (Windows)</option>\n          <option value=\"utf-16be\">UTF-16 BE</option>\n          <option value=\"latin1\">ISO-8859-1 / Latin-1</option>\n        </select>\n      </div>\n      <div class=\"field\">\n        <label for=\"targetEncoding\">Target encoding</label>\n        <select id=\"targetEncoding\">\n          <option value=\"utf-8\">UTF-8</option>\n          <option value=\"utf-16le\">UTF-16 LE (Windows)</option>\n          <option value=\"utf-16be\">UTF-16 BE</option>\n        </select>\n      </div>\n      <div class=\"checkbox-field\" style=\"margin-bottom:14px;\">\n        <input type=\"checkbox\" id=\"bomCheck\" checked>\n        <label for=\"bomCheck\">Include BOM (byte-order mark)</label>\n      </div>\n      <div class=\"field\">\n        <label for=\"outNameInput\">Output file name</label>\n        <input type=\"text\" id=\"outNameInput\" value=\"converted.txt\">\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"convertBtn\" disabled>Convert &amp; download</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Preview</h3>\n      <div class=\"output-box\" id=\"previewBox\" style=\"max-height:320px;\">Load a text file to preview its contents and conversion.</div>\n    </div>\n  </div>",
+  "howto": [
+    "Load a text file with the file picker.",
+    "Confirm the source encoding — the tool auto-detects UTF-8 vs UTF-16 from the BOM or content.",
+    "Choose the target encoding and whether to include a BOM.",
+    "Review the preview panel to confirm the text looks right.",
+    "Click <strong>Convert &amp; download</strong> to save the re-encoded file."
+  ],
+  "features": [
+    "Auto-detection of UTF-8 and UTF-16 from BOM",
+    "Convert between UTF-8, UTF-16 LE/BE and Latin-1",
+    "BOM toggle for Windows compatibility",
+    "Live text preview after conversion",
+    "Client-side only"
+  ],
+  "faq": [
+    {
+      "q": "Why does encoding matter?",
+      "a": "A file saved in UTF-16 can look like a wall of garbage in a UTF-8 reader and vice versa. Correct encoding ensures the text displays and imports cleanly everywhere."
+    },
+    {
+      "q": "What is a BOM?",
+      "a": "The byte-order mark is a small marker at the start of a text file that tells readers which encoding and byte order was used. Windows tools often expect it."
+    },
+    {
+      "q": "Can I convert a .docx or binary file?",
+      "a": "No — this tool is for plain text files (.txt, .csv, .json, .md, config files and similar). Binary formats need their own converters."
+    },
+    {
+      "q": "Is my file uploaded?",
+      "a": "No. Conversion uses the browser's TextDecoder/TextEncoder and Blob API entirely on your device."
+    }
+  ]
+}

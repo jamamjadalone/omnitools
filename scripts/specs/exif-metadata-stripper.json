@@ -1,0 +1,47 @@
+{
+  "id": "exif-metadata-stripper",
+  "slug": "exif-metadata-stripper",
+  "name": "EXIF / Metadata Stripper",
+  "category": "image-tools",
+  "categoryName": "Image Tools",
+  "icon": "🕵️",
+  "description": "Remove EXIF, GPS and other hidden metadata from JPGs before publishing or uploading — protects your privacy and shrinks the file.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"dropzone\" id=\"dropzone\" tabindex=\"0\" role=\"button\" aria-label=\"Upload images to strip metadata\">\n        <div class=\"dz-icon\" aria-hidden=\"true\">🕵️</div>\n        <p>Drop JPG images here or click to browse</p>\n        <p class=\"dz-hint\">GPS, camera, and editing history are removed</p>\n        <input type=\"file\" id=\"fileInput\" accept=\"image/jpeg\" multiple hidden>\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"downloadBtn\" style=\"margin-top:16px;\" disabled>Download cleaned images (ZIP)</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">What gets removed</h3>\n      <div class=\"output-box\" id=\"logBox\" style=\"max-height:360px;\">No images processed yet.</div>\n      <ul style=\"display:grid;gap:8px;color:var(--text-dim);list-style:disc;padding-left:20px;margin-top:16px;\">\n        <li>GPS location coordinates</li>\n        <li>Camera make, model and lens</li>\n        <li>Date and time stamps</li>\n        <li>Software and edit history</li>\n        <li>Thumbnail previews with embedded data</li>\n      </ul>\n    </div>\n  </div>",
+  "howto": [
+    "Drop one or more JPG files onto the dropzone.",
+    "The tool re-encodes each image, writing only the pixel data and none of the EXIF/GPS/ICC metadata.",
+    "Review the log to see each file processed.",
+    "Click <strong>Download cleaned images</strong> to get everything in a ZIP.",
+    "Check the File Size Batch Checker to confirm the cleaned files are smaller."
+  ],
+  "features": [
+    "Removes GPS, camera and software metadata",
+    "Batch processing of many JPGs at once",
+    "Smaller file sizes after cleaning",
+    "ZIP export of all cleaned images",
+    "Fully client-side"
+  ],
+  "faq": [
+    {
+      "q": "Why strip EXIF data?",
+      "a": "Cameras embed GPS coordinates, serial numbers and timestamps in your photos. Publishing those leaks your location and equipment. Stripping them protects privacy."
+    },
+    {
+      "q": "Does this reduce image quality?",
+      "a": "It re-encodes the image to remove metadata, so there is a minimal generation change. Use high quality output and the visible difference is negligible for web use."
+    },
+    {
+      "q": "Does it work for PNG or WebP?",
+      "a": "PNG and WebP carry less metadata, but the tool focuses on JPG, where EXIF is most common. The Background Edge Checker and Format Converter cover other needs for those formats."
+    },
+    {
+      "q": "Can I keep the metadata and still publish?",
+      "a": "You can, but it is not recommended — reviewers and the public can see where and when the photo was taken. Stripping is safer."
+    }
+  ],
+  "extraScripts": [
+    "../../assets/js/vendor/jszip.min.js",
+    "../../assets/js/vendor/filesaver.min.js",
+    "../../assets/js/helpers/zip-export.js"
+  ]
+}

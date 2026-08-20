@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transparent PNG Checker — Free Online Tool | OmniTools</title>
+<meta name="description" content="Upload a PNG and instantly confirm whether it actually contains transparent pixels, and exactly how much of the image is transparent.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/transparent-png-checker/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Transparent PNG Checker — OmniTools">
+<meta property="og:description" content="Upload a PNG and instantly confirm whether it actually contains transparent pixels, and exactly how much of the image is transparent.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/transparent-png-checker/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Transparent PNG Checker",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Upload a PNG and instantly confirm whether it actually contains transparent pixels, and exactly how much of the image is transparent."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Image Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/image-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "Transparent PNG Checker", "item": "https://jamamjadalone.github.io/omnitools/tools/transparent-png-checker/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="transparent-png-checker" data-category-of-tool="image-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/image-tools.html">Image Tools</a><span>/</span>
+    <span>Transparent PNG Checker</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">🫥</span>
+    <div>
+      <h1>Transparent PNG Checker</h1>
+      <p class="tool-sub">Upload a PNG and instantly confirm whether it actually contains transparent pixels, and exactly how much of the image is transparent.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Upload a PNG to check transparency">
+        <div class="dz-icon" aria-hidden="true">🫥</div>
+        <p>Drop a PNG here or click to browse</p>
+        <p class="dz-hint">Works with PNG and WebP — checked locally</p>
+        <input type="file" id="fileInput" accept="image/png,image/webp" hidden>
+      </div>
+    </div>
+    <div class="tool-panel">
+      <div id="emptyState"><p style="color:var(--text-faint);text-align:center;">Upload a PNG to check for transparency.</p></div>
+      <div id="results" style="display:none;">
+        <div id="verdictAlert" class="alert" style="margin-bottom:16px;"></div>
+        <div class="stat-row">
+          <div class="stat"><b id="statSize">—</b><span>Dimensions</span></div>
+          <div class="stat"><b id="statTransparent">—</b><span>Transparent %</span></div>
+          <div class="stat"><b id="statFully">—</b><span>Fully transparent px</span></div>
+        </div>
+        <div class="result-preview" style="margin-top:16px;">
+          <img id="previewImg" alt="Preview of your PNG">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>__ABOUT__</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+            <li>Drop a PNG (or WebP) onto the dropzone.</li>
+      <li>The tool scans every pixel for an alpha channel below 255.</li>
+      <li>A clear verdict tells you whether transparency exists and what percentage of the image is transparent.</li>
+      <li>Use this to confirm your file is truly a transparent PNG before submission or publishing.</li>
+      <li>Pair it with the Background Edge Checker to inspect the quality of the transparent edges.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+            <li>Pixel-level alpha channel analysis</li>
+      <li>Clear has-transparency / no-transparency verdict</li>
+      <li>Percentage and fully-transparent pixel stats</li>
+      <li>Image preview on a checkerboard background</li>
+      <li>Fully client-side</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What counts as transparent? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Any pixel with an alpha value below 255 is considered transparent. Fully transparent pixels have alpha 0 — you can see through them completely.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Why is checking transparency useful? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Some stock platforms reject transparent images unless you have approval, while marketplaces selling cut-outs require it. Knowing for certain avoids surprises at submission time.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Does a JPG ever have transparency? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. JPEG has no alpha channel. If a file was saved with .jpg but truly contains transparency, it was actually saved as PNG — run the File Type Detector to confirm the real format.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Is my image uploaded? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. The check runs entirely in your browser by reading the image data locally.</p></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

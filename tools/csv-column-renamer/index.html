@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSV Column Renamer / Cleaner — Free Online Tool | OmniTools</title>
+<meta name="description" content="Paste a CSV, rename or reorder its columns, trim whitespace and fix encoding, then download the cleaned file.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/csv-column-renamer/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CSV Column Renamer / Cleaner — OmniTools">
+<meta property="og:description" content="Paste a CSV, rename or reorder its columns, trim whitespace and fix encoding, then download the cleaned file.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/csv-column-renamer/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "CSV Column Renamer / Cleaner",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Paste a CSV, rename or reorder its columns, trim whitespace and fix encoding, then download the cleaned file."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Text Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/text-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "CSV Column Renamer / Cleaner", "item": "https://jamamjadalone.github.io/omnitools/tools/csv-column-renamer/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="csv-column-renamer" data-category-of-tool="text-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/text-tools.html">Text Tools</a><span>/</span>
+    <span>CSV Column Renamer / Cleaner</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">🧾</span>
+    <div>
+      <h1>CSV Column Renamer / Cleaner</h1>
+      <p class="tool-sub">Paste a CSV, rename or reorder its columns, trim whitespace and fix encoding, then download the cleaned file.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="csvInput">CSV data</label>
+        <textarea id="csvInput" rows="10" placeholder="name,email,age&#10;John,john@example.com,30&#10;Jane,jane@example.com,25"></textarea>
+      </div>
+      <div class="field">
+        <label for="hasHeader">
+          <input type="checkbox" id="hasHeader" checked style="margin-right:6px;">First row is a header</label>
+      </div>
+      <div class="checkbox-field" style="margin-bottom:14px;">
+        <input type="checkbox" id="trimCheck" checked>
+        <label for="trimCheck">Trim whitespace from cells</label>
+      </div>
+      <button class="btn btn-primary btn-block" id="applyBtn">Apply column edits</button>
+    </div>
+    <div class="tool-panel">
+      <h3 style="margin-bottom:12px;">Columns <span id="colCount">(0)</span></h3>
+      <div id="columnEditor" style="display:grid;gap:8px;margin-bottom:16px;"></div>
+      <h3 style="margin-bottom:12px;">Preview</h3>
+      <div class="output-box" id="previewBox" style="max-height:240px;"></div>
+      <div class="copy-row" style="justify-content:flex-start;margin-top:12px;">
+        <button class="btn btn-secondary btn-sm" id="copyBtn">Copy CSV</button>
+        <button class="btn btn-primary btn-sm" id="downloadBtn">Download CSV</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>__ABOUT__</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+            <li>Paste your CSV into the input — comma or semicolon separators are auto-detected.</li>
+      <li>Keep the header checkbox on if the first row is column names.</li>
+      <li>The columns panel appears; rename any column or drag to reorder.</li>
+      <li>Click <strong>Apply column edits</strong> to preview the result.</li>
+      <li>Copy the cleaned CSV or download it as a file.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+            <li>Auto-detects comma, semicolon or tab separators</li>
+      <li>Rename any column in place</li>
+      <li>Reorder columns by drag-and-drop or arrow buttons</li>
+      <li>Trim whitespace and quote cleanup</li>
+      <li>Copy or download the result as .csv</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Does this handle files with quoted commas? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Yes. Values wrapped in double quotes are parsed correctly so commas inside a cell do not break the columns.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Can I remove a column? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Not directly — but you can clear its name in the editor, and the column will be dropped when you apply the changes.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What if my file uses semicolons? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>The tool detects the separator automatically. If you use a European-style CSV with semicolons, it is handled without extra steps.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Is my data uploaded? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. The CSV is processed entirely in your browser.</p></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

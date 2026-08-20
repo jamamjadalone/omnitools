@@ -1,0 +1,42 @@
+{
+  "id": "alt-text-generator",
+  "slug": "alt-text-generator",
+  "name": "Alt Text Generator Helper",
+  "category": "seo-tools",
+  "categoryName": "SEO Tools",
+  "icon": "♿",
+  "description": "Write clear, descriptive alt text for your images from a short description — template-based, no AI calls, fully in your browser.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"descInput\">What is in the image? (short description)</label>\n        <textarea id=\"descInput\" rows=\"4\" placeholder=\"A woman hiking on a mountain trail at sunrise, carrying a backpack\"></textarea>\n      </div>\n      <div class=\"field\">\n        <label for=\"contextSelect\">Context / purpose</label>\n        <select id=\"contextSelect\">\n          <option value=\"general\">General description</option>\n          <option value=\"product\">Product / e-commerce</option>\n          <option value=\"tutorial\">Tutorial / how-to</option>\n          <option value=\"decorative\">Decorative (may be empty)</option>\n        </select>\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"generateBtn\">Generate alt text</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Generated alt text</h3>\n      <div class=\"output-box\" id=\"outputBox\" style=\"max-height:240px;\">Your alt text will appear here.</div>\n      <div class=\"copy-row\" style=\"justify-content:flex-start;margin-top:12px;\">\n        <button class=\"btn btn-secondary btn-sm\" id=\"copyBtn\">Copy</button>\n      </div>\n      <div class=\"content-block\" style=\"margin-top:24px;\">\n        <h3 style=\"margin-bottom:10px;\">Best practices</h3>\n        <ul style=\"display:grid;gap:8px;color:var(--text-dim);list-style:disc;padding-left:20px;\">\n          <li>Describe the image specifically and factually.</li>\n          <li>Keep it under ~125 characters.</li>\n          <li>Include your target keyword naturally, not awkwardly.</li>\n          <li>Decorative images can use empty alt text (alt=\"\").</li>\n        </ul>\n      </div>\n    </div>\n  </div>",
+  "howto": [
+    "Describe what the image shows in plain words.",
+    "Choose the context — general, product, tutorial or decorative.",
+    "Click <strong>Generate alt text</strong>.",
+    "Review the suggested text and edit it to match your page.",
+    "Copy it into the alt attribute of your image."
+  ],
+  "features": [
+    "Context-aware alt text suggestions (general, product, tutorial)",
+    "Decorative-image guidance with empty alt handling",
+    "Keyword-aware phrasing from your description",
+    "Copy-to-clipboard for easy pasting",
+    "Runs on-device — no AI API, no uploads"
+  ],
+  "faq": [
+    {
+      "q": "Why is alt text important?",
+      "a": "Alt text makes images accessible to screen readers and shows when images fail to load. It also gives search engines context for image SEO."
+    },
+    {
+      "q": "Is this using an AI model?",
+      "a": "No. It builds the text from templates and your description on your device. It is a helper, so always review and tailor it to your actual image."
+    },
+    {
+      "q": "Should every image have alt text?",
+      "a": "Informative images need descriptive alt text. Decorative images should use empty alt text (alt=\"\") so screen readers skip them."
+    },
+    {
+      "q": "How long should alt text be?",
+      "a": "Aim for under 125 characters. It should be concise but descriptive — a few words to a short sentence."
+    }
+  ]
+}

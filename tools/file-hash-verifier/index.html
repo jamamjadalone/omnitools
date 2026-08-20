@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>File Hash / Checksum Verifier — Free Online Tool | OmniTools</title>
+<meta name="description" content="Compute the SHA-256 checksum of any file in your browser and compare it against the hash provided by the download source.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/file-hash-verifier/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="File Hash / Checksum Verifier — OmniTools">
+<meta property="og:description" content="Compute the SHA-256 checksum of any file in your browser and compare it against the hash provided by the download source.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/file-hash-verifier/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "File Hash / Checksum Verifier",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Compute the SHA-256 checksum of any file in your browser and compare it against the hash provided by the download source."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Utilities", "item": "https://jamamjadalone.github.io/omnitools/categories/utilities.html" },
+    { "@type": "ListItem", "position": 3, "name": "File Hash / Checksum Verifier", "item": "https://jamamjadalone.github.io/omnitools/tools/file-hash-verifier/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="file-hash-verifier" data-category-of-tool="utilities">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/utilities.html">Utilities</a><span>/</span>
+    <span>File Hash / Checksum Verifier</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">🔐</span>
+    <div>
+      <h1>File Hash / Checksum Verifier</h1>
+      <p class="tool-sub">Compute the SHA-256 checksum of any file in your browser and compare it against the hash provided by the download source.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="expectedHash">Expected hash (from the download page)</label>
+        <input type="text" id="expectedHash" placeholder="sha256: a1b2c3...">
+      </div>
+      <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Drop a file to verify its hash">
+        <div class="dz-icon" aria-hidden="true">🔐</div>
+        <p>Drop a file here or click to browse</p>
+        <p class="dz-hint">SHA-256 computed locally via Web Crypto</p>
+        <input type="file" id="fileInput" hidden>
+      </div>
+      <div id="progressWrap" style="display:none;margin-top:16px;">
+        <div style="display:flex;align-items:center;gap:10px;"><span class="spinner"></span><span style="font-size:.85rem;color:var(--text-dim);">Hashing…</span></div>
+      </div>
+    </div>
+    <div class="tool-panel">
+      <h3 style="margin-bottom:12px;">Result</h3>
+      <div id="resultEmpty"><p style="color:var(--text-faint);text-align:center;">Drop a file to compute and verify its hash.</p></div>
+      <div id="resultBox" style="display:none;">
+        <div id="matchAlert" class="alert" style="margin-bottom:16px;"></div>
+        <div class="field">
+          <label for="computedHash">Computed SHA-256</label>
+          <div class="output-box" id="computedHash" style="max-height:120px;font-size:.78rem;"></div>
+        </div>
+        <div class="copy-row" style="justify-content:flex-start;">
+          <button class="btn btn-secondary btn-sm" id="copyBtn">Copy hash</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>__ABOUT__</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+            <li>Copy the SHA-256 hash shown on the page you downloaded the file from.</li>
+      <li>Paste it into the <strong>Expected hash</strong> field.</li>
+      <li>Drop the downloaded file onto the dropzone.</li>
+      <li>The tool computes the file's real SHA-256 and compares them.</li>
+      <li>A match confirms the download is intact; a mismatch means the file is corrupt or tampered with — download it again.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+            <li>SHA-256 verification with Web Crypto</li>
+      <li>Live match / mismatch result with color coding</li>
+      <li>Copyable computed hash</li>
+      <li>Handles hashes pasted with or without a sha256: prefix</li>
+      <li>Fully client-side</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Why should I verify a file hash? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Downloads can be corrupted mid-transfer or tampered with. Verifying the SHA-256 hash against the one published by the source proves the file is byte-for-byte what was published.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What if the hash doesn't match? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Do not trust the file. Re-download it, ideally over HTTPS, and verify again. A persistent mismatch may mean the file is corrupt or came from an untrusted source.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Can I verify MD5 or SHA-1 here? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>This tool computes SHA-256, which is the modern standard. MD5 and SHA-1 are considered weak and are rarely published anymore.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Is this secure? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Yes. Hashing runs locally using your browser's built-in Web Crypto implementation — the file never leaves your machine.</p></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+  <script src="../../assets/js/helpers/hash.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

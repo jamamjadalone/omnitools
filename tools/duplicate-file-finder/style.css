@@ -1,0 +1,6 @@
+.dup-group{ border:1px solid var(--border); border-radius:var(--radius-sm); padding:12px; margin-bottom:10px; background:var(--bg-elev); }
+.dup-head{ display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:8px; }
+.dup-head code{ color:var(--accent-2); font-size:.78rem; }
+.dup-file{ display:flex; justify-content:space-between; gap:10px; font-size:.82rem; padding:4px 0; border-bottom:1px solid var(--border-soft); }
+.dup-file span:first-child{ color:var(--text-dim); word-break:break-all; }
+.dup-file span:last-child{ font-family:var(--font-mono); color:var(--text-faint); white-space:nowrap; }

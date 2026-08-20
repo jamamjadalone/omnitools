@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>package.json Validator — Free Online Tool | OmniTools</title>
+<meta name="description" content="Validate and format your package.json — check required fields, version syntax and JSON validity with clear error messages.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/package-json-validator/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="package.json Validator — OmniTools">
+<meta property="og:description" content="Validate and format your package.json — check required fields, version syntax and JSON validity with clear error messages.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/package-json-validator/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "package.json Validator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Validate and format your package.json — check required fields, version syntax and JSON validity with clear error messages."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Developer Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/developer-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "package.json Validator", "item": "https://jamamjadalone.github.io/omnitools/tools/package-json-validator/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="package-json-validator" data-category-of-tool="developer-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/developer-tools.html">Developer Tools</a><span>/</span>
+    <span>package.json Validator</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">📦</span>
+    <div>
+      <h1>package.json Validator</h1>
+      <p class="tool-sub">Validate and format your package.json — check required fields, version syntax and JSON validity with clear error messages.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="pkgInput">Your package.json</label>
+        <textarea id="pkgInput" rows="16" style="font-family:var(--font-mono);font-size:.8rem;">{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "Example package",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "MIT"
+}</textarea>
+      </div>
+      <div class="copy-row" style="justify-content:flex-start;margin-top:10px;">
+        <button class="btn btn-secondary btn-sm" id="validateBtn">Validate</button>
+      </div>
+    </div>
+    <div class="tool-panel">
+      <h3 style="margin-bottom:12px;">Validation result</h3>
+      <div id="resultBox" style="display:grid;gap:8px;">Paste your package.json and click Validate.</div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>__ABOUT__</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+            <li>Paste your package.json into the input.</li>
+      <li>Click <strong>Validate</strong>.</li>
+      <li>The tool checks JSON validity, required fields, version format and dependency syntax.</li>
+      <li>Each check shows pass, warning or fail with a clear message.</li>
+      <li>Fix any issues, re-paste and re-validate until it is clean.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+            <li>JSON syntax validation with helpful errors</li>
+      <li>Checks required fields: name, version, description, main, scripts, license</li>
+      <li>Validates semver version strings</li>
+      <li>Flags common issues in dependency names and versions</li>
+      <li>Fully client-side</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What is a valid semver version? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Semantic versioning uses MAJOR.MINOR.PATCH like 1.0.0, optionally with pre-release tags like 1.0.0-beta.1. The tool flags malformed versions.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Which fields are required? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>npm requires at minimum a name and version. This tool also checks description, main, scripts and license and warns if they are missing or unusual.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Does this run my scripts? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. It only validates the file content — it never executes anything.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Is my file uploaded? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. Validation runs entirely in your browser.</p></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

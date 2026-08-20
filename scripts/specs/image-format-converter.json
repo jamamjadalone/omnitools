@@ -1,0 +1,47 @@
+{
+  "id": "image-format-converter",
+  "slug": "image-format-converter",
+  "name": "Image Format Converter",
+  "category": "converters",
+  "categoryName": "Converters",
+  "icon": "🔄",
+  "description": "Convert images between JPG, PNG and WebP with quality control, and batch-download all results as a ZIP.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"formatSelect\">Output format</label>\n        <select id=\"formatSelect\">\n          <option value=\"image/jpeg\">JPG</option>\n          <option value=\"image/png\">PNG</option>\n          <option value=\"image/webp\">WebP</option>\n        </select>\n      </div>\n      <div class=\"field\" id=\"qualityWrap\">\n        <label for=\"qualityRange\">Quality: <span id=\"qualityValue\" class=\"range-value\">90%</span></label>\n        <input type=\"range\" id=\"qualityRange\" min=\"10\" max=\"100\" value=\"90\">\n      </div>\n      <div class=\"dropzone\" id=\"dropzone\" tabindex=\"0\" role=\"button\" aria-label=\"Drop images to convert\">\n        <div class=\"dz-icon\" aria-hidden=\"true\">🔄</div>\n        <p>Drop images here or click to browse</p>\n        <p class=\"dz-hint\">JPG, PNG and WebP in — pick the output format</p>\n        <input type=\"file\" id=\"fileInput\" accept=\"image/*\" multiple hidden>\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"downloadBtn\" style=\"margin-top:16px;\" disabled>Convert &amp; download (ZIP)</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Converted files</h3>\n      <div id=\"progressWrap\" style=\"display:none;margin-bottom:14px;\">\n        <div style=\"display:flex;align-items:center;gap:10px;\"><span class=\"spinner\"></span><span id=\"progressText\" style=\"font-size:.85rem;color:var(--text-dim);\">Converting…</span></div>\n      </div>\n      <div class=\"output-box\" id=\"logBox\" style=\"max-height:400px;\">No images loaded yet.</div>\n    </div>\n  </div>",
+  "howto": [
+    "Pick the output format — JPG, PNG or WebP.",
+    "Adjust the quality slider (quality only applies to JPG and WebP).",
+    "Drop one or more images onto the dropzone.",
+    "Watch the log as each image is converted with its new size shown.",
+    "Click <strong>Convert &amp; download</strong> to get every converted file in a ZIP."
+  ],
+  "features": [
+    "Convert between JPG, PNG and WebP",
+    "Quality control for JPG and WebP output",
+    "Batch conversion with per-file size log",
+    "ZIP export of all converted files",
+    "Fully client-side"
+  ],
+  "faq": [
+    {
+      "q": "Which format should I choose?",
+      "a": "JPG for photos and small files, PNG for graphics with transparency, and WebP for the best modern compression. Stock platforms typically prefer JPG unless a PNG is required."
+    },
+    {
+      "q": "Does PNG output support transparency?",
+      "a": "Yes. If the source had an alpha channel, PNG conversion preserves it. Converting a JPG to PNG adds no transparency since the source has none."
+    },
+    {
+      "q": "Why does quality only affect JPG and WebP?",
+      "a": "PNG is lossless — it has no quality setting. JPG and WebP use lossy compression where lower quality means a smaller file."
+    },
+    {
+      "q": "Are my images uploaded?",
+      "a": "No. Conversion runs on a canvas locally in your browser."
+    }
+  ],
+  "extraScripts": [
+    "../../assets/js/vendor/jszip.min.js",
+    "../../assets/js/vendor/filesaver.min.js",
+    "../../assets/js/helpers/zip-export.js"
+  ]
+}

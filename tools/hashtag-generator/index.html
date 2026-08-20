@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hashtag Generator — Free Online Tool | OmniTools</title>
+<meta name="description" content="Turn a short topic or description into a ready-to-paste set of relevant hashtags for Instagram, X, TikTok or LinkedIn.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/hashtag-generator/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hashtag Generator — OmniTools">
+<meta property="og:description" content="Turn a short topic or description into a ready-to-paste set of relevant hashtags for Instagram, X, TikTok or LinkedIn.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/hashtag-generator/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Hashtag Generator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Turn a short topic or description into a ready-to-paste set of relevant hashtags for Instagram, X, TikTok or LinkedIn."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Text Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/text-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "Hashtag Generator", "item": "https://jamamjadalone.github.io/omnitools/tools/hashtag-generator/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="hashtag-generator" data-category-of-tool="text-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/text-tools.html">Text Tools</a><span>/</span>
+    <span>Hashtag Generator</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">#️⃣</span>
+    <div>
+      <h1>Hashtag Generator</h1>
+      <p class="tool-sub">Turn a short topic or description into a ready-to-paste set of relevant hashtags for Instagram, X, TikTok or LinkedIn.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="topicInput">Topic or description</label>
+        <textarea id="topicInput" rows="4" placeholder="cozy autumn coffee shop vibes, latte art, warm lighting"></textarea>
+      </div>
+      <div class="field">
+        <label for="countRange">Number of hashtags: <span id="countValue" class="range-value">10</span></label>
+        <input type="range" id="countRange" min="3" max="30" value="10">
+      </div>
+      <div class="checkbox-field" style="margin-bottom:14px;">
+        <input type="checkbox" id="camelCheck">
+        <label for="camelCheck">CamelCase multi-word hashtags (#LatteArt)</label>
+      </div>
+      <button class="btn btn-primary btn-block" id="generateBtn">Generate hashtags</button>
+    </div>
+    <div class="tool-panel">
+      <h3 style="margin-bottom:12px;">Your hashtags</h3>
+      <div class="output-box" id="outputBox" style="max-height:320px;">Your hashtags will appear here.</div>
+      <div class="copy-row" style="justify-content:flex-start;margin-top:12px;">
+        <button class="btn btn-secondary btn-sm" id="copyBtn">Copy</button>
+      </div>
+      <p class="alert alert-warning" style="margin-top:16px;font-size:.8rem;">Auto-generated from a built-in dictionary — review for relevance before posting.</p>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>__ABOUT__</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+            <li>Describe your post topic or paste a short caption.</li>
+      <li>Choose how many hashtags you want (3–30).</li>
+      <li>Optionally enable CamelCase for multi-word tags.</li>
+      <li>Click <strong>Generate hashtags</strong>.</li>
+      <li>Copy the ready-to-paste list and add it to your post.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+            <li>Template-based hashtag generation from a built-in topic dictionary</li>
+      <li>Customizable count from 3 to 30</li>
+      <li>CamelCase option for readability</li>
+      <li>Relevance scoring based on your input words</li>
+      <li>100% on-device</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">How are hashtags generated? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>The tool extracts meaningful words from your topic and matches them against a built-in dictionary of common hashtags, then adds related tags. It runs on your device — no AI calls.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">How many hashtags should I use? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Instagram commonly supports up to 30. For X/Twitter and LinkedIn fewer works better (3–5). This tool lets you pick any number from 3 to 30.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What is CamelCase? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Writing multi-word tags without spaces but with capital letters, like #LatteArt. It keeps the tag readable and often performs better on Instagram.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Will these hashtags work on every platform? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>They are generated generally, so always check platform-specific rules and trending tags in your niche before posting.</p></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

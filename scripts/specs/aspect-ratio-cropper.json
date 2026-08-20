@@ -1,0 +1,42 @@
+{
+  "id": "aspect-ratio-cropper",
+  "slug": "aspect-ratio-cropper",
+  "name": "Aspect Ratio Cropper",
+  "category": "image-tools",
+  "categoryName": "Image Tools",
+  "icon": "✂️",
+  "description": "Crop any image to a specific aspect ratio with common presets — 1:1, 4:3, 16:9 and stock-platform squares — then download it.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"ratioSelect\">Aspect ratio</label>\n        <select id=\"ratioSelect\">\n          <option value=\"1:1\">1:1 (square)</option>\n          <option value=\"4:3\">4:3</option>\n          <option value=\"3:2\">3:2</option>\n          <option value=\"16:9\">16:9 (widescreen)</option>\n          <option value=\"9:16\">9:16 (vertical)</option>\n          <option value=\"2:3\">2:3 (portrait print)</option>\n          <option value=\"free\">Freeform</option>\n        </select>\n      </div>\n      <div class=\"field\">\n        <label for=\"formatSelect\">Output format</label>\n        <select id=\"formatSelect\">\n          <option value=\"image/jpeg\">JPG</option>\n          <option value=\"image/png\">PNG</option>\n          <option value=\"image/webp\">WebP</option>\n        </select>\n      </div>\n      <div class=\"dropzone\" id=\"dropzone\" tabindex=\"0\" role=\"button\" aria-label=\"Upload an image to crop\">\n        <div class=\"dz-icon\" aria-hidden=\"true\">✂️</div>\n        <p>Drop an image here or click to browse</p>\n        <p class=\"dz-hint\">Drag the crop box to frame your subject</p>\n        <input type=\"file\" id=\"fileInput\" accept=\"image/*\" hidden>\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"downloadBtn\" style=\"margin-top:16px;\" disabled>Download crop</button>\n    </div>\n    <div class=\"tool-panel\">\n      <div id=\"emptyState\"><p style=\"color:var(--text-faint);text-align:center;\">Upload an image to start cropping.</p></div>\n      <div id=\"cropWrap\" style=\"display:none;\">\n        <div class=\"crop-stage\" id=\"cropStage\">\n          <canvas id=\"sourceCanvas\" style=\"display:none;\"></canvas>\n          <div class=\"crop-overlay\" id=\"cropOverlay\"></div>\n        </div>\n        <p style=\"font-size:.8rem;color:var(--text-faint);margin-top:8px;text-align:center;\">Click and drag to reposition the crop area.</p>\n      </div>\n    </div>\n  </div>",
+  "howto": [
+    "Pick the target aspect ratio (square, 16:9, stock squares and more).",
+    "Upload your image.",
+    "Drag inside the crop area to position the crop frame over the best part of the image.",
+    "Choose the output format (JPG, PNG or WebP).",
+    "Click <strong>Download crop</strong> to save the result."
+  ],
+  "features": [
+    "Presets for 1:1, 4:3, 3:2, 16:9, 9:16 and 2:3",
+    "Freeform mode for any ratio you type",
+    "Drag-to-position crop with live preview",
+    "JPG, PNG and WebP output",
+    "Processed entirely in your browser"
+  ],
+  "faq": [
+    {
+      "q": "Do stock platforms prefer a specific aspect ratio?",
+      "a": "Many platforms feature square and 4:3 images prominently, and some categories expect exact ratios. This tool covers the most common presets plus freeform."
+    },
+    {
+      "q": "Is cropping lossy?",
+      "a": "Cropping discards pixels outside the frame — that is expected. The remaining pixels are re-encoded at full quality, so there is no additional quality loss beyond the crop itself."
+    },
+    {
+      "q": "Can I set a custom ratio like 5:4?",
+      "a": "Yes. Choose Freeform and type any ratio such as 5:4 or 21:9 in the width:height format."
+    },
+    {
+      "q": "Is my image uploaded?",
+      "a": "No. Everything happens locally on a canvas; nothing is sent to a server."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "zip-creator",
+  "slug": "zip-creator",
+  "name": "ZIP Creator",
+  "category": "utilities",
+  "categoryName": "Utilities",
+  "icon": "🗜️",
+  "description": "Bundle any selection of files into a single .zip archive right in your browser, with optional per-file name edits.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"zipNameInput\">Archive name</label>\n        <input type=\"text\" id=\"zipNameInput\" value=\"my-archive.zip\">\n      </div>\n      <div class=\"dropzone\" id=\"dropzone\" tabindex=\"0\" role=\"button\" aria-label=\"Drop files to add to the ZIP\">\n        <div class=\"dz-icon\" aria-hidden=\"true\">🗜️</div>\n        <p>Drop files here or click to browse</p>\n        <p class=\"dz-hint\">Folders are added with their structure preserved</p>\n        <input type=\"file\" id=\"fileInput\" multiple webkitdirectory hidden>\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"createBtn\" style=\"margin-top:16px;\" disabled>Create ZIP</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Files (<span id=\"fileCount\">0</span>)</h3>\n      <div class=\"output-box\" id=\"fileList\" style=\"max-height:420px;\">No files added yet.</div>\n    </div>\n  </div>",
+  "howto": [
+    "Name your archive (the .zip is appended automatically if missing).",
+    "Drop files or a whole folder onto the dropzone.",
+    "Review the file list on the right — folder paths are preserved.",
+    "Click <strong>Create ZIP</strong>.",
+    "Your .zip downloads immediately, ready to share or upload."
+  ],
+  "features": [
+    "Bundle any number of files into one ZIP",
+    "Folder structure preserved inside the archive",
+    "Custom archive name",
+    "Uses JSZip with DEFLATE compression",
+    "100% client-side"
+  ],
+  "faq": [
+    {
+      "q": "Do the files get uploaded anywhere?",
+      "a": "No. Everything is processed locally with the File API and JSZip, then the ZIP is created in your browser."
+    },
+    {
+      "q": "Can I add files from different folders?",
+      "a": "Yes. Drop multiple selections or folders — each keeps its own path inside the archive."
+    },
+    {
+      "q": "What compression is used?",
+      "a": "JSZip with DEFLATE level 6, a good balance of size and speed for typical file bundles."
+    },
+    {
+      "q": "Are there limits on file count or size?",
+      "a": "It depends on your browser and device memory. Very large batches work but may take longer to compress."
+    }
+  ],
+  "extraScripts": [
+    "../../assets/js/vendor/jszip.min.js",
+    "../../assets/js/vendor/filesaver.min.js",
+    "../../assets/js/helpers/zip-export.js"
+  ]
+}

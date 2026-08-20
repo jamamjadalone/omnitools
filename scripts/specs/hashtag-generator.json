@@ -1,0 +1,42 @@
+{
+  "id": "hashtag-generator",
+  "slug": "hashtag-generator",
+  "name": "Hashtag Generator",
+  "category": "text-tools",
+  "categoryName": "Text Tools",
+  "icon": "#️⃣",
+  "description": "Turn a short topic or description into a ready-to-paste set of relevant hashtags for Instagram, X, TikTok or LinkedIn.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"topicInput\">Topic or description</label>\n        <textarea id=\"topicInput\" rows=\"4\" placeholder=\"cozy autumn coffee shop vibes, latte art, warm lighting\"></textarea>\n      </div>\n      <div class=\"field\">\n        <label for=\"countRange\">Number of hashtags: <span id=\"countValue\" class=\"range-value\">10</span></label>\n        <input type=\"range\" id=\"countRange\" min=\"3\" max=\"30\" value=\"10\">\n      </div>\n      <div class=\"checkbox-field\" style=\"margin-bottom:14px;\">\n        <input type=\"checkbox\" id=\"camelCheck\">\n        <label for=\"camelCheck\">CamelCase multi-word hashtags (#LatteArt)</label>\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"generateBtn\">Generate hashtags</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Your hashtags</h3>\n      <div class=\"output-box\" id=\"outputBox\" style=\"max-height:320px;\">Your hashtags will appear here.</div>\n      <div class=\"copy-row\" style=\"justify-content:flex-start;margin-top:12px;\">\n        <button class=\"btn btn-secondary btn-sm\" id=\"copyBtn\">Copy</button>\n      </div>\n      <p class=\"alert alert-warning\" style=\"margin-top:16px;font-size:.8rem;\">Auto-generated from a built-in dictionary — review for relevance before posting.</p>\n    </div>\n  </div>",
+  "howto": [
+    "Describe your post topic or paste a short caption.",
+    "Choose how many hashtags you want (3–30).",
+    "Optionally enable CamelCase for multi-word tags.",
+    "Click <strong>Generate hashtags</strong>.",
+    "Copy the ready-to-paste list and add it to your post."
+  ],
+  "features": [
+    "Template-based hashtag generation from a built-in topic dictionary",
+    "Customizable count from 3 to 30",
+    "CamelCase option for readability",
+    "Relevance scoring based on your input words",
+    "100% on-device"
+  ],
+  "faq": [
+    {
+      "q": "How are hashtags generated?",
+      "a": "The tool extracts meaningful words from your topic and matches them against a built-in dictionary of common hashtags, then adds related tags. It runs on your device — no AI calls."
+    },
+    {
+      "q": "How many hashtags should I use?",
+      "a": "Instagram commonly supports up to 30. For X/Twitter and LinkedIn fewer works better (3–5). This tool lets you pick any number from 3 to 30."
+    },
+    {
+      "q": "What is CamelCase?",
+      "a": "Writing multi-word tags without spaces but with capital letters, like #LatteArt. It keeps the tag readable and often performs better on Instagram."
+    },
+    {
+      "q": "Will these hashtags work on every platform?",
+      "a": "They are generated generally, so always check platform-specific rules and trending tags in your niche before posting."
+    }
+  ]
+}

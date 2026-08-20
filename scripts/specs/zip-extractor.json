@@ -1,0 +1,47 @@
+{
+  "id": "zip-extractor",
+  "slug": "zip-extractor",
+  "name": "ZIP Extractor",
+  "category": "utilities",
+  "categoryName": "Utilities",
+  "icon": "📦",
+  "description": "Open a .zip file in your browser, browse its contents, and extract individual files or everything without installing anything.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"dropzone\" id=\"dropzone\" tabindex=\"0\" role=\"button\" aria-label=\"Drop a ZIP file to extract it\">\n        <div class=\"dz-icon\" aria-hidden=\"true\">📦</div>\n        <p>Drop a .zip file here or click to browse</p>\n        <p class=\"dz-hint\">Opened locally with JSZip — nothing is uploaded</p>\n        <input type=\"file\" id=\"fileInput\" accept=\".zip\" hidden>\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"extractAllBtn\" style=\"margin-top:16px;\" disabled>Extract all as ZIP</button>\n      <button class=\"btn btn-secondary btn-block\" id=\"extractSelectedBtn\" style=\"margin-top:8px;\" disabled>Download selected</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Archive contents</h3>\n      <div class=\"output-box\" id=\"fileList\" style=\"max-height:420px;\">Drop a ZIP file to see its contents.</div>\n    </div>\n  </div>",
+  "howto": [
+    "Drop your .zip file onto the dropzone.",
+    "The archive is opened in your browser and its contents are listed.",
+    "Tick the files you want, or leave all selected.",
+    "Click <strong>Extract all as ZIP</strong> to re-bundle the chosen files, or <strong>Download selected</strong> to grab the ticked ones directly.",
+    "Files with a check appear as a list with sizes for easy review."
+  ],
+  "features": [
+    "Browse ZIP contents without installing anything",
+    "Select individual files or extract everything",
+    "Per-file size display",
+    "Handles nested folder paths",
+    "JSZip-powered, fully client-side"
+  ],
+  "faq": [
+    {
+      "q": "Does extracting use a server?",
+      "a": "No. The ZIP is opened entirely in your browser with JSZip. Your files never leave your device."
+    },
+    {
+      "q": "Can I extract just one file?",
+      "a": "Yes. Tick the files you want and click <strong>Download selected</strong> to save only those."
+    },
+    {
+      "q": "Are passwords supported?",
+      "a": "Encrypted ZIPs are not supported by the browser-side JSZip build used here. Standard (unencrypted) archives work perfectly."
+    },
+    {
+      "q": "What about very large ZIPs?",
+      "a": "Large archives work, but extraction is limited by your device's memory. Very big archives may take a moment to list."
+    }
+  ],
+  "extraScripts": [
+    "../../assets/js/vendor/jszip.min.js",
+    "../../assets/js/vendor/filesaver.min.js",
+    "../../assets/js/helpers/zip-export.js"
+  ]
+}

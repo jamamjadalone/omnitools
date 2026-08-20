@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thumbnail Grid / Contact Sheet Generator — Free Online Tool | OmniTools</title>
+<meta name="description" content="Combine a batch of images into a single printable contact sheet grid to review them all at a glance before submission.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/thumbnail-grid-generator/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Thumbnail Grid / Contact Sheet Generator — OmniTools">
+<meta property="og:description" content="Combine a batch of images into a single printable contact sheet grid to review them all at a glance before submission.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/thumbnail-grid-generator/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Thumbnail Grid / Contact Sheet Generator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Combine a batch of images into a single printable contact sheet grid to review them all at a glance before submission."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Image Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/image-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "Thumbnail Grid / Contact Sheet Generator", "item": "https://jamamjadalone.github.io/omnitools/tools/thumbnail-grid-generator/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="thumbnail-grid-generator" data-category-of-tool="image-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/image-tools.html">Image Tools</a><span>/</span>
+    <span>Thumbnail Grid / Contact Sheet Generator</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">🖨️</span>
+    <div>
+      <h1>Thumbnail Grid / Contact Sheet Generator</h1>
+      <p class="tool-sub">Combine a batch of images into a single printable contact sheet grid to review them all at a glance before submission.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="columnsInput">Columns per row</label>
+        <input type="number" id="columnsInput" value="4" min="2" max="8">
+      </div>
+      <div class="field">
+        <label for="thumbSizeInput">Thumbnail width (px)</label>
+        <input type="number" id="thumbSizeInput" value="300" min="100" max="800">
+      </div>
+      <div class="checkbox-field" style="margin-bottom:14px;">
+        <input type="checkbox" id="labelsCheck" checked>
+        <label for="labelsCheck">Show file names under thumbnails</label>
+      </div>
+      <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Drop images to build a contact sheet">
+        <div class="dz-icon" aria-hidden="true">🖨️</div>
+        <p>Drop images here or click to browse</p>
+        <p class="dz-hint">Up to 50 images per sheet</p>
+        <input type="file" id="fileInput" accept="image/*" multiple hidden>
+      </div>
+      <button class="btn btn-primary btn-block" id="downloadBtn" style="margin-top:16px;" disabled>Download contact sheet (JPG)</button>
+    </div>
+    <div class="tool-panel">
+      <h3 style="margin-bottom:12px;">Preview</h3>
+      <div id="emptyState"><p style="color:var(--text-faint);text-align:center;">Drop images to generate a contact sheet.</p></div>
+      <div id="previewWrap" style="display:none;">
+        <div class="result-preview">
+          <img id="previewImg" alt="Contact sheet preview">
+        </div>
+        <div id="progressWrap" style="display:none;margin-top:14px;">
+          <div style="display:flex;align-items:center;gap:10px;"><span class="spinner"></span><span style="font-size:.85rem;color:var(--text-dim);">Building sheet…</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>__ABOUT__</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+            <li>Choose how many columns and how large each thumbnail should be.</li>
+      <li>Decide whether to show file names under each thumbnail.</li>
+      <li>Drop the images you want to review onto the dropzone.</li>
+      <li>The tool builds a contact sheet and previews it.</li>
+      <li>Click <strong>Download contact sheet</strong> to save it as a printable JPG.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+            <li>Auto-grid layout with configurable columns</li>
+      <li>Optional file-name labels for easy identification</li>
+      <li>Live preview before download</li>
+      <li>Handles up to 50 images per sheet</li>
+      <li>Fully client-side</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What is a contact sheet? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>A single image that lays out many smaller previews in a grid. Photographers use them to review a whole shoot at a glance before selecting or submitting images.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Can I print the sheet? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Yes. Download it as a JPG and print or share it — ideal for marking up which images to submit to a stock platform.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What happens with more than 50 images? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>The tool processes the first 50. Split the batch into two runs for larger sets, or raise the thumbnail size to fit more per sheet.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Are my images uploaded? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. The sheet is composited on a canvas entirely in your browser.</p></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

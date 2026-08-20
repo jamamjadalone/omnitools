@@ -1,15 +1,65 @@
 {
   "categories": [
-    { "id": "image-tools",     "name": "Image Tools",     "icon": "🖼️", "description": "Compress, convert and analyze images entirely in your browser." },
-    { "id": "video-tools",     "name": "Video Tools",     "icon": "🎬", "description": "Utilities for working with video files. More tools coming soon." },
-    { "id": "pdf-tools",       "name": "PDF Tools",       "icon": "📄", "description": "Work with PDF documents quickly and privately." },
-    { "id": "ai-tools",        "name": "AI Tools",        "icon": "🤖", "description": "Lightweight AI-assisted utilities." },
-    { "id": "seo-tools",       "name": "SEO Tools",       "icon": "📈", "description": "Improve visibility and technical SEO health." },
-    { "id": "developer-tools", "name": "Developer Tools", "icon": "🛠️", "description": "Everyday utilities for writing and debugging code." },
-    { "id": "text-tools",      "name": "Text Tools",      "icon": "📝", "description": "Manipulate, clean and generate text." },
-    { "id": "converters",      "name": "Converters",      "icon": "🔄", "description": "Convert data between common formats." },
-    { "id": "calculators",     "name": "Calculators",     "icon": "🧮", "description": "Quick calculators for everyday numbers." },
-    { "id": "utilities",       "name": "Utilities",       "icon": "⚙️", "description": "Generators and small utilities that don't fit elsewhere." }
+    {
+      "id": "image-tools",
+      "name": "Image Tools",
+      "icon": "🖼️",
+      "description": "Compress, convert and analyze images entirely in your browser."
+    },
+    {
+      "id": "video-tools",
+      "name": "Video Tools",
+      "icon": "🎬",
+      "description": "Utilities for working with video files. More tools coming soon."
+    },
+    {
+      "id": "pdf-tools",
+      "name": "PDF Tools",
+      "icon": "📄",
+      "description": "Work with PDF documents quickly and privately."
+    },
+    {
+      "id": "ai-tools",
+      "name": "AI Tools",
+      "icon": "🤖",
+      "description": "Lightweight AI-assisted utilities."
+    },
+    {
+      "id": "seo-tools",
+      "name": "SEO Tools",
+      "icon": "📈",
+      "description": "Improve visibility and technical SEO health."
+    },
+    {
+      "id": "developer-tools",
+      "name": "Developer Tools",
+      "icon": "🛠️",
+      "description": "Everyday utilities for writing and debugging code."
+    },
+    {
+      "id": "text-tools",
+      "name": "Text Tools",
+      "icon": "📝",
+      "description": "Manipulate, clean and generate text."
+    },
+    {
+      "id": "converters",
+      "name": "Converters",
+      "icon": "🔄",
+      "description": "Convert data between common formats."
+    },
+    {
+      "id": "calculators",
+      "name": "Calculators",
+      "icon": "🧮",
+      "description": "Quick calculators for everyday numbers."
+    },
+    {
+      "id": "utilities",
+      "name": "Utilities",
+      "icon": "⚙️",
+      "description": "Generators and small utilities that don't fit elsewhere."
+    }
   ],
   "tools": [
     {
@@ -19,7 +69,14 @@
       "category": "image-tools",
       "icon": "🗜️",
       "description": "Shrink JPG, PNG and WebP images in your browser without losing visible quality.",
-      "keywords": ["compress image", "reduce image size", "image optimizer", "shrink photo", "jpg compressor", "png compressor"],
+      "keywords": [
+        "compress image",
+        "reduce image size",
+        "image optimizer",
+        "shrink photo",
+        "jpg compressor",
+        "png compressor"
+      ],
       "featured": true,
       "isNew": false
     },
@@ -30,7 +87,12 @@
       "category": "image-tools",
       "icon": "▦",
       "description": "Turn any link, text or Wi-Fi password into a downloadable QR code.",
-      "keywords": ["qr code", "generate qr", "qr generator", "make qr code"],
+      "keywords": [
+        "qr code",
+        "generate qr",
+        "qr generator",
+        "make qr code"
+      ],
       "featured": true,
       "isNew": false
     },
@@ -41,7 +103,13 @@
       "category": "image-tools",
       "icon": "🎨",
       "description": "Pull the dominant colors out of any image and copy their hex codes.",
-      "keywords": ["color palette", "extract colors", "dominant color", "image colors", "hex from image"],
+      "keywords": [
+        "color palette",
+        "extract colors",
+        "dominant color",
+        "image colors",
+        "hex from image"
+      ],
       "featured": true,
       "isNew": false
     },
@@ -52,7 +120,12 @@
       "category": "text-tools",
       "icon": "✉️",
       "description": "Pull every valid email address out of pasted text in one click.",
-      "keywords": ["extract email", "find emails in text", "email finder", "email scraper text"],
+      "keywords": [
+        "extract email",
+        "find emails in text",
+        "email finder",
+        "email scraper text"
+      ],
       "featured": false,
       "isNew": false
     },
@@ -63,7 +136,13 @@
       "category": "developer-tools",
       "icon": "{ }",
       "description": "Format, validate and minify JSON with clear error messages.",
-      "keywords": ["json formatter", "json validator", "json beautifier", "json minify", "pretty print json"],
+      "keywords": [
+        "json formatter",
+        "json validator",
+        "json beautifier",
+        "json minify",
+        "pretty print json"
+      ],
       "featured": true,
       "isNew": false
     },
@@ -74,7 +153,11 @@
       "category": "developer-tools",
       "icon": "⇄",
       "description": "Encode text to Base64 or decode Base64 back to readable text instantly.",
-      "keywords": ["base64 encode", "base64 decode", "base64 converter"],
+      "keywords": [
+        "base64 encode",
+        "base64 decode",
+        "base64 converter"
+      ],
       "featured": false,
       "isNew": false
     },
@@ -85,7 +168,11 @@
       "category": "text-tools",
       "icon": "¶",
       "description": "Generate placeholder paragraphs, sentences or words for mockups.",
-      "keywords": ["lorem ipsum", "placeholder text", "dummy text generator"],
+      "keywords": [
+        "lorem ipsum",
+        "placeholder text",
+        "dummy text generator"
+      ],
       "featured": false,
       "isNew": false
     },
@@ -96,7 +183,12 @@
       "category": "utilities",
       "icon": "🔑",
       "description": "Create strong, random passwords with full control over length and character sets.",
-      "keywords": ["password generator", "random password", "strong password maker", "secure password"],
+      "keywords": [
+        "password generator",
+        "random password",
+        "strong password maker",
+        "secure password"
+      ],
       "featured": true,
       "isNew": true
     },
@@ -107,7 +199,11 @@
       "category": "developer-tools",
       "icon": "#",
       "description": "Generate RFC 4122 v4 UUIDs in bulk, ready to copy or download.",
-      "keywords": ["uuid generator", "guid generator", "generate uuid v4"],
+      "keywords": [
+        "uuid generator",
+        "guid generator",
+        "generate uuid v4"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -118,7 +214,12 @@
       "category": "text-tools",
       "icon": "Aa",
       "description": "Convert text between UPPERCASE, lowercase, Title Case, camelCase and more.",
-      "keywords": ["text case converter", "uppercase lowercase", "camel case", "title case generator"],
+      "keywords": [
+        "text case converter",
+        "uppercase lowercase",
+        "camel case",
+        "title case generator"
+      ],
       "featured": false,
       "isNew": false
     },
@@ -129,7 +230,13 @@
       "category": "image-tools",
       "icon": "✅",
       "description": "Auto-check resolution, format, transparency, aspect ratio and size against Adobe Stock, Shutterstock, Freepik or Envato requirements.",
-      "keywords": ["stock photo check", "image requirements", "adobe stock checklist", "shutterstock requirements", "asset readiness"],
+      "keywords": [
+        "stock photo check",
+        "image requirements",
+        "adobe stock checklist",
+        "shutterstock requirements",
+        "asset readiness"
+      ],
       "featured": true,
       "isNew": true
     },
@@ -140,7 +247,12 @@
       "category": "utilities",
       "icon": "📁",
       "description": "Rename or change the extension of many files at once and download them all as a ZIP.",
-      "keywords": ["batch rename files", "change extension", "rename files in folder", "bulk renamer"],
+      "keywords": [
+        "batch rename files",
+        "change extension",
+        "rename files in folder",
+        "bulk renamer"
+      ],
       "featured": true,
       "isNew": true
     },
@@ -151,7 +263,12 @@
       "category": "utilities",
       "icon": "💾",
       "description": "Turn any pasted text or code into a downloadable file with the right extension.",
-      "keywords": ["save text as file", "download text file", "code snippet to file", "file saver"],
+      "keywords": [
+        "save text as file",
+        "download text file",
+        "code snippet to file",
+        "file saver"
+      ],
       "featured": true,
       "isNew": true
     },
@@ -162,7 +279,13 @@
       "category": "seo-tools",
       "icon": "🔤",
       "description": "Turn any text into a clean, SEO-friendly filename or URL slug with one click.",
-      "keywords": ["seo filename", "filename generator", "slug generator", "clean file name", "seo friendly url"],
+      "keywords": [
+        "seo filename",
+        "filename generator",
+        "slug generator",
+        "clean file name",
+        "seo friendly url"
+      ],
       "featured": true,
       "isNew": true
     },
@@ -173,7 +296,13 @@
       "category": "image-tools",
       "icon": "🏷️",
       "description": "Generate a platform-ready title, description and keyword list from a short photo description.",
-      "keywords": ["stock metadata", "photo title generator", "keywords for stock photos", "description generator", "adobe stock metadata"],
+      "keywords": [
+        "stock metadata",
+        "photo title generator",
+        "keywords for stock photos",
+        "description generator",
+        "adobe stock metadata"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -184,7 +313,12 @@
       "category": "image-tools",
       "icon": "🤖",
       "description": "Generate the correct AI-generated or AI-assisted disclosure note for major stock platforms.",
-      "keywords": ["ai disclosure", "ai generated disclaimer", "stock ai policy", "disclose ai image"],
+      "keywords": [
+        "ai disclosure",
+        "ai generated disclaimer",
+        "stock ai policy",
+        "disclose ai image"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -195,7 +329,12 @@
       "category": "image-tools",
       "icon": "🖼️",
       "description": "Preview a transparent PNG over solid colors to catch halos and messy cut-out edges.",
-      "keywords": ["png edge checker", "background removal check", "halo detection", "transparent image check"],
+      "keywords": [
+        "png edge checker",
+        "background removal check",
+        "halo detection",
+        "transparent image check"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -206,7 +345,510 @@
       "category": "utilities",
       "icon": "🔍",
       "description": "Read a file's real type from its magic bytes and spot extension mismatches.",
-      "keywords": ["file type detector", "magic bytes", "file format checker", "real file extension", "file validator"],
+      "keywords": [
+        "file type detector",
+        "magic bytes",
+        "file format checker",
+        "real file extension",
+        "file validator"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "alt-text-generator",
+      "name": "Alt Text Generator Helper",
+      "slug": "alt-text-generator",
+      "category": "seo-tools",
+      "icon": "♿",
+      "description": "Write clear, descriptive alt text for your images from a short description — template-based, no AI calls, fully in your browser.",
+      "keywords": [
+        "alt text generator helper",
+        "helper generator text alt",
+        "helper",
+        "generator",
+        "text",
+        "alt"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "aspect-ratio-cropper",
+      "name": "Aspect Ratio Cropper",
+      "slug": "aspect-ratio-cropper",
+      "category": "image-tools",
+      "icon": "✂️",
+      "description": "Crop any image to a specific aspect ratio with common presets — 1:1, 4:3, 16:9 and stock-platform squares — then download it.",
+      "keywords": [
+        "aspect ratio cropper",
+        "cropper ratio aspect",
+        "cropper",
+        "ratio",
+        "aspect"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "bulk-image-resizer",
+      "name": "Bulk Image Resizer",
+      "slug": "bulk-image-resizer",
+      "category": "image-tools",
+      "icon": "🖥️",
+      "description": "Resize many images at once by target dimensions, scale or target file size, then download them all as a ZIP.",
+      "keywords": [
+        "bulk image resizer",
+        "resizer image bulk",
+        "resizer",
+        "image",
+        "bulk"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "content-calendar-csv-generator",
+      "name": "Content Calendar CSV Generator",
+      "slug": "content-calendar-csv-generator",
+      "category": "text-tools",
+      "icon": "📅",
+      "description": "Generate a ready-to-use social media content calendar as a CSV — pick a month, add your posts, and download for any spreadsheet app.",
+      "keywords": [
+        "content calendar csv generator",
+        "generator csv calendar content",
+        "generator",
+        "csv",
+        "calendar",
+        "content"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "csv-column-renamer",
+      "name": "CSV Column Renamer / Cleaner",
+      "slug": "csv-column-renamer",
+      "category": "text-tools",
+      "icon": "🧾",
+      "description": "Paste a CSV, rename or reorder its columns, trim whitespace and fix encoding, then download the cleaned file.",
+      "keywords": [
+        "csv column renamer  cleaner",
+        "csv column renamer cleaner",
+        "cleaner renamer column csv",
+        "cleaner",
+        "renamer",
+        "column"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "duplicate-file-finder",
+      "name": "Duplicate File Finder",
+      "slug": "duplicate-file-finder",
+      "category": "utilities",
+      "icon": "👯",
+      "description": "Drop a batch of files and find exact duplicates using SHA-256 hashes computed right in your browser — no uploads.",
+      "keywords": [
+        "duplicate file finder",
+        "finder file duplicate",
+        "finder",
+        "file",
+        "duplicate"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "env-template-generator",
+      "name": ".env Template Generator",
+      "slug": "env-template-generator",
+      "category": "developer-tools",
+      "icon": "🌿",
+      "description": "Generate a ready-to-fill .env template for your stack — Node.js, React, Django, Laravel and more — with comments and placeholders.",
+      "keywords": [
+        "env template generator",
+        "generator template env",
+        "generator",
+        "template",
+        "env"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "exif-metadata-stripper",
+      "name": "EXIF / Metadata Stripper",
+      "slug": "exif-metadata-stripper",
+      "category": "image-tools",
+      "icon": "🕵️",
+      "description": "Remove EXIF, GPS and other hidden metadata from JPGs before publishing or uploading — protects your privacy and shrinks the file.",
+      "keywords": [
+        "exif  metadata stripper",
+        "exif metadata stripper",
+        "stripper metadata exif",
+        "stripper",
+        "metadata",
+        "exif"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "file-hash-verifier",
+      "name": "File Hash / Checksum Verifier",
+      "slug": "file-hash-verifier",
+      "category": "utilities",
+      "icon": "🔐",
+      "description": "Compute the SHA-256 checksum of any file in your browser and compare it against the hash provided by the download source.",
+      "keywords": [
+        "file hash  checksum verifier",
+        "file hash checksum verifier",
+        "verifier checksum hash file",
+        "verifier",
+        "checksum",
+        "hash"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "file-size-batch-checker",
+      "name": "File Size Batch Checker",
+      "slug": "file-size-batch-checker",
+      "category": "utilities",
+      "icon": "📏",
+      "description": "Drop many files and instantly see which ones exceed a size limit you set — sorted biggest first, with a downloadable CSV report.",
+      "keywords": [
+        "file size batch checker",
+        "checker batch size file",
+        "checker",
+        "batch",
+        "size",
+        "file"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "filename-illegal-character-cleaner",
+      "name": "Filename Cleaner",
+      "slug": "filename-illegal-character-cleaner",
+      "category": "utilities",
+      "icon": "🧹",
+      "description": "Strip characters that break filenames on Windows, Mac or cloud uploads, and see exactly what would be replaced.",
+      "keywords": [
+        "filename cleaner",
+        "cleaner filename",
+        "cleaner",
+        "filename"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "gitignore-generator",
+      "name": ".gitignore Generator",
+      "slug": "gitignore-generator",
+      "category": "developer-tools",
+      "icon": "🚫",
+      "description": "Generate a .gitignore file for your project — pick your language or framework and combine multiple presets into one ready-to-use file.",
+      "keywords": [
+        "gitignore generator",
+        "generator gitignore",
+        "generator",
+        "gitignore"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "hashtag-generator",
+      "name": "Hashtag Generator",
+      "slug": "hashtag-generator",
+      "category": "text-tools",
+      "icon": "#️⃣",
+      "description": "Turn a short topic or description into a ready-to-paste set of relevant hashtags for Instagram, X, TikTok or LinkedIn.",
+      "keywords": [
+        "hashtag generator",
+        "generator hashtag",
+        "generator",
+        "hashtag"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "image-dpi-setter",
+      "name": "Image DPI / PPI Setter",
+      "slug": "image-dpi-setter",
+      "category": "image-tools",
+      "icon": "📐",
+      "description": "Set the DPI/PPI metadata of a JPG for print-ready stock submissions without changing the pixel dimensions.",
+      "keywords": [
+        "image dpi  ppi setter",
+        "image dpi ppi setter",
+        "setter ppi dpi image",
+        "setter",
+        "ppi",
+        "dpi"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "image-format-converter",
+      "name": "Image Format Converter",
+      "slug": "image-format-converter",
+      "category": "converters",
+      "icon": "🔄",
+      "description": "Convert images between JPG, PNG and WebP with quality control, and batch-download all results as a ZIP.",
+      "keywords": [
+        "image format converter",
+        "converter format image",
+        "converter",
+        "format",
+        "image"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "keyword-list-formatter",
+      "name": "Keyword List Formatter",
+      "slug": "keyword-list-formatter",
+      "category": "seo-tools",
+      "icon": "🔑",
+      "description": "Paste a messy dump of keywords and get a clean, deduplicated, alphabetized list — ready as comma-separated text, lines or CSV.",
+      "keywords": [
+        "keyword list formatter",
+        "formatter list keyword",
+        "formatter",
+        "list",
+        "keyword"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "license-text-generator",
+      "name": "License Text Generator",
+      "slug": "license-text-generator",
+      "category": "developer-tools",
+      "icon": "⚖️",
+      "description": "Generate the full text of MIT, Apache 2.0 or GPL-3.0 licenses with your name and year filled in — ready to save as LICENSE.",
+      "keywords": [
+        "license text generator",
+        "generator text license",
+        "generator",
+        "text",
+        "license"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "meta-description-length-checker",
+      "name": "Meta Description Length Checker",
+      "slug": "meta-description-length-checker",
+      "category": "seo-tools",
+      "icon": "📝",
+      "description": "Check how your meta description will look in Google search results and whether it fits the recommended character limits.",
+      "keywords": [
+        "meta description length checker",
+        "checker length description meta",
+        "checker",
+        "length",
+        "description",
+        "meta"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "package-json-validator",
+      "name": "package.json Validator",
+      "slug": "package-json-validator",
+      "category": "developer-tools",
+      "icon": "📦",
+      "description": "Validate and format your package.json — check required fields, version syntax and JSON validity with clear error messages.",
+      "keywords": [
+        "packagejson validator",
+        "validator packagejson",
+        "validator",
+        "packagejson"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "readme-template-generator",
+      "name": "README Template Generator",
+      "slug": "readme-template-generator",
+      "category": "developer-tools",
+      "icon": "📖",
+      "description": "Generate a professional README.md for your project — title, badges, features, installation, usage and license sections with your details filled in.",
+      "keywords": [
+        "readme template generator",
+        "generator template readme",
+        "generator",
+        "template",
+        "readme"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "slug-generator",
+      "name": "Slug Generator",
+      "slug": "slug-generator",
+      "category": "seo-tools",
+      "icon": "🔗",
+      "description": "Turn any post title into a clean URL slug for your blog or website — lowercase, hyphenated and ready to paste into your CMS.",
+      "keywords": [
+        "slug generator",
+        "generator slug",
+        "generator",
+        "slug"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "text-file-encoding-converter",
+      "name": "Text File Encoding Converter",
+      "slug": "text-file-encoding-converter",
+      "category": "converters",
+      "icon": "🔡",
+      "description": "Convert text files between UTF-8 and UTF-16 with live preview, then re-save with the correct encoding and optional BOM.",
+      "keywords": [
+        "text file encoding converter",
+        "converter encoding file text",
+        "converter",
+        "encoding",
+        "file",
+        "text"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "thumbnail-grid-generator",
+      "name": "Thumbnail Grid / Contact Sheet Generator",
+      "slug": "thumbnail-grid-generator",
+      "category": "image-tools",
+      "icon": "🖨️",
+      "description": "Combine a batch of images into a single printable contact sheet grid to review them all at a glance before submission.",
+      "keywords": [
+        "thumbnail grid  contact sheet generator",
+        "thumbnail grid contact sheet generator",
+        "generator sheet contact grid thumbnail",
+        "generator",
+        "sheet",
+        "contact"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "title-tag-length-checker",
+      "name": "Title Tag Length Checker",
+      "slug": "title-tag-length-checker",
+      "category": "seo-tools",
+      "icon": "🔖",
+      "description": "Check how your page title tag renders in Google search results and whether it fits the recommended 50–60 character range.",
+      "keywords": [
+        "title tag length checker",
+        "checker length tag title",
+        "checker",
+        "length",
+        "tag",
+        "title"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "transparent-png-checker",
+      "name": "Transparent PNG Checker",
+      "slug": "transparent-png-checker",
+      "category": "image-tools",
+      "icon": "🫥",
+      "description": "Upload a PNG and instantly confirm whether it actually contains transparent pixels, and exactly how much of the image is transparent.",
+      "keywords": [
+        "transparent png checker",
+        "checker png transparent",
+        "checker",
+        "png",
+        "transparent"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "watermark-adder",
+      "name": "Watermark Adder",
+      "slug": "watermark-adder",
+      "category": "image-tools",
+      "icon": "💧",
+      "description": "Add a text watermark to your images for portfolio previews — position, size and opacity control, then batch-download as a ZIP.",
+      "keywords": [
+        "watermark adder",
+        "adder watermark",
+        "adder",
+        "watermark"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "word-char-counter",
+      "name": "Word & Character Counter",
+      "slug": "word-char-counter",
+      "category": "text-tools",
+      "icon": "🔢",
+      "description": "Count words, characters and reading time, and check your text against the limits of Instagram, X/Twitter and YouTube descriptions live.",
+      "keywords": [
+        "word  character counter",
+        "word character counter",
+        "counter character word",
+        "counter",
+        "character",
+        "word"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "zip-creator",
+      "name": "ZIP Creator",
+      "slug": "zip-creator",
+      "category": "utilities",
+      "icon": "🗜️",
+      "description": "Bundle any selection of files into a single .zip archive right in your browser, with optional per-file name edits.",
+      "keywords": [
+        "zip creator",
+        "creator zip",
+        "creator",
+        "zip"
+      ],
+      "featured": false,
+      "isNew": true
+    },
+    {
+      "id": "zip-extractor",
+      "name": "ZIP Extractor",
+      "slug": "zip-extractor",
+      "category": "utilities",
+      "icon": "📦",
+      "description": "Open a .zip file in your browser, browse its contents, and extract individual files or everything without installing anything.",
+      "keywords": [
+        "zip extractor",
+        "extractor zip",
+        "extractor",
+        "zip"
+      ],
       "featured": false,
       "isNew": true
     }

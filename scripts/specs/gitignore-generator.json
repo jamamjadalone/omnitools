@@ -1,0 +1,42 @@
+{
+  "id": "gitignore-generator",
+  "slug": "gitignore-generator",
+  "name": ".gitignore Generator",
+  "category": "developer-tools",
+  "categoryName": "Developer Tools",
+  "icon": "🚫",
+  "description": "Generate a .gitignore file for your project — pick your language or framework and combine multiple presets into one ready-to-use file.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label>Choose presets (you can select several)</label>\n        <div id=\"presetBox\" style=\"display:grid;gap:6px;\">\n          <label class=\"checkbox-field\"><input type=\"checkbox\" class=\"presetCheck\" value=\"node\"> Node.js</label>\n          <label class=\"checkbox-field\"><input type=\"checkbox\" class=\"presetCheck\" value=\"python\"> Python</label>\n          <label class=\"checkbox-field\"><input type=\"checkbox\" class=\"presetCheck\" value=\"java\"> Java</label>\n          <label class=\"checkbox-field\"><input type=\"checkbox\" class=\"presetCheck\" value=\"dotnet\"> .NET / C#</label>\n          <label class=\"checkbox-field\"><input type=\"checkbox\" class=\"presetCheck\" value=\"php\"> PHP</label>\n          <label class=\"checkbox-field\"><input type=\"checkbox\" class=\"presetCheck\" value=\"ruby\"> Ruby / Rails</label>\n          <label class=\"checkbox-field\"><input type=\"checkbox\" class=\"presetCheck\" value=\"go\"> Go</label>\n          <label class=\"checkbox-field\"><input type=\"checkbox\" class=\"presetCheck\" value=\"rust\"> Rust</label>\n          <label class=\"checkbox-field\"><input type=\"checkbox\" class=\"presetCheck\" value=\"macos\"> macOS</label>\n          <label class=\"checkbox-field\"><input type=\"checkbox\" class=\"presetCheck\" value=\"windows\"> Windows</label>\n          <label class=\"checkbox-field\"><input type=\"checkbox\" class=\"presetCheck\" value=\"linux\"> Linux</label>\n          <label class=\"checkbox-field\"><input type=\"checkbox\" class=\"presetCheck\" value=\"ide\"> Editors / IDEs</label>\n          <label class=\"checkbox-field\"><input type=\"checkbox\" class=\"presetCheck\" value=\"env\"> Environment / secrets</label>\n        </div>\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"generateBtn\">Generate .gitignore</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Generated .gitignore</h3>\n      <div class=\"output-box\" id=\"outputBox\" style=\"max-height:420px;\">Your .gitignore will appear here.</div>\n      <div class=\"copy-row\" style=\"justify-content:flex-start;margin-top:12px;\">\n        <button class=\"btn btn-secondary btn-sm\" id=\"copyBtn\">Copy</button>\n        <button class=\"btn btn-primary btn-sm\" id=\"downloadBtn\">Download .gitignore</button>\n      </div>\n    </div>\n  </div>",
+  "howto": [
+    "Tick the presets that match your project — frameworks, OS and editors.",
+    "Click <strong>Generate .gitignore</strong>.",
+    "Combined rules appear in the right panel with section headers.",
+    "Copy the content or download it as a .gitignore file.",
+    "Place the file in your project root before your first commit."
+  ],
+  "features": [
+    "13 presets covering languages, frameworks, OS and editors",
+    "Multiple presets combined into one file",
+    "Section headers for readability",
+    "Copy or download",
+    "Client-side generation"
+  ],
+  "faq": [
+    {
+      "q": "What is a .gitignore file?",
+      "a": "It tells git which files and folders to ignore, so build output, dependencies and secrets are never committed to your repository."
+    },
+    {
+      "q": "Can I combine presets?",
+      "a": "Yes — that is the point. A Node.js project on macOS, for example, ticks Node.js + macOS, and both rule sets are merged with headers."
+    },
+    {
+      "q": "Is .gitignore enough to protect secrets?",
+      "a": "It prevents accidental commits going forward, but once a secret is committed it stays in history. Use it alongside rotating any credentials you have already pushed."
+    },
+    {
+      "q": "Is the file uploaded anywhere?",
+      "a": "No. It is generated locally in your browser."
+    }
+  ]
+}

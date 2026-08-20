@@ -1,0 +1,42 @@
+{
+  "id": "readme-template-generator",
+  "slug": "readme-template-generator",
+  "name": "README Template Generator",
+  "category": "developer-tools",
+  "categoryName": "Developer Tools",
+  "icon": "📖",
+  "description": "Generate a professional README.md for your project — title, badges, features, installation, usage and license sections with your details filled in.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"projectName\">Project name</label>\n        <input type=\"text\" id=\"projectName\" placeholder=\"my-awesome-project\">\n      </div>\n      <div class=\"field\">\n        <label for=\"projectDesc\">One-line description</label>\n        <input type=\"text\" id=\"projectDesc\" placeholder=\"A short description of what this project does.\">\n      </div>\n      <div class=\"field\">\n        <label for=\"githubUser\">GitHub username / org</label>\n        <input type=\"text\" id=\"githubUser\" placeholder=\"your-username\">\n      </div>\n      <div class=\"field\">\n        <label for=\"licenseSelect\">License</label>\n        <select id=\"licenseSelect\">\n          <option value=\"MIT\">MIT</option>\n          <option value=\"Apache-2.0\">Apache 2.0</option>\n          <option value=\"GPL-3.0\">GPL-3.0</option>\n          <option value=\"none\">None</option>\n        </select>\n      </div>\n      <div class=\"checkbox-field\" style=\"margin-bottom:14px;\">\n        <input type=\"checkbox\" id=\"badgesCheck\" checked>\n        <label for=\"badgesCheck\">Include badge row</label>\n      </div>\n      <div class=\"checkbox-field\" style=\"margin-bottom:14px;\">\n        <input type=\"checkbox\" id=\"installCheck\" checked>\n        <label for=\"installCheck\">Include install &amp; usage sections</label>\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"generateBtn\">Generate README</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Generated README.md</h3>\n      <div class=\"output-box\" id=\"outputBox\" style=\"max-height:420px;\">Your README will appear here.</div>\n      <div class=\"copy-row\" style=\"justify-content:flex-start;margin-top:12px;\">\n        <button class=\"btn btn-secondary btn-sm\" id=\"copyBtn\">Copy</button>\n        <button class=\"btn btn-primary btn-sm\" id=\"downloadBtn\">Download README.md</button>\n      </div>\n    </div>\n  </div>",
+  "howto": [
+    "Enter your project name, a one-line description and your GitHub username.",
+    "Choose a license and the sections you want.",
+    "Click <strong>Generate README</strong>.",
+    "Review the markdown preview — badge URLs are built from your GitHub details.",
+    "Copy it or download as README.md and drop it in your repo root."
+  ],
+  "features": [
+    "Professional structure: badges, features, install, usage, contributing, license",
+    "Badge row built from your GitHub username and repo name",
+    "License badge and section matched to your selection",
+    "Copy or download as markdown",
+    "Client-side generation"
+  ],
+  "faq": [
+    {
+      "q": "Are the badges real?",
+      "a": "Yes — they use shields.io URLs constructed from your GitHub username and repo name, so they render live once your repo exists."
+    },
+    {
+      "q": "Can I use this for a private project?",
+      "a": "Yes. Just leave the GitHub username empty to skip the badge row, or keep it — badges on private repos simply show the generic values."
+    },
+    {
+      "q": "Will the README match my project exactly?",
+      "a": "It is a solid starting template. Customize the sections and wording to fit your project before committing."
+    },
+    {
+      "q": "Is the README uploaded?",
+      "a": "No. It is generated entirely in your browser."
+    }
+  ]
+}

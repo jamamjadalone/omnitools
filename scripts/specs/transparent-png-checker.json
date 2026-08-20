@@ -1,0 +1,42 @@
+{
+  "id": "transparent-png-checker",
+  "slug": "transparent-png-checker",
+  "name": "Transparent PNG Checker",
+  "category": "image-tools",
+  "categoryName": "Image Tools",
+  "icon": "🫥",
+  "description": "Upload a PNG and instantly confirm whether it actually contains transparent pixels, and exactly how much of the image is transparent.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"dropzone\" id=\"dropzone\" tabindex=\"0\" role=\"button\" aria-label=\"Upload a PNG to check transparency\">\n        <div class=\"dz-icon\" aria-hidden=\"true\">🫥</div>\n        <p>Drop a PNG here or click to browse</p>\n        <p class=\"dz-hint\">Works with PNG and WebP — checked locally</p>\n        <input type=\"file\" id=\"fileInput\" accept=\"image/png,image/webp\" hidden>\n      </div>\n    </div>\n    <div class=\"tool-panel\">\n      <div id=\"emptyState\"><p style=\"color:var(--text-faint);text-align:center;\">Upload a PNG to check for transparency.</p></div>\n      <div id=\"results\" style=\"display:none;\">\n        <div id=\"verdictAlert\" class=\"alert\" style=\"margin-bottom:16px;\"></div>\n        <div class=\"stat-row\">\n          <div class=\"stat\"><b id=\"statSize\">—</b><span>Dimensions</span></div>\n          <div class=\"stat\"><b id=\"statTransparent\">—</b><span>Transparent %</span></div>\n          <div class=\"stat\"><b id=\"statFully\">—</b><span>Fully transparent px</span></div>\n        </div>\n        <div class=\"result-preview\" style=\"margin-top:16px;\">\n          <img id=\"previewImg\" alt=\"Preview of your PNG\">\n        </div>\n      </div>\n    </div>\n  </div>",
+  "howto": [
+    "Drop a PNG (or WebP) onto the dropzone.",
+    "The tool scans every pixel for an alpha channel below 255.",
+    "A clear verdict tells you whether transparency exists and what percentage of the image is transparent.",
+    "Use this to confirm your file is truly a transparent PNG before submission or publishing.",
+    "Pair it with the Background Edge Checker to inspect the quality of the transparent edges."
+  ],
+  "features": [
+    "Pixel-level alpha channel analysis",
+    "Clear has-transparency / no-transparency verdict",
+    "Percentage and fully-transparent pixel stats",
+    "Image preview on a checkerboard background",
+    "Fully client-side"
+  ],
+  "faq": [
+    {
+      "q": "What counts as transparent?",
+      "a": "Any pixel with an alpha value below 255 is considered transparent. Fully transparent pixels have alpha 0 — you can see through them completely."
+    },
+    {
+      "q": "Why is checking transparency useful?",
+      "a": "Some stock platforms reject transparent images unless you have approval, while marketplaces selling cut-outs require it. Knowing for certain avoids surprises at submission time."
+    },
+    {
+      "q": "Does a JPG ever have transparency?",
+      "a": "No. JPEG has no alpha channel. If a file was saved with .jpg but truly contains transparency, it was actually saved as PNG — run the File Type Detector to confirm the real format."
+    },
+    {
+      "q": "Is my image uploaded?",
+      "a": "No. The check runs entirely in your browser by reading the image data locally."
+    }
+  ]
+}

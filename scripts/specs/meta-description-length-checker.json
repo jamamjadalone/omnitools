@@ -1,0 +1,42 @@
+{
+  "id": "meta-description-length-checker",
+  "slug": "meta-description-length-checker",
+  "name": "Meta Description Length Checker",
+  "category": "seo-tools",
+  "categoryName": "SEO Tools",
+  "icon": "📝",
+  "description": "Check how your meta description will look in Google search results and whether it fits the recommended character limits.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"descriptionInput\">Your meta description</label>\n        <textarea id=\"descriptionInput\" rows=\"6\" placeholder=\"Write a compelling 150-160 character description of your page...\" maxlength=\"320\"></textarea>\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"checkBtn\">Check &amp; preview</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Google result preview</h3>\n      <div id=\"serpPreview\" class=\"serp-box\">\n        <div class=\"serp-url\">https://example.com/your-page-slug</div>\n        <div class=\"serp-title\">Your Page Title | Your Site</div>\n        <div class=\"serp-desc\" id=\"serpDesc\">Your description will appear here.</div>\n      </div>\n      <div class=\"stat-row\" style=\"margin-top:20px;\">\n        <div class=\"stat\"><b id=\"charCount\">0</b><span>Characters</span></div>\n        <div class=\"stat\"><b id=\"wordCount\">0</b><span>Words</span></div>\n        <div class=\"stat\"><b id=\"statusBadge\" style=\"color:var(--success);\">—</b><span>Status</span></div>\n      </div>\n      <div id=\"adviceBox\" style=\"margin-top:16px;\"></div>\n    </div>\n  </div>",
+  "howto": [
+    "Paste or type your meta description.",
+    "Click <strong>Check &amp; preview</strong> (or it updates live).",
+    "See exactly how it renders in a Google-style result preview.",
+    "Read the character count, word count and status badge.",
+    "Use the advice panel to tune the length toward the recommended 150–160 characters."
+  ],
+  "features": [
+    "Live Google-style search result preview",
+    "Character and word counting",
+    "Clear under / ideal / over status with recommendations",
+    "Visual truncation indicator on overflow",
+    "Client-side, no data sent anywhere"
+  ],
+  "faq": [
+    {
+      "q": "What is the ideal meta description length?",
+      "a": "Around 150–160 characters. Descriptions that are too long get truncated in search results with an ellipsis, cutting off your call to action."
+    },
+    {
+      "q": "Does Google always show the full description?",
+      "a": "No. Google frequently rewrites or truncates descriptions based on the query. Aiming for 150–160 characters is the safest guideline."
+    },
+    {
+      "q": "Do meta descriptions affect ranking?",
+      "a": "Not directly as a ranking factor, but they strongly affect click-through rate, which indirectly benefits your SEO."
+    },
+    {
+      "q": "Should I add keywords to the description?",
+      "a": "Include your main keyword naturally, but write for humans first. Keyword-stuffed descriptions look spammy and can be rewritten by Google."
+    }
+  ]
+}

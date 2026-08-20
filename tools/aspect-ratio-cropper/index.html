@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aspect Ratio Cropper — Free Online Tool | OmniTools</title>
+<meta name="description" content="Crop any image to a specific aspect ratio with common presets — 1:1, 4:3, 16:9 and stock-platform squares — then download it.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/aspect-ratio-cropper/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aspect Ratio Cropper — OmniTools">
+<meta property="og:description" content="Crop any image to a specific aspect ratio with common presets — 1:1, 4:3, 16:9 and stock-platform squares — then download it.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/aspect-ratio-cropper/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Aspect Ratio Cropper",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Crop any image to a specific aspect ratio with common presets — 1:1, 4:3, 16:9 and stock-platform squares — then download it."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Image Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/image-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "Aspect Ratio Cropper", "item": "https://jamamjadalone.github.io/omnitools/tools/aspect-ratio-cropper/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="aspect-ratio-cropper" data-category-of-tool="image-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/image-tools.html">Image Tools</a><span>/</span>
+    <span>Aspect Ratio Cropper</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">✂️</span>
+    <div>
+      <h1>Aspect Ratio Cropper</h1>
+      <p class="tool-sub">Crop any image to a specific aspect ratio with common presets — 1:1, 4:3, 16:9 and stock-platform squares — then download it.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="ratioSelect">Aspect ratio</label>
+        <select id="ratioSelect">
+          <option value="1:1">1:1 (square)</option>
+          <option value="4:3">4:3</option>
+          <option value="3:2">3:2</option>
+          <option value="16:9">16:9 (widescreen)</option>
+          <option value="9:16">9:16 (vertical)</option>
+          <option value="2:3">2:3 (portrait print)</option>
+          <option value="free">Freeform</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="formatSelect">Output format</label>
+        <select id="formatSelect">
+          <option value="image/jpeg">JPG</option>
+          <option value="image/png">PNG</option>
+          <option value="image/webp">WebP</option>
+        </select>
+      </div>
+      <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Upload an image to crop">
+        <div class="dz-icon" aria-hidden="true">✂️</div>
+        <p>Drop an image here or click to browse</p>
+        <p class="dz-hint">Drag the crop box to frame your subject</p>
+        <input type="file" id="fileInput" accept="image/*" hidden>
+      </div>
+      <button class="btn btn-primary btn-block" id="downloadBtn" style="margin-top:16px;" disabled>Download crop</button>
+    </div>
+    <div class="tool-panel">
+      <div id="emptyState"><p style="color:var(--text-faint);text-align:center;">Upload an image to start cropping.</p></div>
+      <div id="cropWrap" style="display:none;">
+        <div class="crop-stage" id="cropStage">
+          <canvas id="sourceCanvas" style="display:none;"></canvas>
+          <div class="crop-overlay" id="cropOverlay"></div>
+        </div>
+        <p style="font-size:.8rem;color:var(--text-faint);margin-top:8px;text-align:center;">Click and drag to reposition the crop area.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>__ABOUT__</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+            <li>Pick the target aspect ratio (square, 16:9, stock squares and more).</li>
+      <li>Upload your image.</li>
+      <li>Drag inside the crop area to position the crop frame over the best part of the image.</li>
+      <li>Choose the output format (JPG, PNG or WebP).</li>
+      <li>Click <strong>Download crop</strong> to save the result.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+            <li>Presets for 1:1, 4:3, 3:2, 16:9, 9:16 and 2:3</li>
+      <li>Freeform mode for any ratio you type</li>
+      <li>Drag-to-position crop with live preview</li>
+      <li>JPG, PNG and WebP output</li>
+      <li>Processed entirely in your browser</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Do stock platforms prefer a specific aspect ratio? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Many platforms feature square and 4:3 images prominently, and some categories expect exact ratios. This tool covers the most common presets plus freeform.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Is cropping lossy? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Cropping discards pixels outside the frame — that is expected. The remaining pixels are re-encoded at full quality, so there is no additional quality loss beyond the crop itself.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Can I set a custom ratio like 5:4? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Yes. Choose Freeform and type any ratio such as 5:4 or 21:9 in the width:height format.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Is my image uploaded? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. Everything happens locally on a canvas; nothing is sent to a server.</p></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

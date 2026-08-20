@@ -1,0 +1,42 @@
+{
+  "id": "keyword-list-formatter",
+  "slug": "keyword-list-formatter",
+  "name": "Keyword List Formatter",
+  "category": "seo-tools",
+  "categoryName": "SEO Tools",
+  "icon": "🔑",
+  "description": "Paste a messy dump of keywords and get a clean, deduplicated, alphabetized list — ready as comma-separated text, lines or CSV.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"inputArea\">Messy keyword dump</label>\n        <textarea id=\"inputArea\" rows=\"8\" placeholder=\"SEO&#10;seo tools, seo&#10;keyword research&#10;SEo&#10;keyword,  research&#10;seo tools\"></textarea>\n      </div>\n      <div class=\"field\">\n        <label for=\"outputFormat\">Output format</label>\n        <select id=\"outputFormat\">\n          <option value=\"comma\">Comma-separated</option>\n          <option value=\"lines\">One per line</option>\n          <option value=\"quoted\">Quoted, comma-separated</option>\n          <option value=\"csv\">CSV (one column)</option>\n        </select>\n      </div>\n      <div class=\"checkbox-field\" style=\"margin-bottom:14px;\">\n        <input type=\"checkbox\" id=\"dedupeCheck\" checked>\n        <label for=\"dedupeCheck\">Remove duplicates</label>\n      </div>\n      <div class=\"checkbox-field\" style=\"margin-bottom:14px;\">\n        <input type=\"checkbox\" id=\"sortCheck\" checked>\n        <label for=\"sortCheck\">Sort alphabetically</label>\n      </div>\n      <div class=\"checkbox-field\" style=\"margin-bottom:14px;\">\n        <input type=\"checkbox\" id=\"lowerCheck\" checked>\n        <label for=\"lowerCheck\">Lowercase all keywords</label>\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"formatBtn\">Format keywords</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Result <span id=\"countBadge\" class=\"badge\">0</span></h3>\n      <div class=\"output-box\" id=\"outputBox\" style=\"max-height:320px;\">Your formatted keywords will appear here.</div>\n      <div class=\"copy-row\" style=\"justify-content:flex-start;margin-top:12px;\">\n        <button class=\"btn btn-secondary btn-sm\" id=\"copyBtn\">Copy</button>\n        <button class=\"btn btn-secondary btn-sm\" id=\"downloadBtn\">Download</button>\n      </div>\n    </div>\n  </div>",
+  "howto": [
+    "Paste your raw keyword dump — commas, newlines, spaces and duplicates all fine.",
+    "Choose the output format (comma-separated, lines, quoted or CSV).",
+    "Toggle dedupe, sorting and lowercasing as needed.",
+    "Click <strong>Format keywords</strong>.",
+    "Copy the clean list or download it as a file."
+  ],
+  "features": [
+    "Handles any messy separator — commas, newlines, tabs, spaces",
+    "Duplicate removal with case-insensitive matching",
+    "Alphabetical sorting",
+    "Four output formats including CSV",
+    "Fully client-side"
+  ],
+  "faq": [
+    {
+      "q": "What counts as a duplicate?",
+      "a": "Keywords are compared case-insensitively after trimming, so 'SEO' and 'seo' are treated as the same keyword and only one is kept."
+    },
+    {
+      "q": "Can I export to CSV?",
+      "a": "Yes. Choose the CSV format and the list downloads as a one-column file you can open in any spreadsheet."
+    },
+    {
+      "q": "Will multi-word keywords be split?",
+      "a": "No. Keywords are separated by the punctuation in your input (commas, newlines, tabs), so 'keyword research' stays as one keyword."
+    },
+    {
+      "q": "Is my keyword data uploaded?",
+      "a": "No. Formatting happens entirely in your browser."
+    }
+  ]
+}

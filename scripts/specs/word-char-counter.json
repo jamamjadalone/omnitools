@@ -1,0 +1,42 @@
+{
+  "id": "word-char-counter",
+  "slug": "word-char-counter",
+  "name": "Word & Character Counter",
+  "category": "text-tools",
+  "categoryName": "Text Tools",
+  "icon": "🔢",
+  "description": "Count words, characters and reading time, and check your text against the limits of Instagram, X/Twitter and YouTube descriptions live.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"textInput\">Your text</label>\n        <textarea id=\"textInput\" rows=\"10\" placeholder=\"Type or paste your post, description or caption here...\"></textarea>\n      </div>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Counts</h3>\n      <div class=\"stat-row\">\n        <div class=\"stat\"><b id=\"charCount\">0</b><span>Characters</span></div>\n        <div class=\"stat\"><b id=\"wordCount\">0</b><span>Words</span></div>\n        <div class=\"stat\"><b id=\"sentenceCount\">0</b><span>Sentences</span></div>\n        <div class=\"stat\"><b id=\"readingTime\">0s</b><span>Read time</span></div>\n      </div>\n      <h3 style=\"margin:24px 0 12px;\">Platform limits</h3>\n      <div id=\"limitBox\" style=\"display:grid;gap:10px;\"></div>\n    </div>\n  </div>",
+  "howto": [
+    "Type or paste your text into the input.",
+    "Word, character, sentence and reading-time counts update live.",
+    "The platform limits panel shows how you compare to Instagram, X/Twitter and YouTube description limits.",
+    "Each limit shows your current usage as a progress bar and remaining budget.",
+    "Edit your text until it fits the target platform."
+  ],
+  "features": [
+    "Live word, character and sentence counting",
+    "Reading time estimate",
+    "Platform limits for Instagram, X/Twitter and YouTube descriptions",
+    "Visual progress bars with remaining budget",
+    "Fully client-side"
+  ],
+  "faq": [
+    {
+      "q": "What are the platform character limits?",
+      "a": "Instagram captions allow 2,200 characters; X/Twitter posts allow 280; YouTube descriptions allow 5,000. This tool shows your live position against all three."
+    },
+    {
+      "q": "What counts as a word?",
+      "a": "Any group of characters separated by spaces or newlines. Punctuation attached to a word is included in the character count but not counted separately."
+    },
+    {
+      "q": "Does the count include spaces?",
+      "a": "Yes, the character count includes spaces, matching how most platform character limits are enforced."
+    },
+    {
+      "q": "Is my text uploaded?",
+      "a": "No. All counting happens in your browser instantly."
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filename Cleaner — Free Online Tool | OmniTools</title>
+<meta name="description" content="Strip characters that break filenames on Windows, Mac or cloud uploads, and see exactly what would be replaced.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/filename-illegal-character-cleaner/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Filename Cleaner — OmniTools">
+<meta property="og:description" content="Strip characters that break filenames on Windows, Mac or cloud uploads, and see exactly what would be replaced.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/filename-illegal-character-cleaner/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Filename Cleaner",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Strip characters that break filenames on Windows, Mac or cloud uploads, and see exactly what would be replaced."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Utilities", "item": "https://jamamjadalone.github.io/omnitools/categories/utilities.html" },
+    { "@type": "ListItem", "position": 3, "name": "Filename Cleaner", "item": "https://jamamjadalone.github.io/omnitools/tools/filename-illegal-character-cleaner/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="filename-illegal-character-cleaner" data-category-of-tool="utilities">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/utilities.html">Utilities</a><span>/</span>
+    <span>Filename Cleaner</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">🧹</span>
+    <div>
+      <h1>Filename Cleaner</h1>
+      <p class="tool-sub">Strip characters that break filenames on Windows, Mac or cloud uploads, and see exactly what would be replaced.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="fileNameInput">File name to clean</label>
+        <input type="text" id="fileNameInput" placeholder="my: file* ?name\1.txt">
+      </div>
+      <div class="field">
+        <label for="platformSelect">Target platform</label>
+        <select id="platformSelect">
+          <option value="windows">Windows</option>
+          <option value="mac">Mac / Linux</option>
+          <option value="cloud">Cloud upload (Drive / Dropbox)</option>
+          <option value="all">All platforms (strict)</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="replacementInput">Replace illegal characters with</label>
+        <input type="text" id="replacementInput" value="-">
+      </div>
+      <button class="btn btn-primary btn-block" id="cleanBtn">Clean filename</button>
+      <div class="copy-row" style="justify-content:flex-start;margin-top:12px;">
+        <button class="btn btn-secondary btn-sm" id="copyBtn">Copy result</button>
+      </div>
+    </div>
+    <div class="tool-panel">
+      <h3 style="margin-bottom:12px;">Result</h3>
+      <div class="output-box" id="outputBox">Your cleaned filename will appear here.</div>
+      <div id="detailBox" style="margin-top:12px;display:grid;gap:6px;"></div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>__ABOUT__</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+            <li>Type or paste the filename (with extension) into the input.</li>
+      <li>Pick the platform you are uploading to — this controls which characters are illegal.</li>
+      <li>Choose the replacement character (a hyphen by default).</li>
+      <li>Click <strong>Clean filename</strong>.</li>
+      <li>Review which characters were replaced in the detail list, then copy the cleaned name.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+            <li>Platform-specific rules for Windows, Mac/Linux, cloud uploads and strict-all</li>
+      <li>Live detail of every character replaced</li>
+      <li>Custom replacement character</li>
+      <li>Protects against reserved names like CON, PRN, NUL</li>
+      <li>Fully client-side</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Which characters break Windows filenames? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Windows forbids < > : " / \ | ? * and control characters, plus reserved device names like CON, PRN, AUX, NUL, COM1-9 and LPT1-9. The Windows preset handles all of these.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What is different on Mac and Linux? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Mac and Linux only forbid the forward slash (/) and null bytes. The tool still replaces other awkward characters for safety but applies the stricter Windows rules only on the Windows preset.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What about cloud uploads? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Cloud drives often reject certain characters and reserve names too. The cloud preset keeps it safe for Drive and Dropbox while staying friendly.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Does this rename my actual files? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. It produces the cleaned name for you to copy. To rename many files at once, use the Batch File Renamer.</p></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+/* Tool-specific styles */
+#cropStage{
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  cursor: move;
+  touch-action: none;
+  user-select: none;
+}
+#cropOverlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 2px solid var(--accent-2);
+  box-shadow: 0 0 0 9999px rgba(0,0,0,0.55);
+  cursor: move;
+  touch-action: none;
+  background: transparent;
+}

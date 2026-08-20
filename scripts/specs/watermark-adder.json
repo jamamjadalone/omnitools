@@ -1,0 +1,47 @@
+{
+  "id": "watermark-adder",
+  "slug": "watermark-adder",
+  "name": "Watermark Adder",
+  "category": "image-tools",
+  "categoryName": "Image Tools",
+  "icon": "💧",
+  "description": "Add a text watermark to your images for portfolio previews — position, size and opacity control, then batch-download as a ZIP.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"watermarkText\">Watermark text</label>\n        <input type=\"text\" id=\"watermarkText\" value=\"© Your Name\">\n      </div>\n      <div class=\"field\">\n        <label for=\"positionSelect\">Position</label>\n        <select id=\"positionSelect\">\n          <option value=\"bottom-right\">Bottom right</option>\n          <option value=\"bottom-left\">Bottom left</option>\n          <option value=\"top-right\">Top right</option>\n          <option value=\"top-left\">Top left</option>\n          <option value=\"center\">Center</option>\n        </select>\n      </div>\n      <div class=\"field\">\n        <label for=\"opacityRange\">Opacity: <span id=\"opacityValue\" class=\"range-value\">60%</span></label>\n        <input type=\"range\" id=\"opacityRange\" min=\"10\" max=\"100\" value=\"60\">\n      </div>\n      <div class=\"field\">\n        <label for=\"sizeRange\">Text size: <span id=\"sizeValue\" class=\"range-value\">5%</span></label>\n        <input type=\"range\" id=\"sizeRange\" min=\"1\" max=\"15\" value=\"5\">\n      </div>\n      <div class=\"dropzone\" id=\"dropzone\" tabindex=\"0\" role=\"button\" aria-label=\"Upload images to watermark\">\n        <div class=\"dz-icon\" aria-hidden=\"true\">💧</div>\n        <p>Drop images here or click to browse</p>\n        <p class=\"dz-hint\">JPG, PNG and WebP — processed locally</p>\n        <input type=\"file\" id=\"fileInput\" accept=\"image/*\" multiple hidden>\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"downloadBtn\" style=\"margin-top:16px;\" disabled>Download watermarked (ZIP)</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Preview</h3>\n      <div class=\"result-preview\">\n        <img id=\"previewImg\" alt=\"Preview with watermark\">\n      </div>\n      <div id=\"progressWrap\" style=\"display:none;margin-top:14px;\">\n        <div style=\"display:flex;align-items:center;gap:10px;\"><span class=\"spinner\"></span><span style=\"font-size:.85rem;color:var(--text-dim);\">Applying…</span></div>\n      </div>\n    </div>\n  </div>",
+  "howto": [
+    "Type your watermark text — add © and your name or brand.",
+    "Choose a position, opacity and relative text size.",
+    "Drop one or more images onto the dropzone.",
+    "A live preview shows the first image with the watermark applied.",
+    "Click <strong>Download watermarked</strong> to export all images in a ZIP."
+  ],
+  "features": [
+    "Text watermark with © symbol support",
+    "Five position presets",
+    "Opacity and size sliders with live preview",
+    "Batch watermarking with ZIP export",
+    "Client-side only"
+  ],
+  "faq": [
+    {
+      "q": "Can I upload my logo as a watermark?",
+      "a": "This tool draws text watermarks. For a logo image, you would need an image-editing tool — but the text option covers the common ©-name case for portfolios."
+    },
+    {
+      "q": "Does watermarking change image quality?",
+      "a": "It re-encodes the image with the watermark drawn on top. Use high quality output; the visual change is just the watermark itself."
+    },
+    {
+      "q": "Is the watermark removable?",
+      "a": "Once burned into the pixels, the watermark cannot be cleanly removed. That is the point — it deters unauthorized use of portfolio previews."
+    },
+    {
+      "q": "Are my images uploaded?",
+      "a": "No. Watermarking runs on a canvas locally and the result is downloaded from your browser."
+    }
+  ],
+  "extraScripts": [
+    "../../assets/js/vendor/jszip.min.js",
+    "../../assets/js/vendor/filesaver.min.js",
+    "../../assets/js/helpers/zip-export.js"
+  ]
+}

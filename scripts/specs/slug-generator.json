@@ -1,0 +1,45 @@
+{
+  "id": "slug-generator",
+  "slug": "slug-generator",
+  "name": "Slug Generator",
+  "category": "seo-tools",
+  "categoryName": "SEO Tools",
+  "icon": "🔗",
+  "description": "Turn any post title into a clean URL slug for your blog or website — lowercase, hyphenated and ready to paste into your CMS.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"inputText\">Post title or text</label>\n        <textarea id=\"inputText\" rows=\"4\" placeholder=\"How to Grow Tomatoes in Small Spaces\"></textarea>\n      </div>\n      <div class=\"field\">\n        <label for=\"separatorSelect\">Separator</label>\n        <select id=\"separatorSelect\">\n          <option value=\"-\">Hyphen ( - )</option>\n          <option value=\"_\">Underscore ( _ )</option>\n          <option value=\"none\">None</option>\n        </select>\n      </div>\n      <div class=\"checkbox-field\" style=\"margin-bottom:14px;\">\n        <input type=\"checkbox\" id=\"stripStopwords\" checked>\n        <label for=\"stripStopwords\">Remove common stop words (a, the, of, to...)</label>\n      </div>\n      <div class=\"field\">\n        <label for=\"outputText\">Result</label>\n        <div class=\"output-box\" id=\"outputText\">Your URL slug will appear here.</div>\n      </div>\n      <div class=\"copy-row\" style=\"justify-content:flex-start;margin-top:12px;\">\n        <button class=\"btn btn-primary btn-sm\" id=\"copyBtn\">Copy slug</button>\n      </div>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Example conversions</h3>\n      <div class=\"output-box\" id=\"examplesBox\" style=\"max-height:420px;\"></div>\n    </div>\n  </div>",
+  "howto": [
+    "Paste your post title into the input.",
+    "Choose a separator — hyphen is the recommended standard for URLs.",
+    "Optionally strip stop words for shorter slugs.",
+    "The result updates instantly.",
+    "Copy the slug and paste it into your CMS URL field."
+  ],
+  "features": [
+    "Instant slug generation from any title",
+    "Hyphen, underscore or concatenated output",
+    "Optional stop-word removal for shorter URLs",
+    "Accent and special-character handling",
+    "Example conversions for reference"
+  ],
+  "faq": [
+    {
+      "q": "What is a URL slug?",
+      "a": "The readable part of a URL that identifies a page — for example in example.com/grow-tomatoes-small-spaces, the slug is grow-tomatoes-small-spaces. Clean slugs help SEO and usability."
+    },
+    {
+      "q": "Should I use hyphens or underscores?",
+      "a": "Hyphens. Search engines treat hyphens as word separators, so each word is indexed individually. Underscores are not treated the same way."
+    },
+    {
+      "q": "Why remove stop words?",
+      "a": "Words like a, the, of and to add little meaning. Removing them yields shorter, cleaner slugs that are easier to read and share."
+    },
+    {
+      "q": "Does this update my website?",
+      "a": "No. It only generates the slug text. You paste it into your CMS when creating the post."
+    }
+  ],
+  "extraScripts": [
+    "../../assets/js/helpers/slugify.js"
+  ]
+}

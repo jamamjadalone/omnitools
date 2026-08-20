@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word & Character Counter — Free Online Tool | OmniTools</title>
+<meta name="description" content="Count words, characters and reading time, and check your text against the limits of Instagram, X/Twitter and YouTube descriptions live.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/word-char-counter/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Word & Character Counter — OmniTools">
+<meta property="og:description" content="Count words, characters and reading time, and check your text against the limits of Instagram, X/Twitter and YouTube descriptions live.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/word-char-counter/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Word & Character Counter",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Count words, characters and reading time, and check your text against the limits of Instagram, X/Twitter and YouTube descriptions live."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Text Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/text-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "Word & Character Counter", "item": "https://jamamjadalone.github.io/omnitools/tools/word-char-counter/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="word-char-counter" data-category-of-tool="text-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/text-tools.html">Text Tools</a><span>/</span>
+    <span>Word & Character Counter</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">🔢</span>
+    <div>
+      <h1>Word & Character Counter</h1>
+      <p class="tool-sub">Count words, characters and reading time, and check your text against the limits of Instagram, X/Twitter and YouTube descriptions live.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="textInput">Your text</label>
+        <textarea id="textInput" rows="10" placeholder="Type or paste your post, description or caption here..."></textarea>
+      </div>
+    </div>
+    <div class="tool-panel">
+      <h3 style="margin-bottom:12px;">Counts</h3>
+      <div class="stat-row">
+        <div class="stat"><b id="charCount">0</b><span>Characters</span></div>
+        <div class="stat"><b id="wordCount">0</b><span>Words</span></div>
+        <div class="stat"><b id="sentenceCount">0</b><span>Sentences</span></div>
+        <div class="stat"><b id="readingTime">0s</b><span>Read time</span></div>
+      </div>
+      <h3 style="margin:24px 0 12px;">Platform limits</h3>
+      <div id="limitBox" style="display:grid;gap:10px;"></div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>__ABOUT__</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+            <li>Type or paste your text into the input.</li>
+      <li>Word, character, sentence and reading-time counts update live.</li>
+      <li>The platform limits panel shows how you compare to Instagram, X/Twitter and YouTube description limits.</li>
+      <li>Each limit shows your current usage as a progress bar and remaining budget.</li>
+      <li>Edit your text until it fits the target platform.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+            <li>Live word, character and sentence counting</li>
+      <li>Reading time estimate</li>
+      <li>Platform limits for Instagram, X/Twitter and YouTube descriptions</li>
+      <li>Visual progress bars with remaining budget</li>
+      <li>Fully client-side</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What are the platform character limits? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Instagram captions allow 2,200 characters; X/Twitter posts allow 280; YouTube descriptions allow 5,000. This tool shows your live position against all three.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What counts as a word? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Any group of characters separated by spaces or newlines. Punctuation attached to a word is included in the character count but not counted separately.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Does the count include spaces? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Yes, the character count includes spaces, matching how most platform character limits are enforced.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Is my text uploaded? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. All counting happens in your browser instantly.</p></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

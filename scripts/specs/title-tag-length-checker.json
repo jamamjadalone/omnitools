@@ -1,0 +1,42 @@
+{
+  "id": "title-tag-length-checker",
+  "slug": "title-tag-length-checker",
+  "name": "Title Tag Length Checker",
+  "category": "seo-tools",
+  "categoryName": "SEO Tools",
+  "icon": "🔖",
+  "description": "Check how your page title tag renders in Google search results and whether it fits the recommended 50–60 character range.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"titleInput\">Your page title</label>\n        <input type=\"text\" id=\"titleInput\" placeholder=\"How to Grow Tomatoes in Small Spaces\">\n      </div>\n      <div class=\"field\">\n        <label for=\"siteInput\">Site name (optional, shown after the title)</label>\n        <input type=\"text\" id=\"siteInput\" placeholder=\"My Garden Blog\">\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"checkBtn\">Check &amp; preview</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Google result preview</h3>\n      <div id=\"serpPreview\" class=\"serp-box\">\n        <div class=\"serp-url\">https://example.com/your-page-slug</div>\n        <div class=\"serp-title\" id=\"serpTitle\">Your page title will appear here.</div>\n        <div class=\"serp-desc\">Your meta description appears here.</div>\n      </div>\n      <div class=\"stat-row\" style=\"margin-top:20px;\">\n        <div class=\"stat\"><b id=\"charCount\">0</b><span>Characters</span></div>\n        <div class=\"stat\"><b id=\"pixelWidth\">0</b><span>Approx. px</span></div>\n        <div class=\"stat\"><b id=\"statusBadge\" style=\"color:var(--success);\">—</b><span>Status</span></div>\n      </div>\n      <div id=\"adviceBox\" style=\"margin-top:16px;\"></div>\n    </div>\n  </div>",
+  "howto": [
+    "Type your page title.",
+    "Optionally add your site name, which appears after the title in results.",
+    "Click <strong>Check &amp; preview</strong> for a live Google-style preview.",
+    "Read the character count and approximate pixel width.",
+    "Use the advice panel to keep the title in the recommended 50–60 character range."
+  ],
+  "features": [
+    "Live Google-style search result preview",
+    "Character count with the 50–60 character guideline",
+    "Approximate pixel-width estimate (mobile and desktop)",
+    "Clear status badge with actionable advice",
+    "Fully client-side"
+  ],
+  "faq": [
+    {
+      "q": "What is the recommended title length?",
+      "a": "50–60 characters is the classic guideline. Google truncates longer titles in search results, so keeping the key phrase early and within range preserves it."
+    },
+    {
+      "q": "Is pixel width a better measure than characters?",
+      "a": "Yes — Google truncates by pixel width, not character count. This tool estimates both, with characters as the quick guideline and pixel width as the finer check."
+    },
+    {
+      "q": "Should my brand name be in the title?",
+      "a": "Putting your brand after the page phrase is common — for example 'Page Title | Brand Name'. Keep the total under the limit and put keywords first."
+    },
+    {
+      "q": "Do title tags affect SEO?",
+      "a": "Yes. Titles are one of the strongest on-page signals and directly affect click-through rate. They are often the first thing a searcher sees."
+    }
+  ]
+}

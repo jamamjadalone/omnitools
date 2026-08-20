@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keyword List Formatter — Free Online Tool | OmniTools</title>
+<meta name="description" content="Paste a messy dump of keywords and get a clean, deduplicated, alphabetized list — ready as comma-separated text, lines or CSV.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/keyword-list-formatter/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Keyword List Formatter — OmniTools">
+<meta property="og:description" content="Paste a messy dump of keywords and get a clean, deduplicated, alphabetized list — ready as comma-separated text, lines or CSV.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/keyword-list-formatter/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Keyword List Formatter",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Paste a messy dump of keywords and get a clean, deduplicated, alphabetized list — ready as comma-separated text, lines or CSV."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "SEO Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/seo-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": "Keyword List Formatter", "item": "https://jamamjadalone.github.io/omnitools/tools/keyword-list-formatter/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="keyword-list-formatter" data-category-of-tool="seo-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/seo-tools.html">SEO Tools</a><span>/</span>
+    <span>Keyword List Formatter</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">🔑</span>
+    <div>
+      <h1>Keyword List Formatter</h1>
+      <p class="tool-sub">Paste a messy dump of keywords and get a clean, deduplicated, alphabetized list — ready as comma-separated text, lines or CSV.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="inputArea">Messy keyword dump</label>
+        <textarea id="inputArea" rows="8" placeholder="SEO&#10;seo tools, seo&#10;keyword research&#10;SEo&#10;keyword,  research&#10;seo tools"></textarea>
+      </div>
+      <div class="field">
+        <label for="outputFormat">Output format</label>
+        <select id="outputFormat">
+          <option value="comma">Comma-separated</option>
+          <option value="lines">One per line</option>
+          <option value="quoted">Quoted, comma-separated</option>
+          <option value="csv">CSV (one column)</option>
+        </select>
+      </div>
+      <div class="checkbox-field" style="margin-bottom:14px;">
+        <input type="checkbox" id="dedupeCheck" checked>
+        <label for="dedupeCheck">Remove duplicates</label>
+      </div>
+      <div class="checkbox-field" style="margin-bottom:14px;">
+        <input type="checkbox" id="sortCheck" checked>
+        <label for="sortCheck">Sort alphabetically</label>
+      </div>
+      <div class="checkbox-field" style="margin-bottom:14px;">
+        <input type="checkbox" id="lowerCheck" checked>
+        <label for="lowerCheck">Lowercase all keywords</label>
+      </div>
+      <button class="btn btn-primary btn-block" id="formatBtn">Format keywords</button>
+    </div>
+    <div class="tool-panel">
+      <h3 style="margin-bottom:12px;">Result <span id="countBadge" class="badge">0</span></h3>
+      <div class="output-box" id="outputBox" style="max-height:320px;">Your formatted keywords will appear here.</div>
+      <div class="copy-row" style="justify-content:flex-start;margin-top:12px;">
+        <button class="btn btn-secondary btn-sm" id="copyBtn">Copy</button>
+        <button class="btn btn-secondary btn-sm" id="downloadBtn">Download</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>__ABOUT__</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+            <li>Paste your raw keyword dump — commas, newlines, spaces and duplicates all fine.</li>
+      <li>Choose the output format (comma-separated, lines, quoted or CSV).</li>
+      <li>Toggle dedupe, sorting and lowercasing as needed.</li>
+      <li>Click <strong>Format keywords</strong>.</li>
+      <li>Copy the clean list or download it as a file.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+            <li>Handles any messy separator — commas, newlines, tabs, spaces</li>
+      <li>Duplicate removal with case-insensitive matching</li>
+      <li>Alphabetical sorting</li>
+      <li>Four output formats including CSV</li>
+      <li>Fully client-side</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What counts as a duplicate? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Keywords are compared case-insensitively after trimming, so 'SEO' and 'seo' are treated as the same keyword and only one is kept.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Can I export to CSV? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Yes. Choose the CSV format and the list downloads as a one-column file you can open in any spreadsheet.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Will multi-word keywords be split? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. Keywords are separated by the punctuation in your input (commas, newlines, tabs), so 'keyword research' stays as one keyword.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Is my keyword data uploaded? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. Formatting happens entirely in your browser.</p></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

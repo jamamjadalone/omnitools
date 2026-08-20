@@ -1,0 +1,42 @@
+{
+  "id": "package-json-validator",
+  "slug": "package-json-validator",
+  "name": "package.json Validator",
+  "category": "developer-tools",
+  "categoryName": "Developer Tools",
+  "icon": "📦",
+  "description": "Validate and format your package.json — check required fields, version syntax and JSON validity with clear error messages.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"pkgInput\">Your package.json</label>\n        <textarea id=\"pkgInput\" rows=\"16\" style=\"font-family:var(--font-mono);font-size:.8rem;\">{\n  \"name\": \"my-app\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Example package\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"start\": \"node index.js\"\n  },\n  \"license\": \"MIT\"\n}</textarea>\n      </div>\n      <div class=\"copy-row\" style=\"justify-content:flex-start;margin-top:10px;\">\n        <button class=\"btn btn-secondary btn-sm\" id=\"validateBtn\">Validate</button>\n      </div>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Validation result</h3>\n      <div id=\"resultBox\" style=\"display:grid;gap:8px;\">Paste your package.json and click Validate.</div>\n    </div>\n  </div>",
+  "howto": [
+    "Paste your package.json into the input.",
+    "Click <strong>Validate</strong>.",
+    "The tool checks JSON validity, required fields, version format and dependency syntax.",
+    "Each check shows pass, warning or fail with a clear message.",
+    "Fix any issues, re-paste and re-validate until it is clean."
+  ],
+  "features": [
+    "JSON syntax validation with helpful errors",
+    "Checks required fields: name, version, description, main, scripts, license",
+    "Validates semver version strings",
+    "Flags common issues in dependency names and versions",
+    "Fully client-side"
+  ],
+  "faq": [
+    {
+      "q": "What is a valid semver version?",
+      "a": "Semantic versioning uses MAJOR.MINOR.PATCH like 1.0.0, optionally with pre-release tags like 1.0.0-beta.1. The tool flags malformed versions."
+    },
+    {
+      "q": "Which fields are required?",
+      "a": "npm requires at minimum a name and version. This tool also checks description, main, scripts and license and warns if they are missing or unusual."
+    },
+    {
+      "q": "Does this run my scripts?",
+      "a": "No. It only validates the file content — it never executes anything."
+    },
+    {
+      "q": "Is my file uploaded?",
+      "a": "No. Validation runs entirely in your browser."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "bulk-image-resizer",
+  "slug": "bulk-image-resizer",
+  "name": "Bulk Image Resizer",
+  "category": "image-tools",
+  "categoryName": "Image Tools",
+  "icon": "🖥️",
+  "description": "Resize many images at once by target dimensions, scale or target file size, then download them all as a ZIP.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"modeSelect\">Resize by</label>\n        <select id=\"modeSelect\">\n          <option value=\"dimensions\">Target dimensions</option>\n          <option value=\"scale\">Scale factor</option>\n          <option value=\"filesize\">Target file size (KB)</option>\n        </select>\n      </div>\n      <div class=\"field\" id=\"dimWrap\">\n        <label for=\"widthInput\">Max width (px)</label>\n        <input type=\"number\" id=\"widthInput\" value=\"1920\" min=\"16\">\n        <label for=\"heightInput\" style=\"margin-top:10px;\">Max height (px)</label>\n        <input type=\"number\" id=\"heightInput\" value=\"1080\" min=\"16\">\n      </div>\n      <div class=\"field\" id=\"scaleWrap\" style=\"display:none;\">\n        <label for=\"scaleInput\">Scale (%)</label>\n        <input type=\"number\" id=\"scaleInput\" value=\"50\" min=\"1\" max=\"100\">\n      </div>\n      <div class=\"field\" id=\"filesizeWrap\" style=\"display:none;\">\n        <label for=\"targetKBInput\">Target size (KB) — best effort</label>\n        <input type=\"number\" id=\"targetKBInput\" value=\"200\" min=\"1\">\n      </div>\n      <div class=\"checkbox-field\" style=\"margin-bottom:14px;\">\n        <input type=\"checkbox\" id=\"keepAspect\" checked>\n        <label for=\"keepAspect\">Keep aspect ratio</label>\n      </div>\n      <div class=\"dropzone\" id=\"dropzone\" tabindex=\"0\" role=\"button\" aria-label=\"Drop images to resize\">\n        <div class=\"dz-icon\" aria-hidden=\"true\">🖼️</div>\n        <p>Drop images here or click to browse</p>\n        <p class=\"dz-hint\">JPG, PNG and WebP — processed locally</p>\n        <input type=\"file\" id=\"fileInput\" accept=\"image/*\" multiple hidden>\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"downloadBtn\" style=\"margin-top:16px;\" disabled>Download resized images (ZIP)</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Progress</h3>\n      <div id=\"progressWrap\" style=\"display:none;margin-bottom:14px;\">\n        <div style=\"display:flex;align-items:center;gap:10px;\"><span class=\"spinner\"></span><span id=\"progressText\" style=\"font-size:.85rem;color:var(--text-dim);\">Resizing…</span></div>\n      </div>\n      <div class=\"output-box\" id=\"logBox\" style=\"max-height:400px;\">No images loaded yet.</div>\n    </div>\n  </div>",
+  "howto": [
+    "Choose what to resize by: dimensions, scale factor, or target file size.",
+    "Enter the target values for the chosen mode.",
+    "Drop one or more images (or a folder) onto the dropzone.",
+    "The tool resizes each image, keeping aspect ratio by default.",
+    "Click <strong>Download resized images</strong> to get everything in a ZIP."
+  ],
+  "features": [
+    "Resize by max dimensions, scale percentage, or target file size",
+    "Batch processing with a progress log",
+    "Aspect ratio preserved by default",
+    "JPG, PNG and WebP support",
+    "All results bundled into a single ZIP"
+  ],
+  "faq": [
+    {
+      "q": "Does resizing upload my images?",
+      "a": "No. Images are processed on a canvas entirely in your browser and only the results are downloaded."
+    },
+    {
+      "q": "How does target file size work?",
+      "a": "The tool re-encodes the image with progressively lower JPEG quality until the size is under your target. It is a best-effort approach — very large originals may not always hit an exact size."
+    },
+    {
+      "q": "Will PNG transparency be preserved?",
+      "a": "Yes, PNG resizes keep the alpha channel. If you resize to a target file size, the image is re-encoded as JPEG, which removes transparency."
+    },
+    {
+      "q": "What output format is used?",
+      "a": "The output keeps the original format (JPG stays JPG, PNG stays PNG). For format conversion, use the Image Format Converter tool."
+    }
+  ],
+  "extraScripts": [
+    "../../assets/js/vendor/jszip.min.js",
+    "../../assets/js/vendor/filesaver.min.js",
+    "../../assets/js/helpers/zip-export.js"
+  ]
+}

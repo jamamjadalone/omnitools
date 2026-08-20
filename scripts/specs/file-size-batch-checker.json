@@ -1,0 +1,42 @@
+{
+  "id": "file-size-batch-checker",
+  "slug": "file-size-batch-checker",
+  "name": "File Size Batch Checker",
+  "category": "utilities",
+  "categoryName": "Utilities",
+  "icon": "📏",
+  "description": "Drop many files and instantly see which ones exceed a size limit you set — sorted biggest first, with a downloadable CSV report.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"limitInput\">Size limit (MB)</label>\n        <input type=\"number\" id=\"limitInput\" value=\"10\" min=\"0.1\" step=\"0.1\">\n      </div>\n      <div class=\"dropzone\" id=\"dropzone\" tabindex=\"0\" role=\"button\" aria-label=\"Drop files to check their sizes\">\n        <div class=\"dz-icon\" aria-hidden=\"true\">📂</div>\n        <p>Drop files here or click to browse</p>\n        <p class=\"dz-hint\">Folders are scanned recursively — everything stays on your device</p>\n        <input type=\"file\" id=\"fileInput\" multiple webkitdirectory hidden>\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"downloadBtn\" style=\"margin-top:16px;\" disabled>Download CSV report</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Summary</h3>\n      <div class=\"stat-row\">\n        <div class=\"stat\"><b id=\"totalCount\">0</b><span>Files</span></div>\n        <div class=\"stat\"><b id=\"overCount\">0</b><span>Over limit</span></div>\n        <div class=\"stat\"><b id=\"totalSize\">0 B</b><span>Total size</span></div>\n      </div>\n      <div class=\"output-box\" id=\"fileList\" style=\"max-height:400px;margin-top:16px;\">No files loaded yet.</div>\n    </div>\n  </div>",
+  "howto": [
+    "Set the size limit in megabytes (defaults to 10 MB).",
+    "Drop files or a whole folder onto the dropzone, or click to browse.",
+    "Every file is scanned and sorted by size — over-limit files are highlighted in red.",
+    "Check the summary stats at the top for counts and total size.",
+    "Click <strong>Download CSV report</strong> to export the full list."
+  ],
+  "features": [
+    "Batch size check across hundreds of files at once",
+    "Custom size limit with clear over/under highlighting",
+    "Automatic sort by size, biggest first",
+    "CSV report export for your records",
+    "Runs 100% in your browser"
+  ],
+  "faq": [
+    {
+      "q": "Does this upload my files anywhere?",
+      "a": "No. Files are read locally with the File API and never leave your device."
+    },
+    {
+      "q": "Can I check a whole folder?",
+      "a": "Yes — the folder picker includes every file inside, including subfolders."
+    },
+    {
+      "q": "What counts as over the limit?",
+      "a": "Any file whose size in MB is greater than the number you set. The limit is the maximum size your destination accepts, such as an email attachment or a stock upload."
+    },
+    {
+      "q": "What is in the CSV report?",
+      "a": "One row per file with its name, size in bytes and MB, and whether it is over the limit."
+    }
+  ]
+}

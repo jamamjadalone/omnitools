@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>.gitignore Generator — Free Online Tool | OmniTools</title>
+<meta name="description" content="Generate a .gitignore file for your project — pick your language or framework and combine multiple presets into one ready-to-use file.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/gitignore-generator/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content=".gitignore Generator — OmniTools">
+<meta property="og:description" content="Generate a .gitignore file for your project — pick your language or framework and combine multiple presets into one ready-to-use file.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/gitignore-generator/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": ".gitignore Generator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Generate a .gitignore file for your project — pick your language or framework and combine multiple presets into one ready-to-use file."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Developer Tools", "item": "https://jamamjadalone.github.io/omnitools/categories/developer-tools.html" },
+    { "@type": "ListItem", "position": 3, "name": ".gitignore Generator", "item": "https://jamamjadalone.github.io/omnitools/tools/gitignore-generator/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="gitignore-generator" data-category-of-tool="developer-tools">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/developer-tools.html">Developer Tools</a><span>/</span>
+    <span>.gitignore Generator</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">🚫</span>
+    <div>
+      <h1>.gitignore Generator</h1>
+      <p class="tool-sub">Generate a .gitignore file for your project — pick your language or framework and combine multiple presets into one ready-to-use file.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label>Choose presets (you can select several)</label>
+        <div id="presetBox" style="display:grid;gap:6px;">
+          <label class="checkbox-field"><input type="checkbox" class="presetCheck" value="node"> Node.js</label>
+          <label class="checkbox-field"><input type="checkbox" class="presetCheck" value="python"> Python</label>
+          <label class="checkbox-field"><input type="checkbox" class="presetCheck" value="java"> Java</label>
+          <label class="checkbox-field"><input type="checkbox" class="presetCheck" value="dotnet"> .NET / C#</label>
+          <label class="checkbox-field"><input type="checkbox" class="presetCheck" value="php"> PHP</label>
+          <label class="checkbox-field"><input type="checkbox" class="presetCheck" value="ruby"> Ruby / Rails</label>
+          <label class="checkbox-field"><input type="checkbox" class="presetCheck" value="go"> Go</label>
+          <label class="checkbox-field"><input type="checkbox" class="presetCheck" value="rust"> Rust</label>
+          <label class="checkbox-field"><input type="checkbox" class="presetCheck" value="macos"> macOS</label>
+          <label class="checkbox-field"><input type="checkbox" class="presetCheck" value="windows"> Windows</label>
+          <label class="checkbox-field"><input type="checkbox" class="presetCheck" value="linux"> Linux</label>
+          <label class="checkbox-field"><input type="checkbox" class="presetCheck" value="ide"> Editors / IDEs</label>
+          <label class="checkbox-field"><input type="checkbox" class="presetCheck" value="env"> Environment / secrets</label>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-block" id="generateBtn">Generate .gitignore</button>
+    </div>
+    <div class="tool-panel">
+      <h3 style="margin-bottom:12px;">Generated .gitignore</h3>
+      <div class="output-box" id="outputBox" style="max-height:420px;">Your .gitignore will appear here.</div>
+      <div class="copy-row" style="justify-content:flex-start;margin-top:12px;">
+        <button class="btn btn-secondary btn-sm" id="copyBtn">Copy</button>
+        <button class="btn btn-primary btn-sm" id="downloadBtn">Download .gitignore</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>__ABOUT__</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+            <li>Tick the presets that match your project — frameworks, OS and editors.</li>
+      <li>Click <strong>Generate .gitignore</strong>.</li>
+      <li>Combined rules appear in the right panel with section headers.</li>
+      <li>Copy the content or download it as a .gitignore file.</li>
+      <li>Place the file in your project root before your first commit.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+            <li>13 presets covering languages, frameworks, OS and editors</li>
+      <li>Multiple presets combined into one file</li>
+      <li>Section headers for readability</li>
+      <li>Copy or download</li>
+      <li>Client-side generation</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What is a .gitignore file? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>It tells git which files and folders to ignore, so build output, dependencies and secrets are never committed to your repository.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Can I combine presets? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>Yes — that is the point. A Node.js project on macOS, for example, ticks Node.js + macOS, and both rule sets are merged with headers.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Is .gitignore enough to protect secrets? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>It prevents accidental commits going forward, but once a secret is committed it stays in history. Use it alongside rotating any credentials you have already pushed.</p></div>
+        </div>
+      <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Is the file uploaded anywhere? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="faq-answer"><p>No. It is generated locally in your browser.</p></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

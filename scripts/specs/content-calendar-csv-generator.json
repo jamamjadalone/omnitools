@@ -1,0 +1,42 @@
+{
+  "id": "content-calendar-csv-generator",
+  "slug": "content-calendar-csv-generator",
+  "name": "Content Calendar CSV Generator",
+  "category": "text-tools",
+  "categoryName": "Text Tools",
+  "icon": "📅",
+  "description": "Generate a ready-to-use social media content calendar as a CSV — pick a month, add your posts, and download for any spreadsheet app.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"monthInput\">Month</label>\n        <input type=\"month\" id=\"monthInput\">\n      </div>\n      <div class=\"field\">\n        <label for=\"platformInput\">Platform</label>\n        <select id=\"platformSelect\">\n          <option value=\"All platforms\">All platforms</option>\n          <option value=\"Instagram\">Instagram</option>\n          <option value=\"X (Twitter)\">X (Twitter)</option>\n          <option value=\"Facebook\">Facebook</option>\n          <option value=\"LinkedIn\">LinkedIn</option>\n          <option value=\"TikTok\">TikTok</option>\n          <option value=\"YouTube\">YouTube</option>\n        </select>\n      </div>\n      <div class=\"field\">\n        <label for=\"themeInput\">Content theme / focus</label>\n        <input type=\"text\" id=\"themeInput\" placeholder=\"e.g. Product launches, tips, behind the scenes\">\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"generateBtn\">Generate calendar (CSV)</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Preview</h3>\n      <div class=\"output-box\" id=\"previewBox\" style=\"max-height:400px;\">Your generated calendar will preview here.</div>\n      <div class=\"copy-row\" style=\"justify-content:flex-start;margin-top:12px;\">\n        <button class=\"btn btn-secondary btn-sm\" id=\"copyBtn\">Copy CSV</button>\n      </div>\n      <p class=\"alert alert-warning\" style=\"margin-top:16px;font-size:.8rem;\">Generates a template with placeholders — fill in the topic, caption and status per day.</p>\n    </div>\n  </div>",
+  "howto": [
+    "Pick the month for your calendar.",
+    "Choose the main platform and the content theme for the month.",
+    "Click <strong>Generate calendar</strong>.",
+    "Preview the CSV in the right panel — every day of the month is a row.",
+    "Download it and open in Excel, Google Sheets or your planner."
+  ],
+  "features": [
+    "Full month of daily content slots",
+    "Platform and theme fields applied to every row",
+    "Pre-built columns: date, platform, theme, topic, caption, media, status, notes",
+    "Copy or download as .csv",
+    "Client-side generation"
+  ],
+  "faq": [
+    {
+      "q": "What columns does the calendar include?",
+      "a": "Date, weekday, platform, theme, topic, caption, media type, status and notes. Empty fields are ready for you to fill in."
+    },
+    {
+      "q": "Can I add multiple platforms?",
+      "a": "Pick one platform per generation run, then generate again with a different platform — or choose 'All platforms' and label each row as you go."
+    },
+    {
+      "q": "Does it plan my content for me?",
+      "a": "It builds the skeleton and prompts you with a topic idea per day based on your theme. You fill in the actual captions and media."
+    },
+    {
+      "q": "Where do I open the CSV?",
+      "a": "Any spreadsheet app — Excel, Google Sheets, Numbers or Airtable all import the comma-separated file directly."
+    }
+  ]
+}

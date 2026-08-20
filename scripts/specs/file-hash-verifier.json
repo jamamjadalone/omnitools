@@ -1,0 +1,45 @@
+{
+  "id": "file-hash-verifier",
+  "slug": "file-hash-verifier",
+  "name": "File Hash / Checksum Verifier",
+  "category": "utilities",
+  "categoryName": "Utilities",
+  "icon": "🔐",
+  "description": "Compute the SHA-256 checksum of any file in your browser and compare it against the hash provided by the download source.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"expectedHash\">Expected hash (from the download page)</label>\n        <input type=\"text\" id=\"expectedHash\" placeholder=\"sha256: a1b2c3...\">\n      </div>\n      <div class=\"dropzone\" id=\"dropzone\" tabindex=\"0\" role=\"button\" aria-label=\"Drop a file to verify its hash\">\n        <div class=\"dz-icon\" aria-hidden=\"true\">🔐</div>\n        <p>Drop a file here or click to browse</p>\n        <p class=\"dz-hint\">SHA-256 computed locally via Web Crypto</p>\n        <input type=\"file\" id=\"fileInput\" hidden>\n      </div>\n      <div id=\"progressWrap\" style=\"display:none;margin-top:16px;\">\n        <div style=\"display:flex;align-items:center;gap:10px;\"><span class=\"spinner\"></span><span style=\"font-size:.85rem;color:var(--text-dim);\">Hashing…</span></div>\n      </div>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Result</h3>\n      <div id=\"resultEmpty\"><p style=\"color:var(--text-faint);text-align:center;\">Drop a file to compute and verify its hash.</p></div>\n      <div id=\"resultBox\" style=\"display:none;\">\n        <div id=\"matchAlert\" class=\"alert\" style=\"margin-bottom:16px;\"></div>\n        <div class=\"field\">\n          <label for=\"computedHash\">Computed SHA-256</label>\n          <div class=\"output-box\" id=\"computedHash\" style=\"max-height:120px;font-size:.78rem;\"></div>\n        </div>\n        <div class=\"copy-row\" style=\"justify-content:flex-start;\">\n          <button class=\"btn btn-secondary btn-sm\" id=\"copyBtn\">Copy hash</button>\n        </div>\n      </div>\n    </div>\n  </div>",
+  "howto": [
+    "Copy the SHA-256 hash shown on the page you downloaded the file from.",
+    "Paste it into the <strong>Expected hash</strong> field.",
+    "Drop the downloaded file onto the dropzone.",
+    "The tool computes the file's real SHA-256 and compares them.",
+    "A match confirms the download is intact; a mismatch means the file is corrupt or tampered with — download it again."
+  ],
+  "features": [
+    "SHA-256 verification with Web Crypto",
+    "Live match / mismatch result with color coding",
+    "Copyable computed hash",
+    "Handles hashes pasted with or without a sha256: prefix",
+    "Fully client-side"
+  ],
+  "faq": [
+    {
+      "q": "Why should I verify a file hash?",
+      "a": "Downloads can be corrupted mid-transfer or tampered with. Verifying the SHA-256 hash against the one published by the source proves the file is byte-for-byte what was published."
+    },
+    {
+      "q": "What if the hash doesn't match?",
+      "a": "Do not trust the file. Re-download it, ideally over HTTPS, and verify again. A persistent mismatch may mean the file is corrupt or came from an untrusted source."
+    },
+    {
+      "q": "Can I verify MD5 or SHA-1 here?",
+      "a": "This tool computes SHA-256, which is the modern standard. MD5 and SHA-1 are considered weak and are rarely published anymore."
+    },
+    {
+      "q": "Is this secure?",
+      "a": "Yes. Hashing runs locally using your browser's built-in Web Crypto implementation — the file never leaves your machine."
+    }
+  ],
+  "extraScripts": [
+    "../../assets/js/helpers/hash.js"
+  ]
+}

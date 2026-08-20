@@ -1,0 +1,42 @@
+{
+  "id": "csv-column-renamer",
+  "slug": "csv-column-renamer",
+  "name": "CSV Column Renamer / Cleaner",
+  "category": "text-tools",
+  "categoryName": "Text Tools",
+  "icon": "🧾",
+  "description": "Paste a CSV, rename or reorder its columns, trim whitespace and fix encoding, then download the cleaned file.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"csvInput\">CSV data</label>\n        <textarea id=\"csvInput\" rows=\"10\" placeholder=\"name,email,age&#10;John,john@example.com,30&#10;Jane,jane@example.com,25\"></textarea>\n      </div>\n      <div class=\"field\">\n        <label for=\"hasHeader\">\n          <input type=\"checkbox\" id=\"hasHeader\" checked style=\"margin-right:6px;\">First row is a header</label>\n      </div>\n      <div class=\"checkbox-field\" style=\"margin-bottom:14px;\">\n        <input type=\"checkbox\" id=\"trimCheck\" checked>\n        <label for=\"trimCheck\">Trim whitespace from cells</label>\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"applyBtn\">Apply column edits</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Columns <span id=\"colCount\">(0)</span></h3>\n      <div id=\"columnEditor\" style=\"display:grid;gap:8px;margin-bottom:16px;\"></div>\n      <h3 style=\"margin-bottom:12px;\">Preview</h3>\n      <div class=\"output-box\" id=\"previewBox\" style=\"max-height:240px;\"></div>\n      <div class=\"copy-row\" style=\"justify-content:flex-start;margin-top:12px;\">\n        <button class=\"btn btn-secondary btn-sm\" id=\"copyBtn\">Copy CSV</button>\n        <button class=\"btn btn-primary btn-sm\" id=\"downloadBtn\">Download CSV</button>\n      </div>\n    </div>\n  </div>",
+  "howto": [
+    "Paste your CSV into the input — comma or semicolon separators are auto-detected.",
+    "Keep the header checkbox on if the first row is column names.",
+    "The columns panel appears; rename any column or drag to reorder.",
+    "Click <strong>Apply column edits</strong> to preview the result.",
+    "Copy the cleaned CSV or download it as a file."
+  ],
+  "features": [
+    "Auto-detects comma, semicolon or tab separators",
+    "Rename any column in place",
+    "Reorder columns by drag-and-drop or arrow buttons",
+    "Trim whitespace and quote cleanup",
+    "Copy or download the result as .csv"
+  ],
+  "faq": [
+    {
+      "q": "Does this handle files with quoted commas?",
+      "a": "Yes. Values wrapped in double quotes are parsed correctly so commas inside a cell do not break the columns."
+    },
+    {
+      "q": "Can I remove a column?",
+      "a": "Not directly — but you can clear its name in the editor, and the column will be dropped when you apply the changes."
+    },
+    {
+      "q": "What if my file uses semicolons?",
+      "a": "The tool detects the separator automatically. If you use a European-style CSV with semicolons, it is handled without extra steps."
+    },
+    {
+      "q": "Is my data uploaded?",
+      "a": "No. The CSV is processed entirely in your browser."
+    }
+  ]
+}

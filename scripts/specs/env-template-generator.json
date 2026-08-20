@@ -1,0 +1,42 @@
+{
+  "id": "env-template-generator",
+  "slug": "env-template-generator",
+  "name": ".env Template Generator",
+  "category": "developer-tools",
+  "categoryName": "Developer Tools",
+  "icon": "🌿",
+  "description": "Generate a ready-to-fill .env template for your stack — Node.js, React, Django, Laravel and more — with comments and placeholders.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"frameworkSelect\">Framework / stack</label>\n        <select id=\"frameworkSelect\">\n          <option value=\"node\">Node.js</option>\n          <option value=\"react\">React / Vite</option>\n          <option value=\"next\">Next.js</option>\n          <option value=\"django\">Django (Python)</option>\n          <option value=\"flask\">Flask (Python)</option>\n          <option value=\"laravel\">Laravel (PHP)</option>\n          <option value=\"rails\">Ruby on Rails</option>\n          <option value=\"flutter\">Flutter</option>\n          <option value=\"generic\">Generic / other</option>\n        </select>\n      </div>\n      <div class=\"field\">\n        <label for=\"appNameInput\">App name</label>\n        <input type=\"text\" id=\"appNameInput\" value=\"my-app\">\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"generateBtn\">Generate .env</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Generated .env</h3>\n      <div class=\"output-box\" id=\"outputBox\" style=\"max-height:420px;\">Your .env template will appear here.</div>\n      <div class=\"copy-row\" style=\"justify-content:flex-start;margin-top:12px;\">\n        <button class=\"btn btn-secondary btn-sm\" id=\"copyBtn\">Copy</button>\n        <button class=\"btn btn-primary btn-sm\" id=\"downloadBtn\">Download .env</button>\n      </div>\n    </div>\n  </div>",
+  "howto": [
+    "Pick your framework or stack from the dropdown.",
+    "Enter your app name.",
+    "Click <strong>Generate .env</strong>.",
+    "Copy the template or download it as a .env file.",
+    "Fill in the real values, then save as .env (and never commit it to git)."
+  ],
+  "features": [
+    "Stack-specific templates for 9 common frameworks",
+    "Commented variable descriptions for each key",
+    "Sensible defaults for ports, environments and databases",
+    "Copy or download as a real .env file",
+    "Client-side generation"
+  ],
+  "faq": [
+    {
+      "q": "Where does the .env file go?",
+      "a": "In the root of your project. Add it to your .gitignore so secrets are never committed — most frameworks do this automatically."
+    },
+    {
+      "q": "Are these templates safe to use?",
+      "a": "Yes. They are standard environment variable names for each framework with empty placeholders for your real secrets."
+    },
+    {
+      "q": "Can I customize the variables?",
+      "a": "The templates give you the common keys. Edit the file freely — .env is just plain text with KEY=value lines."
+    },
+    {
+      "q": "Is anything uploaded?",
+      "a": "No. The template is generated entirely in your browser."
+    }
+  ]
+}

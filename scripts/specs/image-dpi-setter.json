@@ -1,0 +1,42 @@
+{
+  "id": "image-dpi-setter",
+  "slug": "image-dpi-setter",
+  "name": "Image DPI / PPI Setter",
+  "category": "image-tools",
+  "categoryName": "Image Tools",
+  "icon": "📐",
+  "description": "Set the DPI/PPI metadata of a JPG for print-ready stock submissions without changing the pixel dimensions.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"dpiInput\">DPI / PPI to set</label>\n        <input type=\"number\" id=\"dpiInput\" value=\"300\" min=\"72\" max=\"2400\">\n      </div>\n      <div class=\"dropzone\" id=\"dropzone\" tabindex=\"0\" role=\"button\" aria-label=\"Upload a JPG to set its DPI\">\n        <div class=\"dz-icon\" aria-hidden=\"true\">📐</div>\n        <p>Drop a JPG here or click to browse</p>\n        <p class=\"dz-hint\">Only the DPI metadata changes — pixels stay the same</p>\n        <input type=\"file\" id=\"fileInput\" accept=\"image/jpeg\" hidden>\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"downloadBtn\" style=\"margin-top:16px;\" disabled>Download with new DPI</button>\n    </div>\n    <div class=\"tool-panel\">\n      <div id=\"emptyState\"><p style=\"color:var(--text-faint);text-align:center;\">Upload a JPG to set its DPI metadata.</p></div>\n      <div id=\"results\" style=\"display:none;\">\n        <div class=\"stat-row\">\n          <div class=\"stat\"><b id=\"statSize\">—</b><span>Dimensions</span></div>\n          <div class=\"stat\"><b id=\"statOldDpi\">—</b><span>Current DPI</span></div>\n          <div class=\"stat\"><b id=\"statNewDpi\">—</b><span>New DPI</span></div>\n          <div class=\"stat\"><b id=\"statPrint\">—</b><span>Print size</span></div>\n        </div>\n        <div class=\"result-preview\" style=\"margin-top:16px;\">\n          <img id=\"previewImg\" alt=\"Preview of your JPG\">\n        </div>\n      </div>\n    </div>\n  </div>",
+  "howto": [
+    "Enter the DPI value you need (300 is the standard for print).",
+    "Drop a JPG onto the dropzone.",
+    "The tool reads the current DPI and rewrites the JPEG with your value — pixel dimensions are untouched.",
+    "Check the new print size shown in the results.",
+    "Click <strong>Download with new DPI</strong> to save the updated file."
+  ],
+  "features": [
+    "Rewrite JPEG DPI/PPI metadata without resampling",
+    "Reads current DPI from the original file",
+    "Shows the resulting print size at the new DPI",
+    "300 DPI preset with custom values supported",
+    "Fully client-side"
+  ],
+  "faq": [
+    {
+      "q": "Does changing DPI affect image quality?",
+      "a": "No. DPI is just a metadata label that tells printing software how large to print the image. Your pixel dimensions stay exactly the same."
+    },
+    {
+      "q": "Why do stock platforms care about DPI?",
+      "a": "Some print-oriented categories require a specific DPI so buyers can place the image into print layouts at the correct physical size. Setting 300 DPI satisfies the common requirement."
+    },
+    {
+      "q": "Can I use this on a PNG?",
+      "a": "PNG files support DPI in their metadata too, but this tool focuses on JPG, which is the most common format for stock print submissions."
+    },
+    {
+      "q": "Is quality lost on re-save?",
+      "a": "The tool re-encodes the JPG to apply the metadata. Use a high quality setting when saving; the change is metadata-only in intent, though re-encoding is standard practice."
+    }
+  ]
+}

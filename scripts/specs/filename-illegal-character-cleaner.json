@@ -1,0 +1,42 @@
+{
+  "id": "filename-illegal-character-cleaner",
+  "slug": "filename-illegal-character-cleaner",
+  "name": "Filename Cleaner",
+  "category": "utilities",
+  "categoryName": "Utilities",
+  "icon": "🧹",
+  "description": "Strip characters that break filenames on Windows, Mac or cloud uploads, and see exactly what would be replaced.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"fileNameInput\">File name to clean</label>\n        <input type=\"text\" id=\"fileNameInput\" placeholder=\"my: file* ?name\\1.txt\">\n      </div>\n      <div class=\"field\">\n        <label for=\"platformSelect\">Target platform</label>\n        <select id=\"platformSelect\">\n          <option value=\"windows\">Windows</option>\n          <option value=\"mac\">Mac / Linux</option>\n          <option value=\"cloud\">Cloud upload (Drive / Dropbox)</option>\n          <option value=\"all\">All platforms (strict)</option>\n        </select>\n      </div>\n      <div class=\"field\">\n        <label for=\"replacementInput\">Replace illegal characters with</label>\n        <input type=\"text\" id=\"replacementInput\" value=\"-\">\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"cleanBtn\">Clean filename</button>\n      <div class=\"copy-row\" style=\"justify-content:flex-start;margin-top:12px;\">\n        <button class=\"btn btn-secondary btn-sm\" id=\"copyBtn\">Copy result</button>\n      </div>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Result</h3>\n      <div class=\"output-box\" id=\"outputBox\">Your cleaned filename will appear here.</div>\n      <div id=\"detailBox\" style=\"margin-top:12px;display:grid;gap:6px;\"></div>\n    </div>\n  </div>",
+  "howto": [
+    "Type or paste the filename (with extension) into the input.",
+    "Pick the platform you are uploading to — this controls which characters are illegal.",
+    "Choose the replacement character (a hyphen by default).",
+    "Click <strong>Clean filename</strong>.",
+    "Review which characters were replaced in the detail list, then copy the cleaned name."
+  ],
+  "features": [
+    "Platform-specific rules for Windows, Mac/Linux, cloud uploads and strict-all",
+    "Live detail of every character replaced",
+    "Custom replacement character",
+    "Protects against reserved names like CON, PRN, NUL",
+    "Fully client-side"
+  ],
+  "faq": [
+    {
+      "q": "Which characters break Windows filenames?",
+      "a": "Windows forbids < > : \" / \\ | ? * and control characters, plus reserved device names like CON, PRN, AUX, NUL, COM1-9 and LPT1-9. The Windows preset handles all of these."
+    },
+    {
+      "q": "What is different on Mac and Linux?",
+      "a": "Mac and Linux only forbid the forward slash (/) and null bytes. The tool still replaces other awkward characters for safety but applies the stricter Windows rules only on the Windows preset."
+    },
+    {
+      "q": "What about cloud uploads?",
+      "a": "Cloud drives often reject certain characters and reserve names too. The cloud preset keeps it safe for Drive and Dropbox while staying friendly."
+    },
+    {
+      "q": "Does this rename my actual files?",
+      "a": "No. It produces the cleaned name for you to copy. To rename many files at once, use the Batch File Renamer."
+    }
+  ]
+}

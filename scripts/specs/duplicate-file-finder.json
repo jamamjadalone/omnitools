@@ -1,0 +1,45 @@
+{
+  "id": "duplicate-file-finder",
+  "slug": "duplicate-file-finder",
+  "name": "Duplicate File Finder",
+  "category": "utilities",
+  "categoryName": "Utilities",
+  "icon": "👯",
+  "description": "Drop a batch of files and find exact duplicates using SHA-256 hashes computed right in your browser — no uploads.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"dropzone\" id=\"dropzone\" tabindex=\"0\" role=\"button\" aria-label=\"Drop files to find duplicates\">\n        <div class=\"dz-icon\" aria-hidden=\"true\">👯</div>\n        <p>Drop files here or click to browse</p>\n        <p class=\"dz-hint\">Exact duplicates are matched by SHA-256 hash — computed locally</p>\n        <input type=\"file\" id=\"fileInput\" multiple webkitdirectory hidden>\n      </div>\n      <div id=\"progressWrap\" style=\"display:none;margin-top:16px;\">\n        <div style=\"display:flex;align-items:center;gap:10px;\"><span class=\"spinner\"></span><span id=\"progressText\" style=\"font-size:.85rem;color:var(--text-dim);\">Hashing files…</span></div>\n      </div>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">Results</h3>\n      <div class=\"stat-row\">\n        <div class=\"stat\"><b id=\"totalCount\">0</b><span>Scanned</span></div>\n        <div class=\"stat\"><b id=\"dupCount\">0</b><span>Duplicates</span></div>\n        <div class=\"stat\"><b id=\"savable\">0 B</b><span>Potentially freed</span></div>\n      </div>\n      <div class=\"output-box\" id=\"resultsBox\" style=\"max-height:400px;margin-top:16px;\">Drop files to scan for duplicates.</div>\n    </div>\n  </div>",
+  "howto": [
+    "Drop a group of files (or a folder) onto the dropzone.",
+    "The tool hashes every file with SHA-256 using your browser's Web Crypto API.",
+    "Files sharing an identical hash are grouped as duplicates.",
+    "Read the duplicate groups and the total space you could free by removing the extras.",
+    "Delete the duplicates in your own file manager — this tool never deletes anything."
+  ],
+  "features": [
+    "Exact-match detection via SHA-256 hashing",
+    "Hundreds of files handled at once, with progress feedback",
+    "Duplicate groups clearly listed with file sizes",
+    "Estimate of disk space that could be freed",
+    "Fully offline and private"
+  ],
+  "faq": [
+    {
+      "q": "How accurate is SHA-256 duplicate detection?",
+      "a": "Very accurate. Two different files with the same SHA-256 hash are effectively impossible, so matching hashes mean the files are byte-for-byte identical."
+    },
+    {
+      "q": "Does the tool delete anything?",
+      "a": "No. It only identifies duplicates. You delete them yourself in your file manager, which is safer."
+    },
+    {
+      "q": "What about large files — will it freeze?",
+      "a": "Hashing runs asynchronously with a progress indicator, so large files are processed in chunks without freezing the page."
+    },
+    {
+      "q": "Can it find duplicates that differ only by filename?",
+      "a": "Yes — that is exactly what it is for. Two copies of the same photo with different names share the same hash and are reported as duplicates."
+    }
+  ],
+  "extraScripts": [
+    "../../assets/js/helpers/hash.js"
+  ]
+}

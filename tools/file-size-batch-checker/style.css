@@ -1,0 +1,5 @@
+.size-row{ display:flex; justify-content:space-between; gap:10px; padding:6px 0; border-bottom:1px solid var(--border-soft); font-size:.82rem; }
+.size-row .sr-name{ color:var(--text-dim); word-break:break-all; }
+.size-row .sr-size{ white-space:nowrap; font-family:var(--font-mono); color:var(--text-faint); }
+.size-row.over-limit .sr-name{ color:var(--danger); font-weight:600; }
+.size-row.over-limit .sr-size{ color:var(--danger); }

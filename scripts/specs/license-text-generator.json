@@ -1,0 +1,42 @@
+{
+  "id": "license-text-generator",
+  "slug": "license-text-generator",
+  "name": "License Text Generator",
+  "category": "developer-tools",
+  "categoryName": "Developer Tools",
+  "icon": "⚖️",
+  "description": "Generate the full text of MIT, Apache 2.0 or GPL-3.0 licenses with your name and year filled in — ready to save as LICENSE.",
+  "body": "<div class=\"tool-layout split\">\n    <div class=\"tool-panel\">\n      <div class=\"field\">\n        <label for=\"licenseSelect\">License</label>\n        <select id=\"licenseSelect\">\n          <option value=\"MIT\">MIT</option>\n          <option value=\"Apache-2.0\">Apache License 2.0</option>\n          <option value=\"GPL-3.0\">GNU GPL v3</option>\n        </select>\n      </div>\n      <div class=\"field\">\n        <label for=\"holderInput\">Copyright holder (your name or company)</label>\n        <input type=\"text\" id=\"holderInput\" value=\"Your Name\">\n      </div>\n      <div class=\"field\">\n        <label for=\"yearInput\">Year</label>\n        <input type=\"number\" id=\"yearInput\" value=\"2026\" min=\"2000\" max=\"2100\">\n      </div>\n      <button class=\"btn btn-primary btn-block\" id=\"generateBtn\">Generate license</button>\n    </div>\n    <div class=\"tool-panel\">\n      <h3 style=\"margin-bottom:12px;\">License text</h3>\n      <div class=\"output-box\" id=\"outputBox\" style=\"max-height:460px;\">Choose a license and generate its full text.</div>\n      <div class=\"copy-row\" style=\"justify-content:flex-start;margin-top:12px;\">\n        <button class=\"btn btn-secondary btn-sm\" id=\"copyBtn\">Copy</button>\n        <button class=\"btn btn-primary btn-sm\" id=\"downloadBtn\">Download LICENSE</button>\n      </div>\n    </div>\n  </div>",
+  "howto": [
+    "Choose a license — MIT, Apache 2.0 or GPL-3.0.",
+    "Enter the copyright holder name and the year.",
+    "Click <strong>Generate license</strong>.",
+    "Review the full legal text with your details inserted.",
+    "Download it as a LICENSE file and place it in your repo root."
+  ],
+  "features": [
+    "Complete text of MIT, Apache 2.0 and GPL-3.0",
+    "Copyright holder and year filled in automatically",
+    "Copy or download as a LICENSE file",
+    "Handy per-license summary of what it allows",
+    "Client-side generation"
+  ],
+  "faq": [
+    {
+      "q": "Which license should I choose?",
+      "a": "MIT is permissive and popular for most projects. Apache 2.0 adds explicit patent protection. GPL-3.0 is a copyleft license that requires derivative works to stay open. Pick based on your goals."
+    },
+    {
+      "q": "Is this legal advice?",
+      "a": "No. The text is the official license boilerplate, but if you are unsure, consult a lawyer — especially for company or commercial projects."
+    },
+    {
+      "q": "Where should the license file go?",
+      "a": "In the project root, named LICENSE or LICENSE.md. Most platforms and package managers read it automatically from there."
+    },
+    {
+      "q": "Is the license uploaded?",
+      "a": "No. The text is generated locally in your browser."
+    }
+  ]
+}
