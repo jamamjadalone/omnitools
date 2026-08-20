@@ -1,6 +1,6 @@
 /* ============ Hero ============ */
 .hero{
-  position: relative; padding: 80px 0 60px; overflow: hidden;
+  position: relative; padding: 100px 0 60px; overflow: hidden;
 }
 .hero::before{
   content: ""; position: absolute; top: -200px; left: 50%; transform: translateX(-50%);
@@ -14,6 +14,7 @@
 .hero-stats .stat{ text-align: left; }
 .hero-stats .stat b{ display: block; font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; }
 .hero-stats .stat span{ font-size: .78rem; color: var(--text-faint); text-transform: uppercase; letter-spacing: .05em; }
+.hero-cta{ display: flex; gap: 12px; justify-content: center; margin-top: 32px; flex-wrap: wrap; }
 
 /* Ticker: rotating strip of tool chips, the page's signature motif */
 .tool-ticker{
@@ -29,6 +30,18 @@
 }
 @keyframes ticker-scroll{ from{ transform: translateX(0); } to{ transform: translateX(-50%); } }
 
+/* ============ How it works ============ */
+.steps-grid{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; counter-reset: step; }
+.step-card{ position: relative; padding: 28px 24px; border-radius: var(--radius-md); background: var(--bg-elev); border: 1px solid var(--border); counter-increment: step; }
+.step-card::before{
+  content: counter(step); display: flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border-radius: 50%;
+  background: var(--accent-soft); color: var(--accent); font-family: var(--font-display); font-weight: 800; font-size: 1rem;
+  margin-bottom: 16px;
+}
+.step-card h3{ font-size: 1.05rem; margin-bottom: 6px; }
+.step-card p{ font-size: .9rem; margin: 0; }
+
 /* ============ Why choose / features ============ */
 .feature-grid{ display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 24px; }
 .feature{ padding: 24px; border-radius: var(--radius-md); background: var(--bg-elev); border: 1px solid var(--border); }
@@ -39,6 +52,12 @@
 .newsletter form{ display: flex; gap: 10px; max-width: 420px; margin: 24px auto 0; }
 .newsletter input{ flex: 1; padding: 13px 16px; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg); color: var(--text); }
 
+/* ============ Built by ============ */
+.built-by{ text-align: center; padding: 0 0 8px; }
+.built-by a{ display: inline-flex; align-items: center; gap: 8px; color: var(--text-faint); font-size: .88rem; font-weight: 500; transition: color var(--dur-fast) var(--ease); }
+.built-by a:hover{ color: #ff0000; }
+.built-by a svg{ width: 20px; height: 20px; }
+
 /* Section reveal animation */
 .reveal{ opacity: 0; transform: translateY(18px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
 .reveal.in-view{ opacity: 1; transform: translateY(0); }
@@ -47,4 +66,6 @@
   .footer-grid{ grid-template-columns: 1fr 1fr; }
   .newsletter{ padding: 32px 22px; }
   .newsletter form{ flex-direction: column; }
+  .steps-grid{ grid-template-columns: 1fr; }
+  .hero{ padding: 60px 0 40px; }
 }
