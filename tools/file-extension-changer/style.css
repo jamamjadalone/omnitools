@@ -1,0 +1,5 @@
+/* File Extension Changer styles */
+.dragover {
+  border-color: var(--accent) !important;
+  background: var(--bg-hover) !important;
+}
