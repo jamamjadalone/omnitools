@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../../" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>File Extension Changer — Free Online Tool | OmniTools</title>
+<meta name="description" content="Quickly change and convert file extensions in batch. Works 100% locally in your browser with instant ZIP download.">
+<link rel="canonical" href="https://jamamjadalone.github.io/omnitools/tools/file-extension-changer/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="File Extension Changer — OmniTools">
+<meta property="og:description" content="Quickly change and convert file extensions in batch. Works 100% locally in your browser with instant ZIP download.">
+<meta property="og:url" content="https://jamamjadalone.github.io/omnitools/tools/file-extension-changer/index.html">
+<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#0a0c11">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/base.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/tool-page.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "File Extension Changer",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "description": "Batch change or convert file extensions locally in your browser with zero upload."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://jamamjadalone.github.io/omnitools/index.html" },
+    { "@type": "ListItem", "position": 2, "name": "Converters", "item": "https://jamamjadalone.github.io/omnitools/categories/converters.html" },
+    { "@type": "ListItem", "position": 3, "name": "File Extension Changer", "item": "https://jamamjadalone.github.io/omnitools/tools/file-extension-changer/index.html" }
+  ]
+}
+</script>
+</head>
+<body data-tool="file-extension-changer" data-category-of-tool="converters">
+<a href="#main" class="skip-link">Skip to content</a>
+<header id="site-header" class="site-header"></header>
+<main id="main">
+<div class="container tool-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="../../index.html">Home</a><span>/</span>
+    <a href="../../categories/converters.html">Converters</a><span>/</span>
+    <span>File Extension Changer</span>
+  </nav>
+
+  <div class="tool-header">
+    <span class="tool-icon-lg" aria-hidden="true">📁</span>
+    <div>
+      <h1>File Extension Changer</h1>
+      <p class="tool-sub">Batch change and convert file extensions instantly. Works 100% locally in your browser with zero uploads.</p>
+    </div>
+  </div>
+
+  <div class="tool-layout split">
+    <div class="tool-panel">
+      <div class="field">
+        <label for="newExtSelect">Target extension</label>
+        <select id="newExtSelect">
+          <option value="jpg">.jpg (JPEG Image)</option>
+          <option value="png">.png (PNG Image)</option>
+          <option value="webp">.webp (WebP Image)</option>
+          <option value="pdf">.pdf (PDF Document)</option>
+          <option value="txt">.txt (Text File)</option>
+          <option value="csv">.csv (CSV Spreadsheet)</option>
+          <option value="json">.json (JSON Data)</option>
+          <option value="zip">.zip (ZIP Archive)</option>
+          <option value="mp3">.mp3 (Audio File)</option>
+          <option value="mp4">.mp4 (Video File)</option>
+          <option value="custom">Custom Extension...</option>
+        </select>
+      </div>
+      <div class="field" id="customExtWrap" style="display:none;">
+        <label for="customExtInput">Custom extension (without dot)</label>
+        <input type="text" id="customExtInput" placeholder="e.g. svg, mkv, md">
+      </div>
+
+      <div class="dropzone" id="dropzone" tabindex="0" role="button" aria-label="Drop files to change extensions">
+        <div class="dz-icon" aria-hidden="true">📁</div>
+        <p>Drop files here or click to browse</p>
+        <p class="dz-hint">Select any file type — fast, private &amp; in-browser</p>
+        <input type="file" id="fileInput" multiple hidden>
+      </div>
+
+      <div class="field-row" style="margin-top:16px;display:flex;gap:10px;">
+        <button class="btn btn-primary" id="processBtn" style="flex:1;" disabled>Change Extensions</button>
+        <button class="btn btn-secondary" id="clearBtn" disabled>Clear</button>
+      </div>
+    </div>
+
+    <div class="tool-panel">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+        <h3 style="margin:0;">Files (<span id="fileCount">0</span>)</h3>
+        <button class="btn btn-primary btn-sm" id="downloadZipBtn" disabled>Download All (ZIP)</button>
+      </div>
+      <div class="output-box" id="fileListWrap" style="max-height:420px;overflow-y:auto;font-size:0.9rem;">
+        No files selected yet. Drop files on the left to get started.
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>About this tool</h2>
+    <p>File Extension Changer allows you to bulk rename and switch extensions of any files directly inside your web browser. Perfect for fixing misnamed file formats, converting file extensions in bulk, or preparing assets for platform submission without downloading external utilities.</p>
+  </div>
+
+  <div class="content-block">
+    <h2>How to use it</h2>
+    <ol class="how-to-steps">
+      <li>Select the desired target extension from the dropdown, or enter a custom one.</li>
+      <li>Drop your files into the upload area or click to select them from your device.</li>
+      <li>Click <strong>Change Extensions</strong> to apply the new extensions.</li>
+      <li>Download individual files directly or click <strong>Download All (ZIP)</strong> to save everything in one package.</li>
+    </ol>
+  </div>
+
+  <div class="content-block">
+    <h2>Features</h2>
+    <ul style="display:grid;gap:10px;color:var(--text-dim);list-style:disc;padding-left:20px;">
+      <li>100% Client-Side: Your files never leave your computer or get uploaded anywhere.</li>
+      <li>Batch Support: Convert dozens or hundreds of files simultaneously.</li>
+      <li>Custom Extensions: Specify any custom extension you need.</li>
+      <li>Single-click ZIP Export: Download all converted files neatly bundled.</li>
+      <li>Completely Free with no file size or count limits.</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Frequently asked questions</h2>
+    <div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Does changing the extension alter file data? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>Changing a file extension updates the filename container, allowing programs that identify files by extension to recognize them. It retains 100% of the underlying binary data without quality loss.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Are my files uploaded to any server? <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="faq-answer"><p>No. All processing happens entirely in your local browser sandbox memory.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block related-tools">
+    <h2>Related tools</h2>
+    <div class="grid grid-tools" id="relatedToolsGrid"></div>
+  </div>
+</div>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/render.js"></script>
+<script src="../../assets/js/vendor/jszip.min.js"></script>
+<script src="../../assets/js/vendor/filesaver.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
