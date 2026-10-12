@@ -3,61 +3,61 @@
     {
       "id": "image-tools",
       "name": "Image Tools",
-      "icon": "🖼️",
+      "icon": "\ud83d\uddbc\ufe0f",
       "description": "Compress, convert and analyze images entirely in your browser."
     },
     {
       "id": "video-tools",
       "name": "Video Tools",
-      "icon": "🎬",
+      "icon": "\ud83c\udfac",
       "description": "Utilities for working with video files. More tools coming soon."
     },
     {
       "id": "pdf-tools",
       "name": "PDF Tools",
-      "icon": "📄",
+      "icon": "\ud83d\udcc4",
       "description": "Work with PDF documents quickly and privately."
     },
     {
       "id": "ai-tools",
       "name": "AI Tools",
-      "icon": "🤖",
+      "icon": "\ud83e\udd16",
       "description": "Lightweight AI-assisted utilities."
     },
     {
       "id": "seo-tools",
       "name": "SEO Tools",
-      "icon": "📈",
+      "icon": "\ud83d\udcc8",
       "description": "Improve visibility and technical SEO health."
     },
     {
       "id": "developer-tools",
       "name": "Developer Tools",
-      "icon": "🛠️",
+      "icon": "\ud83d\udee0\ufe0f",
       "description": "Everyday utilities for writing and debugging code."
     },
     {
       "id": "text-tools",
       "name": "Text Tools",
-      "icon": "📝",
+      "icon": "\ud83d\udcdd",
       "description": "Manipulate, clean and generate text."
     },
     {
       "id": "converters",
       "name": "Converters",
-      "icon": "🔄",
+      "icon": "\ud83d\udd04",
       "description": "Convert data between common formats."
     },
     {
       "id": "calculators",
       "name": "Calculators",
-      "icon": "🧮",
+      "icon": "\ud83e\uddee",
       "description": "Quick calculators for everyday numbers."
     },
     {
       "id": "utilities",
       "name": "Utilities",
-      "icon": "⚙️",
+      "icon": "\u2699\ufe0f",
       "description": "Generators and small utilities that don't fit elsewhere."
     }
   ],
@@ -67,9 +67,16 @@
       "name": "Image Compressor",
       "slug": "image-compressor",
       "category": "image-tools",
-      "icon": "🗜️",
+      "icon": "\ud83d\udddc\ufe0f",
       "description": "Shrink JPG, PNG and WebP images in your browser without losing visible quality.",
-      "keywords": ["compress image", "reduce image size", "image optimizer", "shrink photo", "jpg compressor", "png compressor"],
+      "keywords": [
+        "compress image",
+        "reduce image size",
+        "image optimizer",
+        "shrink photo",
+        "jpg compressor",
+        "png compressor"
+      ],
       "featured": true,
       "isNew": false
     },
@@ -78,9 +85,14 @@
       "name": "QR Code Generator",
       "slug": "qr-code-generator",
       "category": "image-tools",
-      "icon": "▦",
+      "icon": "\u25a6",
       "description": "Turn any link, text or Wi-Fi password into a downloadable QR code.",
-      "keywords": ["qr code", "generate qr", "qr generator", "make qr code"],
+      "keywords": [
+        "qr code",
+        "generate qr",
+        "qr generator",
+        "make qr code"
+      ],
       "featured": true,
       "isNew": false
     },
@@ -89,9 +101,15 @@
       "name": "Color Palette Extractor",
       "slug": "color-palette-extractor",
       "category": "image-tools",
-      "icon": "🎨",
+      "icon": "\ud83c\udfa8",
       "description": "Pull the dominant colors out of any image and copy their hex codes.",
-      "keywords": ["color palette", "extract colors", "dominant color", "image colors", "hex from image"],
+      "keywords": [
+        "color palette",
+        "extract colors",
+        "dominant color",
+        "image colors",
+        "hex from image"
+      ],
       "featured": true,
       "isNew": false
     },
@@ -100,9 +118,14 @@
       "name": "Email Extractor",
       "slug": "email-extractor",
       "category": "text-tools",
-      "icon": "✉️",
+      "icon": "\u2709\ufe0f",
       "description": "Pull every valid email address out of pasted text in one click.",
-      "keywords": ["extract email", "find emails in text", "email finder", "email scraper text"],
+      "keywords": [
+        "extract email",
+        "find emails in text",
+        "email finder",
+        "email scraper text"
+      ],
       "featured": false,
       "isNew": false
     },
@@ -113,7 +136,13 @@
       "category": "developer-tools",
       "icon": "{ }",
       "description": "Format, validate and minify JSON with clear error messages.",
-      "keywords": ["json formatter", "json validator", "json beautifier", "json minify", "pretty print json"],
+      "keywords": [
+        "json formatter",
+        "json validator",
+        "json beautifier",
+        "json minify",
+        "pretty print json"
+      ],
       "featured": true,
       "isNew": false
     },
@@ -122,9 +151,13 @@
       "name": "Base64 Encoder / Decoder",
       "slug": "base64-encoder-decoder",
       "category": "developer-tools",
-      "icon": "⇄",
+      "icon": "\u21c4",
       "description": "Encode text to Base64 or decode Base64 back to readable text instantly.",
-      "keywords": ["base64 encode", "base64 decode", "base64 converter"],
+      "keywords": [
+        "base64 encode",
+        "base64 decode",
+        "base64 converter"
+      ],
       "featured": false,
       "isNew": false
     },
@@ -133,9 +166,13 @@
       "name": "Lorem Ipsum Generator",
       "slug": "lorem-ipsum-generator",
       "category": "text-tools",
-      "icon": "¶",
+      "icon": "\u00b6",
       "description": "Generate placeholder paragraphs, sentences or words for mockups.",
-      "keywords": ["lorem ipsum", "placeholder text", "dummy text generator"],
+      "keywords": [
+        "lorem ipsum",
+        "placeholder text",
+        "dummy text generator"
+      ],
       "featured": false,
       "isNew": false
     },
@@ -144,9 +181,14 @@
       "name": "Password Generator",
       "slug": "password-generator",
       "category": "utilities",
-      "icon": "🔑",
+      "icon": "\ud83d\udd11",
       "description": "Create strong, random passwords with full control over length and character sets.",
-      "keywords": ["password generator", "random password", "strong password maker", "secure password"],
+      "keywords": [
+        "password generator",
+        "random password",
+        "strong password maker",
+        "secure password"
+      ],
       "featured": true,
       "isNew": true
     },
@@ -157,7 +199,11 @@
       "category": "developer-tools",
       "icon": "#",
       "description": "Generate RFC 4122 v4 UUIDs in bulk, ready to copy or download.",
-      "keywords": ["uuid generator", "guid generator", "generate uuid v4"],
+      "keywords": [
+        "uuid generator",
+        "guid generator",
+        "generate uuid v4"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -168,7 +214,12 @@
       "category": "text-tools",
       "icon": "Aa",
       "description": "Convert text between UPPERCASE, lowercase, Title Case, camelCase and more.",
-      "keywords": ["text case converter", "uppercase lowercase", "camel case", "title case generator"],
+      "keywords": [
+        "text case converter",
+        "uppercase lowercase",
+        "camel case",
+        "title case generator"
+      ],
       "featured": false,
       "isNew": false
     },
@@ -177,9 +228,15 @@
       "name": "Stock Asset Readiness Checker",
       "slug": "stock-asset-readiness-checker",
       "category": "image-tools",
-      "icon": "✅",
+      "icon": "\u2705",
       "description": "Auto-check resolution, format, transparency, aspect ratio and size against Adobe Stock, Shutterstock, Freepik or Envato requirements.",
-      "keywords": ["stock photo check", "image requirements", "adobe stock checklist", "shutterstock requirements", "asset readiness"],
+      "keywords": [
+        "stock photo check",
+        "image requirements",
+        "adobe stock checklist",
+        "shutterstock requirements",
+        "asset readiness"
+      ],
       "featured": true,
       "isNew": true
     },
@@ -188,9 +245,14 @@
       "name": "Batch File Renamer",
       "slug": "batch-file-renamer",
       "category": "utilities",
-      "icon": "📁",
+      "icon": "\ud83d\udcc1",
       "description": "Rename or change the extension of many files at once and download them all as a ZIP.",
-      "keywords": ["batch rename files", "change extension", "rename files in folder", "bulk renamer"],
+      "keywords": [
+        "batch rename files",
+        "change extension",
+        "rename files in folder",
+        "bulk renamer"
+      ],
       "featured": true,
       "isNew": true
     },
@@ -199,9 +261,14 @@
       "name": "Universal File Saver",
       "slug": "universal-file-saver",
       "category": "utilities",
-      "icon": "💾",
+      "icon": "\ud83d\udcbe",
       "description": "Turn any pasted text or code into a downloadable file with the right extension.",
-      "keywords": ["save text as file", "download text file", "code snippet to file", "file saver"],
+      "keywords": [
+        "save text as file",
+        "download text file",
+        "code snippet to file",
+        "file saver"
+      ],
       "featured": true,
       "isNew": true
     },
@@ -210,9 +277,15 @@
       "name": "SEO-Friendly Filename Generator",
       "slug": "seo-friendly-filename-generator",
       "category": "seo-tools",
-      "icon": "🔤",
+      "icon": "\ud83d\udd24",
       "description": "Turn any text into a clean, SEO-friendly filename or URL slug with one click.",
-      "keywords": ["seo filename", "filename generator", "slug generator", "clean file name", "seo friendly url"],
+      "keywords": [
+        "seo filename",
+        "filename generator",
+        "slug generator",
+        "clean file name",
+        "seo friendly url"
+      ],
       "featured": true,
       "isNew": true
     },
@@ -221,9 +294,15 @@
       "name": "Stock Photo Metadata Generator",
       "slug": "stock-photo-metadata-generator",
       "category": "image-tools",
-      "icon": "🏷️",
+      "icon": "\ud83c\udff7\ufe0f",
       "description": "Generate a platform-ready title, description and keyword list from a short photo description.",
-      "keywords": ["stock metadata", "photo title generator", "keywords for stock photos", "description generator", "adobe stock metadata"],
+      "keywords": [
+        "stock metadata",
+        "photo title generator",
+        "keywords for stock photos",
+        "description generator",
+        "adobe stock metadata"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -232,9 +311,14 @@
       "name": "AI Image Disclosure Helper",
       "slug": "ai-image-disclosure-helper",
       "category": "image-tools",
-      "icon": "🤖",
+      "icon": "\ud83e\udd16",
       "description": "Generate the correct AI-generated or AI-assisted disclosure note for major stock platforms.",
-      "keywords": ["ai disclosure", "ai generated disclaimer", "stock ai policy", "disclose ai image"],
+      "keywords": [
+        "ai disclosure",
+        "ai generated disclaimer",
+        "stock ai policy",
+        "disclose ai image"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -243,9 +327,14 @@
       "name": "Image Background Edge Checker",
       "slug": "image-background-edge-checker",
       "category": "image-tools",
-      "icon": "🖼️",
+      "icon": "\ud83d\uddbc\ufe0f",
       "description": "Preview a transparent PNG over solid colors to catch halos and messy cut-out edges.",
-      "keywords": ["png edge checker", "background removal check", "halo detection", "transparent image check"],
+      "keywords": [
+        "png edge checker",
+        "background removal check",
+        "halo detection",
+        "transparent image check"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -254,9 +343,15 @@
       "name": "File Type Detector",
       "slug": "file-type-detector",
       "category": "utilities",
-      "icon": "🔍",
+      "icon": "\ud83d\udd0d",
       "description": "Read a file's real type from its magic bytes and spot extension mismatches.",
-      "keywords": ["file type detector", "magic bytes", "file format checker", "real file extension", "file validator"],
+      "keywords": [
+        "file type detector",
+        "magic bytes",
+        "file format checker",
+        "real file extension",
+        "file validator"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -265,9 +360,14 @@
       "name": "Alt Text Generator Helper",
       "slug": "alt-text-generator",
       "category": "seo-tools",
-      "icon": "♿",
-      "description": "Write clear, descriptive alt text for your images from a short description — template-based, no AI calls, fully in your browser.",
-      "keywords": ["alt text generator", "image alt text", "accessibility text", "alt attribute helper"],
+      "icon": "\u267f",
+      "description": "Write clear, descriptive alt text for your images from a short description \u2014 template-based, no AI calls, fully in your browser.",
+      "keywords": [
+        "alt text generator",
+        "image alt text",
+        "accessibility text",
+        "alt attribute helper"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -276,9 +376,14 @@
       "name": "Aspect Ratio Cropper",
       "slug": "aspect-ratio-cropper",
       "category": "image-tools",
-      "icon": "✂️",
-      "description": "Crop any image to a specific aspect ratio with common presets — 1:1, 4:3, 16:9 and stock-platform squares — then download it.",
-      "keywords": ["aspect ratio", "crop image", "image cropper", "ratio crop"],
+      "icon": "\u2702\ufe0f",
+      "description": "Crop any image to a specific aspect ratio with common presets \u2014 1:1, 4:3, 16:9 and stock-platform squares \u2014 then download it.",
+      "keywords": [
+        "aspect ratio",
+        "crop image",
+        "image cropper",
+        "ratio crop"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -287,9 +392,14 @@
       "name": "Bulk Image Resizer",
       "slug": "bulk-image-resizer",
       "category": "image-tools",
-      "icon": "🖥️",
+      "icon": "\ud83d\udda5\ufe0f",
       "description": "Resize many images at once by target dimensions, scale or target file size, then download them all as a ZIP.",
-      "keywords": ["bulk image resizer", "resize images", "batch resize", "image resizer"],
+      "keywords": [
+        "bulk image resizer",
+        "resize images",
+        "batch resize",
+        "image resizer"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -298,9 +408,14 @@
       "name": "Content Calendar CSV Generator",
       "slug": "content-calendar-csv-generator",
       "category": "text-tools",
-      "icon": "📅",
-      "description": "Generate a ready-to-use social media content calendar as a CSV — pick a month, add your posts, and download for any spreadsheet app.",
-      "keywords": ["content calendar", "social media calendar", "csv generator", "content planner"],
+      "icon": "\ud83d\udcc5",
+      "description": "Generate a ready-to-use social media content calendar as a CSV \u2014 pick a month, add your posts, and download for any spreadsheet app.",
+      "keywords": [
+        "content calendar",
+        "social media calendar",
+        "csv generator",
+        "content planner"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -309,9 +424,14 @@
       "name": "CSV Column Renamer / Cleaner",
       "slug": "csv-column-renamer",
       "category": "text-tools",
-      "icon": "🧾",
+      "icon": "\ud83e\uddfe",
       "description": "Paste a CSV, rename or reorder its columns, trim whitespace and fix encoding, then download the cleaned file.",
-      "keywords": ["csv renamer", "csv cleaner", "csv columns", "csv editor"],
+      "keywords": [
+        "csv renamer",
+        "csv cleaner",
+        "csv columns",
+        "csv editor"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -320,9 +440,14 @@
       "name": "Duplicate File Finder",
       "slug": "duplicate-file-finder",
       "category": "utilities",
-      "icon": "👯",
-      "description": "Drop a batch of files and find exact duplicates using SHA-256 hashes computed right in your browser — no uploads.",
-      "keywords": ["duplicate files", "find duplicates", "file dedup", "duplicate finder"],
+      "icon": "\ud83d\udc6f",
+      "description": "Drop a batch of files and find exact duplicates using SHA-256 hashes computed right in your browser \u2014 no uploads.",
+      "keywords": [
+        "duplicate files",
+        "find duplicates",
+        "file dedup",
+        "duplicate finder"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -331,9 +456,14 @@
       "name": ".env Template Generator",
       "slug": "env-template-generator",
       "category": "developer-tools",
-      "icon": "🌿",
-      "description": "Generate a ready-to-fill .env template for your stack — Node.js, React, Django, Laravel and more — with comments and placeholders.",
-      "keywords": ["env template", "dotenv generator", "environment variables", "env file"],
+      "icon": "\ud83c\udf3f",
+      "description": "Generate a ready-to-fill .env template for your stack \u2014 Node.js, React, Django, Laravel and more \u2014 with comments and placeholders.",
+      "keywords": [
+        "env template",
+        "dotenv generator",
+        "environment variables",
+        "env file"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -342,9 +472,14 @@
       "name": "EXIF / Metadata Stripper",
       "slug": "exif-metadata-stripper",
       "category": "image-tools",
-      "icon": "🕵️",
-      "description": "Remove EXIF, GPS and other hidden metadata from JPGs before publishing or uploading — protects your privacy and shrinks the file.",
-      "keywords": ["exif stripper", "metadata remover", "strip exif", "privacy photo"],
+      "icon": "\ud83d\udd75\ufe0f",
+      "description": "Remove EXIF, GPS and other hidden metadata from JPGs before publishing or uploading \u2014 protects your privacy and shrinks the file.",
+      "keywords": [
+        "exif stripper",
+        "metadata remover",
+        "strip exif",
+        "privacy photo"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -353,9 +488,14 @@
       "name": "File Hash / Checksum Verifier",
       "slug": "file-hash-verifier",
       "category": "utilities",
-      "icon": "🔐",
+      "icon": "\ud83d\udd10",
       "description": "Compute the SHA-256 checksum of any file in your browser and compare it against the hash provided by the download source.",
-      "keywords": ["file hash", "checksum verifier", "sha256 file", "file integrity"],
+      "keywords": [
+        "file hash",
+        "checksum verifier",
+        "sha256 file",
+        "file integrity"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -364,9 +504,14 @@
       "name": "File Size Batch Checker",
       "slug": "file-size-batch-checker",
       "category": "utilities",
-      "icon": "📏",
-      "description": "Drop many files and instantly see which ones exceed a size limit you set — sorted biggest first, with a downloadable CSV report.",
-      "keywords": ["file size checker", "batch file size", "size limit check", "file size report"],
+      "icon": "\ud83d\udccf",
+      "description": "Drop many files and instantly see which ones exceed a size limit you set \u2014 sorted biggest first, with a downloadable CSV report.",
+      "keywords": [
+        "file size checker",
+        "batch file size",
+        "size limit check",
+        "file size report"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -375,9 +520,14 @@
       "name": "Filename Cleaner",
       "slug": "filename-illegal-character-cleaner",
       "category": "utilities",
-      "icon": "🧹",
+      "icon": "\ud83e\uddf9",
       "description": "Strip characters that break filenames on Windows, Mac or cloud uploads, and see exactly what would be replaced.",
-      "keywords": ["filename cleaner", "illegal characters", "filename fix", "safe filename"],
+      "keywords": [
+        "filename cleaner",
+        "illegal characters",
+        "filename fix",
+        "safe filename"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -386,9 +536,14 @@
       "name": ".gitignore Generator",
       "slug": "gitignore-generator",
       "category": "developer-tools",
-      "icon": "🚫",
-      "description": "Generate a .gitignore file for your project — pick your language or framework and combine multiple presets into one ready-to-use file.",
-      "keywords": ["gitignore generator", "gitignore template", "git ignore file", "git ignore"],
+      "icon": "\ud83d\udeab",
+      "description": "Generate a .gitignore file for your project \u2014 pick your language or framework and combine multiple presets into one ready-to-use file.",
+      "keywords": [
+        "gitignore generator",
+        "gitignore template",
+        "git ignore file",
+        "git ignore"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -397,9 +552,14 @@
       "name": "Hashtag Generator",
       "slug": "hashtag-generator",
       "category": "text-tools",
-      "icon": "#️⃣",
+      "icon": "#\ufe0f\u20e3",
       "description": "Turn a short topic or description into a ready-to-paste set of relevant hashtags for Instagram, X, TikTok or LinkedIn.",
-      "keywords": ["hashtag generator", "hashtags", "social media hashtags", "trending hashtags"],
+      "keywords": [
+        "hashtag generator",
+        "hashtags",
+        "social media hashtags",
+        "trending hashtags"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -408,9 +568,14 @@
       "name": "Image DPI / PPI Setter",
       "slug": "image-dpi-setter",
       "category": "image-tools",
-      "icon": "📐",
+      "icon": "\ud83d\udcd0",
       "description": "Set the DPI/PPI metadata of a JPG for print-ready stock submissions without changing the pixel dimensions.",
-      "keywords": ["image dpi", "set dpi", "ppi setter", "print resolution"],
+      "keywords": [
+        "image dpi",
+        "set dpi",
+        "ppi setter",
+        "print resolution"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -419,9 +584,14 @@
       "name": "Image Format Converter",
       "slug": "image-format-converter",
       "category": "converters",
-      "icon": "🔄",
+      "icon": "\ud83d\udd04",
       "description": "Convert images between JPG, PNG and WebP with quality control, and batch-download all results as a ZIP.",
-      "keywords": ["image format converter", "jpg to png", "png to webp", "image converter"],
+      "keywords": [
+        "image format converter",
+        "jpg to png",
+        "png to webp",
+        "image converter"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -430,9 +600,14 @@
       "name": "Keyword List Formatter",
       "slug": "keyword-list-formatter",
       "category": "seo-tools",
-      "icon": "🔑",
-      "description": "Paste a messy dump of keywords and get a clean, deduplicated, alphabetized list — ready as comma-separated text, lines or CSV.",
-      "keywords": ["keyword formatter", "keyword list", "deduplicate keywords", "keyword organizer"],
+      "icon": "\ud83d\udd11",
+      "description": "Paste a messy dump of keywords and get a clean, deduplicated, alphabetized list \u2014 ready as comma-separated text, lines or CSV.",
+      "keywords": [
+        "keyword formatter",
+        "keyword list",
+        "deduplicate keywords",
+        "keyword organizer"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -441,9 +616,14 @@
       "name": "License Text Generator",
       "slug": "license-text-generator",
       "category": "developer-tools",
-      "icon": "⚖️",
-      "description": "Generate the full text of MIT, Apache 2.0 or GPL-3.0 licenses with your name and year filled in — ready to save as LICENSE.",
-      "keywords": ["license generator", "mit license", "open source license", "license text"],
+      "icon": "\u2696\ufe0f",
+      "description": "Generate the full text of MIT, Apache 2.0 or GPL-3.0 licenses with your name and year filled in \u2014 ready to save as LICENSE.",
+      "keywords": [
+        "license generator",
+        "mit license",
+        "open source license",
+        "license text"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -452,9 +632,14 @@
       "name": "Meta Description Length Checker",
       "slug": "meta-description-length-checker",
       "category": "seo-tools",
-      "icon": "📝",
+      "icon": "\ud83d\udcdd",
       "description": "Check how your meta description will look in Google search results and whether it fits the recommended character limits.",
-      "keywords": ["meta description", "description length", "seo meta", "google snippet"],
+      "keywords": [
+        "meta description",
+        "description length",
+        "seo meta",
+        "google snippet"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -463,9 +648,14 @@
       "name": "package.json Validator",
       "slug": "package-json-validator",
       "category": "developer-tools",
-      "icon": "📦",
-      "description": "Validate and format your package.json — check required fields, version syntax and JSON validity with clear error messages.",
-      "keywords": ["package.json validator", "npm validate", "package validator", "node validator"],
+      "icon": "\ud83d\udce6",
+      "description": "Validate and format your package.json \u2014 check required fields, version syntax and JSON validity with clear error messages.",
+      "keywords": [
+        "package.json validator",
+        "npm validate",
+        "package validator",
+        "node validator"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -474,9 +664,14 @@
       "name": "README Template Generator",
       "slug": "readme-template-generator",
       "category": "developer-tools",
-      "icon": "📖",
-      "description": "Generate a professional README.md for your project — title, badges, features, installation, usage and license sections with your details filled in.",
-      "keywords": ["readme generator", "readme template", "documentation generator", "project readme"],
+      "icon": "\ud83d\udcd6",
+      "description": "Generate a professional README.md for your project \u2014 title, badges, features, installation, usage and license sections with your details filled in.",
+      "keywords": [
+        "readme generator",
+        "readme template",
+        "documentation generator",
+        "project readme"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -485,9 +680,14 @@
       "name": "Slug Generator",
       "slug": "slug-generator",
       "category": "seo-tools",
-      "icon": "🔗",
-      "description": "Turn any post title into a clean URL slug for your blog or website — lowercase, hyphenated and ready to paste into your CMS.",
-      "keywords": ["slug generator", "url slug", "clean url", "permalink generator"],
+      "icon": "\ud83d\udd17",
+      "description": "Turn any post title into a clean URL slug for your blog or website \u2014 lowercase, hyphenated and ready to paste into your CMS.",
+      "keywords": [
+        "slug generator",
+        "url slug",
+        "clean url",
+        "permalink generator"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -496,9 +696,14 @@
       "name": "Text File Encoding Converter",
       "slug": "text-file-encoding-converter",
       "category": "converters",
-      "icon": "🔡",
+      "icon": "\ud83d\udd21",
       "description": "Convert text files between UTF-8 and UTF-16 with live preview, then re-save with the correct encoding and optional BOM.",
-      "keywords": ["encoding converter", "utf8 utf16", "text encoding", "file encoding"],
+      "keywords": [
+        "encoding converter",
+        "utf8 utf16",
+        "text encoding",
+        "file encoding"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -507,9 +712,14 @@
       "name": "Thumbnail Grid / Contact Sheet Generator",
       "slug": "thumbnail-grid-generator",
       "category": "image-tools",
-      "icon": "🖨️",
+      "icon": "\ud83d\udda8\ufe0f",
       "description": "Combine a batch of images into a single printable contact sheet grid to review them all at a glance before submission.",
-      "keywords": ["thumbnail grid", "contact sheet", "image grid", "photo sheet"],
+      "keywords": [
+        "thumbnail grid",
+        "contact sheet",
+        "image grid",
+        "photo sheet"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -518,9 +728,14 @@
       "name": "Title Tag Length Checker",
       "slug": "title-tag-length-checker",
       "category": "seo-tools",
-      "icon": "🔖",
-      "description": "Check how your page title tag renders in Google search results and whether it fits the recommended 50–60 character range.",
-      "keywords": ["title tag", "title length", "seo title", "page title check"],
+      "icon": "\ud83d\udd16",
+      "description": "Check how your page title tag renders in Google search results and whether it fits the recommended 50\u201360 character range.",
+      "keywords": [
+        "title tag",
+        "title length",
+        "seo title",
+        "page title check"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -529,9 +744,14 @@
       "name": "Transparent PNG Checker",
       "slug": "transparent-png-checker",
       "category": "image-tools",
-      "icon": "🫥",
+      "icon": "\ud83e\udee5",
       "description": "Upload a PNG and instantly confirm whether it actually contains transparent pixels, and exactly how much of the image is transparent.",
-      "keywords": ["transparent png", "png checker", "transparency test", "alpha channel"],
+      "keywords": [
+        "transparent png",
+        "png checker",
+        "transparency test",
+        "alpha channel"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -540,9 +760,14 @@
       "name": "Watermark Adder",
       "slug": "watermark-adder",
       "category": "image-tools",
-      "icon": "💧",
-      "description": "Add a text watermark to your images for portfolio previews — position, size and opacity control, then batch-download as a ZIP.",
-      "keywords": ["watermark adder", "add watermark", "text watermark", "image watermark"],
+      "icon": "\ud83d\udca7",
+      "description": "Add a text watermark to your images for portfolio previews \u2014 position, size and opacity control, then batch-download as a ZIP.",
+      "keywords": [
+        "watermark adder",
+        "add watermark",
+        "text watermark",
+        "image watermark"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -551,9 +776,14 @@
       "name": "Word & Character Counter",
       "slug": "word-char-counter",
       "category": "text-tools",
-      "icon": "🔢",
+      "icon": "\ud83d\udd22",
       "description": "Count words, characters and reading time, and check your text against the limits of Instagram, X/Twitter and YouTube descriptions live.",
-      "keywords": ["word counter", "character counter", "text count", "word count"],
+      "keywords": [
+        "word counter",
+        "character counter",
+        "text count",
+        "word count"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -562,9 +792,14 @@
       "name": "ZIP Creator",
       "slug": "zip-creator",
       "category": "utilities",
-      "icon": "🗜️",
+      "icon": "\ud83d\udddc\ufe0f",
       "description": "Bundle any selection of files into a single .zip archive right in your browser, with optional per-file name edits.",
-      "keywords": ["zip creator", "create zip", "compress files", "zip archive"],
+      "keywords": [
+        "zip creator",
+        "create zip",
+        "compress files",
+        "zip archive"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -573,9 +808,14 @@
       "name": "ZIP Extractor",
       "slug": "zip-extractor",
       "category": "utilities",
-      "icon": "📦",
+      "icon": "\ud83d\udce6",
       "description": "Open a .zip file in your browser, browse its contents, and extract individual files or everything without installing anything.",
-      "keywords": ["zip extractor", "unzip files", "extract zip", "open zip"],
+      "keywords": [
+        "zip extractor",
+        "unzip files",
+        "extract zip",
+        "open zip"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -584,9 +824,14 @@
       "name": "Pig Latin Converter",
       "slug": "pig-latin",
       "category": "text-tools",
-      "icon": "🐷",
+      "icon": "\ud83d\udc37",
       "description": "Convert English text to Pig Latin instantly.",
-      "keywords": ["pig latin", "convert text", "word game", "language"],
+      "keywords": [
+        "pig latin",
+        "convert text",
+        "word game",
+        "language"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -595,9 +840,14 @@
       "name": "Text to Speech",
       "slug": "text-to-speech",
       "category": "text-tools",
-      "icon": "🔊",
+      "icon": "\ud83d\udd0a",
       "description": "Convert text to speech using your browser's built-in voices.",
-      "keywords": ["text to speech", "tts", "speech synthesis", "read aloud"],
+      "keywords": [
+        "text to speech",
+        "tts",
+        "speech synthesis",
+        "read aloud"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -606,9 +856,14 @@
       "name": "Password Memorizer",
       "slug": "password-memorizer",
       "category": "text-tools",
-      "icon": "🧠",
+      "icon": "\ud83e\udde0",
       "description": "Generate memorable passwords from word combinations.",
-      "keywords": ["memorable password", "passphrase", "word password", "easy password"],
+      "keywords": [
+        "memorable password",
+        "passphrase",
+        "word password",
+        "easy password"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -617,9 +872,14 @@
       "name": "ASCII Art Converter",
       "slug": "ascii-art-converter",
       "category": "text-tools",
-      "icon": "🔠",
+      "icon": "\ud83d\udd20",
       "description": "Convert text into large ASCII art banners.",
-      "keywords": ["ascii art", "text art", "banner", "font generator"],
+      "keywords": [
+        "ascii art",
+        "text art",
+        "banner",
+        "font generator"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -628,9 +888,14 @@
       "name": "Word Cloud Generator",
       "slug": "word-cloud-generator",
       "category": "text-tools",
-      "icon": "☁️",
+      "icon": "\u2601\ufe0f",
       "description": "Visualize word frequency from any text as a word cloud.",
-      "keywords": ["word cloud", "text analysis", "frequency", "word count"],
+      "keywords": [
+        "word cloud",
+        "text analysis",
+        "frequency",
+        "word count"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -639,9 +904,14 @@
       "name": "JSON Tree Viewer",
       "slug": "json-tree-viewer",
       "category": "developer-tools",
-      "icon": "🌲",
+      "icon": "\ud83c\udf32",
       "description": "Visualize JSON as an expandable/collapsible tree structure.",
-      "keywords": ["json viewer", "json tree", "json visualizer", "json formatter"],
+      "keywords": [
+        "json viewer",
+        "json tree",
+        "json visualizer",
+        "json formatter"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -650,9 +920,14 @@
       "name": "HTML Preview",
       "slug": "html-preview",
       "category": "developer-tools",
-      "icon": "🖥️",
+      "icon": "\ud83d\udda5\ufe0f",
       "description": "Write HTML and see a live preview in an iframe.",
-      "keywords": ["html preview", "live editor", "html tester", "code preview"],
+      "keywords": [
+        "html preview",
+        "live editor",
+        "html tester",
+        "code preview"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -661,9 +936,14 @@
       "name": "Git Commit Message Generator",
       "slug": "git-commit-msg",
       "category": "developer-tools",
-      "icon": "📝",
+      "icon": "\ud83d\udcdd",
       "description": "Generate conventional commit messages for your git commits.",
-      "keywords": ["git commit", "commit message", "conventional commits", "git helper"],
+      "keywords": [
+        "git commit",
+        "commit message",
+        "conventional commits",
+        "git helper"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -672,9 +952,14 @@
       "name": "DB Schema Designer",
       "slug": "db-schema-designer",
       "category": "developer-tools",
-      "icon": "🗃️",
+      "icon": "\ud83d\uddc3\ufe0f",
       "description": "Design database tables with fields, types, and constraints. Export as SQL.",
-      "keywords": ["database schema", "db designer", "sql generator", "table designer"],
+      "keywords": [
+        "database schema",
+        "db designer",
+        "sql generator",
+        "table designer"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -683,9 +968,15 @@
       "name": "String Hash Generator",
       "slug": "string-hash-generator",
       "category": "developer-tools",
-      "icon": "#️⃣",
+      "icon": "#\ufe0f\u20e3",
       "description": "Generate MD5, SHA-1, SHA-256, and SHA-512 hashes from any string.",
-      "keywords": ["hash generator", "md5", "sha256", "sha512", "checksum"],
+      "keywords": [
+        "hash generator",
+        "md5",
+        "sha256",
+        "sha512",
+        "checksum"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -694,9 +985,14 @@
       "name": "Keyboard Tester",
       "slug": "keyboard-tester",
       "category": "utilities",
-      "icon": "⌨️",
+      "icon": "\u2328\ufe0f",
       "description": "Test your keyboard with a visual keyboard layout.",
-      "keywords": ["keyboard tester", "key test", "keyboard check", "key tester"],
+      "keywords": [
+        "keyboard tester",
+        "key test",
+        "keyboard check",
+        "key tester"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -705,9 +1001,14 @@
       "name": "Color Blindness Simulator",
       "slug": "color-blindness-sim",
       "category": "utilities",
-      "icon": "👁️",
+      "icon": "\ud83d\udc41\ufe0f",
       "description": "Simulate deuteranopia, protanopia, and tritanopia on images.",
-      "keywords": ["color blindness", "color blind simulator", "accessibility", "deuteranopia"],
+      "keywords": [
+        "color blindness",
+        "color blind simulator",
+        "accessibility",
+        "deuteranopia"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -716,9 +1017,14 @@
       "name": "Battery Info",
       "slug": "battery-info",
       "category": "utilities",
-      "icon": "🔋",
+      "icon": "\ud83d\udd0b",
       "description": "Display your device battery status in real time.",
-      "keywords": ["battery status", "battery level", "battery info", "charge status"],
+      "keywords": [
+        "battery status",
+        "battery level",
+        "battery info",
+        "charge status"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -727,9 +1033,14 @@
       "name": "Connection Tester",
       "slug": "connection-tester",
       "category": "utilities",
-      "icon": "📡",
+      "icon": "\ud83d\udce1",
       "description": "Estimate your internet connection speed with a quick test.",
-      "keywords": ["speed test", "connection speed", "internet test", "bandwidth"],
+      "keywords": [
+        "speed test",
+        "connection speed",
+        "internet test",
+        "bandwidth"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -738,9 +1049,14 @@
       "name": "Clipboard History",
       "slug": "clipboard-history",
       "category": "utilities",
-      "icon": "📋",
+      "icon": "\ud83d\udccb",
       "description": "Store and recall clipboard entries in your browser.",
-      "keywords": ["clipboard", "copy paste", "clipboard manager", "text history"],
+      "keywords": [
+        "clipboard",
+        "copy paste",
+        "clipboard manager",
+        "text history"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -749,9 +1065,14 @@
       "name": "Tip & Split Calculator",
       "slug": "tip-split",
       "category": "calculators",
-      "icon": "💰",
+      "icon": "\ud83d\udcb0",
       "description": "Split bills with custom items, tip percentages, and per-person totals.",
-      "keywords": ["tip calculator", "bill split", "split bill", "tip and split"],
+      "keywords": [
+        "tip calculator",
+        "bill split",
+        "split bill",
+        "tip and split"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -760,9 +1081,14 @@
       "name": "Currency Converter",
       "slug": "currency-converter",
       "category": "calculators",
-      "icon": "💱",
+      "icon": "\ud83d\udcb1",
       "description": "Convert between 50+ world currencies using approximate rates.",
-      "keywords": ["currency converter", "exchange rate", "money converter", "forex"],
+      "keywords": [
+        "currency converter",
+        "exchange rate",
+        "money converter",
+        "forex"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -771,9 +1097,14 @@
       "name": "Pregnancy Due Date Calculator",
       "slug": "pregnancy-due-date",
       "category": "calculators",
-      "icon": "👶",
+      "icon": "\ud83d\udc76",
       "description": "Estimate your due date from the first day of your last menstrual period.",
-      "keywords": ["due date", "pregnancy calculator", "expected due date", "naegele"],
+      "keywords": [
+        "due date",
+        "pregnancy calculator",
+        "expected due date",
+        "naegele"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -782,9 +1113,14 @@
       "name": "Ovulation Calculator",
       "slug": "ovulation-calculator",
       "category": "calculators",
-      "icon": "🌸",
+      "icon": "\ud83c\udf38",
       "description": "Calculate ovulation and fertile window dates from your cycle.",
-      "keywords": ["ovulation", "fertile window", "cycle calculator", "ovulation date"],
+      "keywords": [
+        "ovulation",
+        "fertile window",
+        "cycle calculator",
+        "ovulation date"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -793,9 +1129,14 @@
       "name": "HTML to Markdown",
       "slug": "html-to-markdown",
       "category": "converters",
-      "icon": "📄",
+      "icon": "\ud83d\udcc4",
       "description": "Convert HTML to clean Markdown format.",
-      "keywords": ["html to markdown", "markdown converter", "html converter", "md"],
+      "keywords": [
+        "html to markdown",
+        "markdown converter",
+        "html converter",
+        "md"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -804,9 +1145,14 @@
       "name": "CSS to JS Object",
       "slug": "css-to-js-object",
       "category": "converters",
-      "icon": "🎨",
+      "icon": "\ud83c\udfa8",
       "description": "Convert CSS properties to a JavaScript camelCase style object.",
-      "keywords": ["css to js", "css object", "inline style", "camelcase"],
+      "keywords": [
+        "css to js",
+        "css object",
+        "inline style",
+        "camelcase"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -815,9 +1161,14 @@
       "name": "Text to Slug",
       "slug": "text-to-slug",
       "category": "converters",
-      "icon": "🔗",
+      "icon": "\ud83d\udd17",
       "description": "Generate URL-friendly slugs from any text.",
-      "keywords": ["url slug", "slug generator", "text to slug", "seo url"],
+      "keywords": [
+        "url slug",
+        "slug generator",
+        "text to slug",
+        "seo url"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -826,9 +1177,14 @@
       "name": "AI Text Checker",
       "slug": "ai-checker",
       "category": "ai-tools",
-      "icon": "🤖",
+      "icon": "\ud83e\udd16",
       "description": "Analyze text for patterns common in AI-generated content.",
-      "keywords": ["ai detector", "ai text", "ai checker", "gpt detector"],
+      "keywords": [
+        "ai detector",
+        "ai text",
+        "ai checker",
+        "gpt detector"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -837,9 +1193,14 @@
       "name": "Plagiarism Checker",
       "slug": "plagiarism-checker",
       "category": "ai-tools",
-      "icon": "🔍",
+      "icon": "\ud83d\udd0d",
       "description": "Compare two texts for similarity using word overlap analysis.",
-      "keywords": ["plagiarism", "text similarity", "copy checker", "duplicate text"],
+      "keywords": [
+        "plagiarism",
+        "text similarity",
+        "copy checker",
+        "duplicate text"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -848,9 +1209,14 @@
       "name": "Age Calculator",
       "slug": "age-calculator",
       "category": "calculators",
-      "icon": "🎂",
+      "icon": "\ud83c\udf82",
       "description": "Calculate your exact age in years, months and days from your birth date.",
-      "keywords": ["age calculator", "birth date", "how old am i", "age from birthday"],
+      "keywords": [
+        "age calculator",
+        "birth date",
+        "how old am i",
+        "age from birthday"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -859,9 +1225,14 @@
       "name": "API Tester",
       "slug": "api-tester",
       "category": "developer-tools",
-      "icon": "🧪",
-      "description": "Send HTTP requests to any API endpoint with custom headers, methods and body — see the response live.",
-      "keywords": ["api tester", "rest client", "http request", "api debugger"],
+      "icon": "\ud83e\uddea",
+      "description": "Send HTTP requests to any API endpoint with custom headers, methods and body \u2014 see the response live.",
+      "keywords": [
+        "api tester",
+        "rest client",
+        "http request",
+        "api debugger"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -870,9 +1241,14 @@
       "name": "Area Calculator",
       "slug": "area-calculator",
       "category": "calculators",
-      "icon": "📐",
+      "icon": "\ud83d\udcd0",
       "description": "Calculate the area of circles, rectangles, triangles, trapezoids and more.",
-      "keywords": ["area calculator", "geometry", "square footage", "shape area"],
+      "keywords": [
+        "area calculator",
+        "geometry",
+        "square footage",
+        "shape area"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -881,9 +1257,14 @@
       "name": "Avatar Generator",
       "slug": "avatar-generator",
       "category": "image-tools",
-      "icon": "👤",
+      "icon": "\ud83d\udc64",
       "description": "Generate colorful initial-based avatar images for profiles and placeholders.",
-      "keywords": ["avatar generator", "profile picture", "initial avatar", "default avatar"],
+      "keywords": [
+        "avatar generator",
+        "profile picture",
+        "initial avatar",
+        "default avatar"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -892,9 +1273,15 @@
       "name": "Barcode Generator",
       "slug": "barcode-generator",
       "category": "image-tools",
-      "icon": "▮▮",
+      "icon": "\u25ae\u25ae",
       "description": "Generate barcodes in Code 128, EAN, UPC and other formats for labels and inventory.",
-      "keywords": ["barcode generator", "code128", "ean barcode", "upc code", "generate barcode"],
+      "keywords": [
+        "barcode generator",
+        "code128",
+        "ean barcode",
+        "upc code",
+        "generate barcode"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -903,9 +1290,14 @@
       "name": "Binary / Text Converter",
       "slug": "binary-text-converter",
       "category": "converters",
-      "icon": "💻",
+      "icon": "\ud83d\udcbb",
       "description": "Convert text to binary and binary back to readable text instantly.",
-      "keywords": ["binary converter", "text to binary", "binary to text", "binary translator"],
+      "keywords": [
+        "binary converter",
+        "text to binary",
+        "binary to text",
+        "binary translator"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -914,9 +1306,14 @@
       "name": "Body Fat Calculator",
       "slug": "body-fat-calculator",
       "category": "calculators",
-      "icon": "⚖️",
+      "icon": "\u2696\ufe0f",
       "description": "Estimate your body fat percentage using the U.S. Navy method from simple measurements.",
-      "keywords": ["body fat calculator", "body fat percentage", "navy method", "body composition"],
+      "keywords": [
+        "body fat calculator",
+        "body fat percentage",
+        "navy method",
+        "body composition"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -925,9 +1322,14 @@
       "name": "Calorie Calculator",
       "slug": "calorie-calculator",
       "category": "calculators",
-      "icon": "🔥",
+      "icon": "\ud83d\udd25",
       "description": "Calculate your daily calorie needs based on age, weight, height and activity level.",
-      "keywords": ["calorie calculator", "daily calories", "tdee", "calorie needs"],
+      "keywords": [
+        "calorie calculator",
+        "daily calories",
+        "tdee",
+        "calorie needs"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -936,9 +1338,14 @@
       "name": "Coin Flipper",
       "slug": "coin-flipper",
       "category": "utilities",
-      "icon": "🪙",
-      "description": "Flip a virtual coin with a realistic animation — heads or tails.",
-      "keywords": ["coin flip", "flip coin", "heads or tails", "random coin"],
+      "icon": "\ud83e\ude99",
+      "description": "Flip a virtual coin with a realistic animation \u2014 heads or tails.",
+      "keywords": [
+        "coin flip",
+        "flip coin",
+        "heads or tails",
+        "random coin"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -947,9 +1354,14 @@
       "name": "Color Converter",
       "slug": "color-converter",
       "category": "converters",
-      "icon": "🎨",
+      "icon": "\ud83c\udfa8",
       "description": "Convert colors between HEX, RGB, HSL and named formats with a live preview.",
-      "keywords": ["color converter", "hex to rgb", "rgb to hsl", "color format"],
+      "keywords": [
+        "color converter",
+        "hex to rgb",
+        "rgb to hsl",
+        "color format"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -958,9 +1370,14 @@
       "name": "Color Picker",
       "slug": "color-picker",
       "category": "utilities",
-      "icon": "💧",
+      "icon": "\ud83d\udca7",
       "description": "Pick any color from a visual palette and copy its HEX, RGB or HSL value.",
-      "keywords": ["color picker", "choose color", "color palette", "select color"],
+      "keywords": [
+        "color picker",
+        "choose color",
+        "color palette",
+        "select color"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -969,9 +1386,14 @@
       "name": "Compound Interest Calculator",
       "slug": "compound-interest",
       "category": "calculators",
-      "icon": "📈",
+      "icon": "\ud83d\udcc8",
       "description": "Calculate compound interest over time with regular contributions and compounding frequency options.",
-      "keywords": ["compound interest", "interest calculator", "investment growth", "compound growth"],
+      "keywords": [
+        "compound interest",
+        "interest calculator",
+        "investment growth",
+        "compound growth"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -980,9 +1402,14 @@
       "name": "Countdown Timer",
       "slug": "countdown-timer",
       "category": "utilities",
-      "icon": "⏱️",
+      "icon": "\u23f1\ufe0f",
       "description": "Set a countdown timer with sound alerts for focus sessions, cooking or any event.",
-      "keywords": ["countdown timer", "timer", "countdown", "alarm timer"],
+      "keywords": [
+        "countdown timer",
+        "timer",
+        "countdown",
+        "alarm timer"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -991,9 +1418,14 @@
       "name": "Cron Expression Builder",
       "slug": "cron-builder",
       "category": "developer-tools",
-      "icon": "⏰",
-      "description": "Build and understand cron expressions visually — see the next execution times live.",
-      "keywords": ["cron builder", "cron expression", "cron job", "crontab generator"],
+      "icon": "\u23f0",
+      "description": "Build and understand cron expressions visually \u2014 see the next execution times live.",
+      "keywords": [
+        "cron builder",
+        "cron expression",
+        "cron job",
+        "crontab generator"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1002,9 +1434,14 @@
       "name": "CSS Minifier",
       "slug": "css-minifier",
       "category": "developer-tools",
-      "icon": "📦",
+      "icon": "\ud83d\udce6",
       "description": "Minify CSS code to reduce file size by removing whitespace and comments.",
-      "keywords": ["css minifier", "minify css", "compress css", "css optimizer"],
+      "keywords": [
+        "css minifier",
+        "minify css",
+        "compress css",
+        "css optimizer"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1013,9 +1450,14 @@
       "name": "CSS Unit Converter",
       "slug": "css-unit-converter",
       "category": "converters",
-      "icon": "📏",
+      "icon": "\ud83d\udccf",
       "description": "Convert between px, rem, em, vw and percentage CSS units based on your root font size.",
-      "keywords": ["css unit converter", "rem to px", "px to rem", "css units"],
+      "keywords": [
+        "css unit converter",
+        "rem to px",
+        "px to rem",
+        "css units"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1024,9 +1466,14 @@
       "name": "CSV to JSON",
       "slug": "csv-to-json",
       "category": "converters",
-      "icon": "📋",
+      "icon": "\ud83d\udccb",
       "description": "Convert CSV data to formatted JSON with automatic header detection.",
-      "keywords": ["csv to json", "csv converter", "csv parser", "json from csv"],
+      "keywords": [
+        "csv to json",
+        "csv converter",
+        "csv parser",
+        "json from csv"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1035,9 +1482,14 @@
       "name": "Date Calculator",
       "slug": "date-calculator",
       "category": "calculators",
-      "icon": "📅",
+      "icon": "\ud83d\udcc5",
       "description": "Add or subtract days, weeks, months or years from any date and find the difference between two dates.",
-      "keywords": ["date calculator", "add days", "date difference", "date math"],
+      "keywords": [
+        "date calculator",
+        "add days",
+        "date difference",
+        "date math"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1046,9 +1498,14 @@
       "name": "Dice Roller",
       "slug": "dice-roller",
       "category": "utilities",
-      "icon": "🎲",
-      "description": "Roll one or more dice with custom sides — perfect for tabletop games and RPGs.",
-      "keywords": ["dice roller", "roll dice", "random dice", "d20"],
+      "icon": "\ud83c\udfb2",
+      "description": "Roll one or more dice with custom sides \u2014 perfect for tabletop games and RPGs.",
+      "keywords": [
+        "dice roller",
+        "roll dice",
+        "random dice",
+        "d20"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1057,9 +1514,14 @@
       "name": "Discount Calculator",
       "slug": "discount-calculator",
       "category": "calculators",
-      "icon": "🏷️",
+      "icon": "\ud83c\udff7\ufe0f",
       "description": "Calculate the final price after a percentage or fixed-amount discount.",
-      "keywords": ["discount calculator", "sale price", "percent off", "price after discount"],
+      "keywords": [
+        "discount calculator",
+        "sale price",
+        "percent off",
+        "price after discount"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1068,9 +1530,14 @@
       "name": "Emoji Converter",
       "slug": "emoji-converter",
       "category": "text-tools",
-      "icon": "😊",
+      "icon": "\ud83d\ude0a",
       "description": "Convert text representations like :smile: and HTML entities into actual emoji characters.",
-      "keywords": ["emoji converter", "text to emoji", "emoji codes", "smiley converter"],
+      "keywords": [
+        "emoji converter",
+        "text to emoji",
+        "emoji codes",
+        "smiley converter"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1079,9 +1546,14 @@
       "name": "Favicon Generator",
       "slug": "favicon-generator",
       "category": "image-tools",
-      "icon": "🏁",
+      "icon": "\ud83c\udfc1",
       "description": "Generate favicon ICO and PNG files from text, emoji or an uploaded image.",
-      "keywords": ["favicon generator", "ico generator", "site icon", "favicon maker"],
+      "keywords": [
+        "favicon generator",
+        "ico generator",
+        "site icon",
+        "favicon maker"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1090,9 +1562,14 @@
       "name": "Fuel Cost Calculator",
       "slug": "fuel-cost-calculator",
       "category": "calculators",
-      "icon": "⛽",
+      "icon": "\u26fd",
       "description": "Estimate fuel cost for a trip based on distance, fuel efficiency and gas price.",
-      "keywords": ["fuel cost", "gas calculator", "trip fuel cost", "mileage cost"],
+      "keywords": [
+        "fuel cost",
+        "gas calculator",
+        "trip fuel cost",
+        "mileage cost"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1101,9 +1578,14 @@
       "name": "Glitch Text Generator",
       "slug": "glitch-text",
       "category": "text-tools",
-      "icon": "⚡",
+      "icon": "\u26a1",
       "description": "Apply Zalgo glitch effects to text for a distorted, creepy look.",
-      "keywords": ["glitch text", "zalgo text", "creepy text", "distorted text"],
+      "keywords": [
+        "glitch text",
+        "zalgo text",
+        "creepy text",
+        "distorted text"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1112,9 +1594,14 @@
       "name": "GPA Calculator",
       "slug": "gpa-calculator",
       "category": "calculators",
-      "icon": "🎓",
+      "icon": "\ud83c\udf93",
       "description": "Calculate your GPA by entering courses, credits and letter grades.",
-      "keywords": ["gpa calculator", "grade point average", "college gpa", "calculate gpa"],
+      "keywords": [
+        "gpa calculator",
+        "grade point average",
+        "college gpa",
+        "calculate gpa"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1123,9 +1610,14 @@
       "name": "Heading Hierarchy Checker",
       "slug": "heading-checker",
       "category": "seo-tools",
-      "icon": "📑",
+      "icon": "\ud83d\udcd1",
       "description": "Paste HTML or a URL to check heading structure and spot skipped or duplicate heading levels.",
-      "keywords": ["heading checker", "h1 checker", "heading hierarchy", "html headings"],
+      "keywords": [
+        "heading checker",
+        "h1 checker",
+        "heading hierarchy",
+        "html headings"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1134,9 +1626,14 @@
       "name": "HTML Entity Encoder",
       "slug": "html-entity-encoder",
       "category": "developer-tools",
-      "icon": "🔤",
+      "icon": "\ud83d\udd24",
       "description": "Encode special characters to HTML entities or decode them back to readable text.",
-      "keywords": ["html entity", "encode html", "decode html entities", "html special characters"],
+      "keywords": [
+        "html entity",
+        "encode html",
+        "decode html entities",
+        "html special characters"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1145,9 +1642,14 @@
       "name": "Image Cropper",
       "slug": "image-cropper",
       "category": "image-tools",
-      "icon": "✂️",
+      "icon": "\u2702\ufe0f",
       "description": "Crop images to any custom dimensions with a visual draggable crop box.",
-      "keywords": ["image cropper", "crop image", "cut image", "resize crop"],
+      "keywords": [
+        "image cropper",
+        "crop image",
+        "cut image",
+        "resize crop"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1156,9 +1658,14 @@
       "name": "Image Metadata Viewer",
       "slug": "image-metadata-viewer",
       "category": "image-tools",
-      "icon": "🔍",
+      "icon": "\ud83d\udd0d",
       "description": "View EXIF data, camera settings, GPS coordinates and other metadata embedded in your images.",
-      "keywords": ["image metadata", "exif viewer", "photo info", "camera data"],
+      "keywords": [
+        "image metadata",
+        "exif viewer",
+        "photo info",
+        "camera data"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1167,9 +1674,14 @@
       "name": "Image to ASCII Art",
       "slug": "image-to-ascii",
       "category": "image-tools",
-      "icon": "🖼️",
+      "icon": "\ud83d\uddbc\ufe0f",
       "description": "Convert any image into ASCII art text that you can copy or download.",
-      "keywords": ["image to ascii", "ascii art", "photo to text", "text art generator"],
+      "keywords": [
+        "image to ascii",
+        "ascii art",
+        "photo to text",
+        "text art generator"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1178,9 +1690,14 @@
       "name": "IP Address Lookup",
       "slug": "ip-lookup",
       "category": "utilities",
-      "icon": "🌐",
+      "icon": "\ud83c\udf10",
       "description": "Look up your public IP address along with approximate location and ISP details.",
-      "keywords": ["ip lookup", "what is my ip", "ip address", "ip geolocation"],
+      "keywords": [
+        "ip lookup",
+        "what is my ip",
+        "ip address",
+        "ip geolocation"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1189,9 +1706,14 @@
       "name": "JSON to CSV",
       "slug": "json-to-csv",
       "category": "converters",
-      "icon": "📊",
+      "icon": "\ud83d\udcca",
       "description": "Convert JSON arrays of objects into a downloadable CSV file.",
-      "keywords": ["json to csv", "json converter", "json to spreadsheet", "export csv"],
+      "keywords": [
+        "json to csv",
+        "json converter",
+        "json to spreadsheet",
+        "export csv"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1200,9 +1722,14 @@
       "name": "JWT Decoder",
       "slug": "jwt-decoder",
       "category": "developer-tools",
-      "icon": "🔓",
-      "description": "Decode and inspect JWT tokens — view header, payload and signature without verification.",
-      "keywords": ["jwt decoder", "json web token", "jwt viewer", "token decoder"],
+      "icon": "\ud83d\udd13",
+      "description": "Decode and inspect JWT tokens \u2014 view header, payload and signature without verification.",
+      "keywords": [
+        "jwt decoder",
+        "json web token",
+        "jwt viewer",
+        "token decoder"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1211,9 +1738,14 @@
       "name": "Keyword Extractor",
       "slug": "keyword-extractor",
       "category": "seo-tools",
-      "icon": "🔑",
+      "icon": "\ud83d\udd11",
       "description": "Extract the most frequent and meaningful keywords from any block of text.",
-      "keywords": ["keyword extractor", "extract keywords", "text keywords", "keyword analysis"],
+      "keywords": [
+        "keyword extractor",
+        "extract keywords",
+        "text keywords",
+        "keyword analysis"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1222,9 +1754,14 @@
       "name": "Letter Frequency Analyzer",
       "slug": "letter-frequency",
       "category": "text-tools",
-      "icon": "📊",
+      "icon": "\ud83d\udcca",
       "description": "Analyze the frequency of each letter, word or character in any text.",
-      "keywords": ["letter frequency", "text analysis", "character frequency", "word frequency"],
+      "keywords": [
+        "letter frequency",
+        "text analysis",
+        "character frequency",
+        "word frequency"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1233,9 +1770,14 @@
       "name": "Loan Calculator",
       "slug": "loan-calculator",
       "category": "calculators",
-      "icon": "🏦",
+      "icon": "\ud83c\udfe6",
       "description": "Calculate monthly payments, total interest and amortization for any loan amount and term.",
-      "keywords": ["loan calculator", "monthly payment", "loan interest", "amortization"],
+      "keywords": [
+        "loan calculator",
+        "monthly payment",
+        "loan interest",
+        "amortization"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1244,9 +1786,14 @@
       "name": "Markdown Preview",
       "slug": "markdown-preview",
       "category": "developer-tools",
-      "icon": "📝",
+      "icon": "\ud83d\udcdd",
       "description": "Write Markdown and see a live rendered preview with syntax-highlighted source.",
-      "keywords": ["markdown preview", "md editor", "markdown viewer", "markdown renderer"],
+      "keywords": [
+        "markdown preview",
+        "md editor",
+        "markdown viewer",
+        "markdown renderer"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1255,9 +1802,14 @@
       "name": "Metronome",
       "slug": "metronome",
       "category": "utilities",
-      "icon": "🎵",
+      "icon": "\ud83c\udfb5",
       "description": "Interactive metronome with adjustable tempo, time signature and accent patterns.",
-      "keywords": ["metronome", "tempo", "bpm", "music metronome"],
+      "keywords": [
+        "metronome",
+        "tempo",
+        "bpm",
+        "music metronome"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1266,9 +1818,14 @@
       "name": "Morse Code Translator",
       "slug": "morse-code-translator",
       "category": "converters",
-      "icon": "💡",
+      "icon": "\ud83d\udca1",
       "description": "Convert text to Morse code and Morse code back to readable text with audio playback.",
-      "keywords": ["morse code", "morse translator", "morse code converter", "dot dash"],
+      "keywords": [
+        "morse code",
+        "morse translator",
+        "morse code converter",
+        "dot dash"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1277,9 +1834,14 @@
       "name": "Mortgage Calculator",
       "slug": "mortgage-calculator",
       "category": "calculators",
-      "icon": "🏠",
+      "icon": "\ud83c\udfe0",
       "description": "Estimate monthly mortgage payments, total interest and amortization schedules.",
-      "keywords": ["mortgage calculator", "home loan", "monthly payment", "mortgage payment"],
+      "keywords": [
+        "mortgage calculator",
+        "home loan",
+        "monthly payment",
+        "mortgage payment"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1288,9 +1850,14 @@
       "name": "Random Name Generator",
       "slug": "name-generator",
       "category": "utilities",
-      "icon": "🎲",
+      "icon": "\ud83c\udfb2",
       "description": "Generate random first names, last names or full names for characters and projects.",
-      "keywords": ["name generator", "random name", "fake name", "character name"],
+      "keywords": [
+        "name generator",
+        "random name",
+        "fake name",
+        "character name"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1299,9 +1866,14 @@
       "name": "Noise Generator",
       "slug": "noise-generator",
       "category": "utilities",
-      "icon": "🔊",
+      "icon": "\ud83d\udd0a",
       "description": "Generate white, pink or brown noise for focus, sleep or sound masking.",
-      "keywords": ["white noise", "noise generator", "pink noise", "brown noise"],
+      "keywords": [
+        "white noise",
+        "noise generator",
+        "pink noise",
+        "brown noise"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1310,9 +1882,14 @@
       "name": "Number Base Converter",
       "slug": "number-base-converter",
       "category": "converters",
-      "icon": "🔢",
+      "icon": "\ud83d\udd22",
       "description": "Convert numbers between binary, octal, decimal, hexadecimal and custom bases.",
-      "keywords": ["base converter", "binary decimal hex", "number conversion", "radix converter"],
+      "keywords": [
+        "base converter",
+        "binary decimal hex",
+        "number conversion",
+        "radix converter"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1321,9 +1898,14 @@
       "name": "Open Graph Preview",
       "slug": "og-preview",
       "category": "seo-tools",
-      "icon": "🖼️",
+      "icon": "\ud83d\uddbc\ufe0f",
       "description": "Preview how your page will look when shared on social media with Open Graph meta tags.",
-      "keywords": ["og preview", "open graph", "social preview", "og:image"],
+      "keywords": [
+        "og preview",
+        "open graph",
+        "social preview",
+        "og:image"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1334,7 +1916,12 @@
       "category": "calculators",
       "icon": "%",
       "description": "Calculate percentages, percentage change and what percent one number is of another.",
-      "keywords": ["percentage calculator", "percent", "percentage change", "percent of"],
+      "keywords": [
+        "percentage calculator",
+        "percent",
+        "percentage change",
+        "percent of"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1343,9 +1930,14 @@
       "name": "Pomodoro Timer",
       "slug": "pomodoro-timer",
       "category": "utilities",
-      "icon": "🍅",
+      "icon": "\ud83c\udf45",
       "description": "Pomodoro focus timer with configurable work and break intervals and session tracking.",
-      "keywords": ["pomodoro", "focus timer", "productivity timer", "work timer"],
+      "keywords": [
+        "pomodoro",
+        "focus timer",
+        "productivity timer",
+        "work timer"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1354,9 +1946,14 @@
       "name": "Common Port Reference",
       "slug": "port-reference",
       "category": "developer-tools",
-      "icon": "🔌",
+      "icon": "\ud83d\udd0c",
       "description": "Quick reference table of common network ports and the services that use them.",
-      "keywords": ["port reference", "network ports", "port numbers", "common ports"],
+      "keywords": [
+        "port reference",
+        "network ports",
+        "port numbers",
+        "common ports"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1365,9 +1962,14 @@
       "name": "Pregnancy Calculator",
       "slug": "pregnancy-calculator",
       "category": "calculators",
-      "icon": "🤰",
+      "icon": "\ud83e\udd30",
       "description": "Calculate current pregnancy week, trimester and upcoming milestones from your last period.",
-      "keywords": ["pregnancy calculator", "pregnancy week", "due date", "trimester"],
+      "keywords": [
+        "pregnancy calculator",
+        "pregnancy week",
+        "due date",
+        "trimester"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1376,9 +1978,14 @@
       "name": "AI Prompt Improver",
       "slug": "prompt-improver",
       "category": "ai-tools",
-      "icon": "✨",
+      "icon": "\u2728",
       "description": "Refine and enhance your AI prompts for better, more specific results.",
-      "keywords": ["prompt improver", "ai prompt", "prompt engineering", "better prompts"],
+      "keywords": [
+        "prompt improver",
+        "ai prompt",
+        "prompt engineering",
+        "better prompts"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1387,9 +1994,14 @@
       "name": "QR Code Reader",
       "slug": "qr-code-reader",
       "category": "image-tools",
-      "icon": "📷",
+      "icon": "\ud83d\udcf7",
       "description": "Upload an image containing a QR code and decode its contents instantly.",
-      "keywords": ["qr code reader", "qr scanner", "read qr code", "decode qr"],
+      "keywords": [
+        "qr code reader",
+        "qr scanner",
+        "read qr code",
+        "decode qr"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1398,9 +2010,14 @@
       "name": "Rainbow Text Generator",
       "slug": "rainbow-text",
       "category": "text-tools",
-      "icon": "🌈",
+      "icon": "\ud83c\udf08",
       "description": "Apply rainbow gradient colors to each letter of your text for a colorful effect.",
-      "keywords": ["rainbow text", "colorful text", "gradient text", "rainbow letters"],
+      "keywords": [
+        "rainbow text",
+        "colorful text",
+        "gradient text",
+        "rainbow letters"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1409,9 +2026,14 @@
       "name": "Random Color Generator",
       "slug": "random-color",
       "category": "utilities",
-      "icon": "🎨",
+      "icon": "\ud83c\udfa8",
       "description": "Generate random colors with HEX, RGB and HSL values and a visual preview.",
-      "keywords": ["random color", "color generator", "random hex", "color palette"],
+      "keywords": [
+        "random color",
+        "color generator",
+        "random hex",
+        "color palette"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1420,9 +2042,14 @@
       "name": "Random Number Generator",
       "slug": "random-number",
       "category": "utilities",
-      "icon": "🎲",
+      "icon": "\ud83c\udfb2",
       "description": "Generate random numbers within a custom range with optional exclusion of duplicates.",
-      "keywords": ["random number", "number generator", "random range", "rng"],
+      "keywords": [
+        "random number",
+        "number generator",
+        "random range",
+        "rng"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1431,9 +2058,14 @@
       "name": "Random Word Generator",
       "slug": "random-word-generator",
       "category": "utilities",
-      "icon": "📝",
+      "icon": "\ud83d\udcdd",
       "description": "Generate random English words for brainstorming, passwords or creative projects.",
-      "keywords": ["random word", "word generator", "random english word", "word picker"],
+      "keywords": [
+        "random word",
+        "word generator",
+        "random english word",
+        "word picker"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1442,9 +2074,14 @@
       "name": "Readability Score",
       "slug": "readability-score",
       "category": "text-tools",
-      "icon": "📖",
+      "icon": "\ud83d\udcd6",
       "description": "Analyze text readability using Flesch-Kincaid, Gunning Fog and other scoring algorithms.",
-      "keywords": ["readability score", "flesch kincaid", "reading level", "text analysis"],
+      "keywords": [
+        "readability score",
+        "flesch kincaid",
+        "reading level",
+        "text analysis"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1453,9 +2090,14 @@
       "name": "Regex Tester",
       "slug": "regex-tester",
       "category": "developer-tools",
-      "icon": "🔍",
+      "icon": "\ud83d\udd0d",
       "description": "Test regular expressions with live highlighting of matches, groups and capture details.",
-      "keywords": ["regex tester", "regular expression", "regex playground", "pattern matcher"],
+      "keywords": [
+        "regex tester",
+        "regular expression",
+        "regex playground",
+        "pattern matcher"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1464,9 +2106,14 @@
       "name": "Retirement Calculator",
       "slug": "retirement-calculator",
       "category": "calculators",
-      "icon": "🏖️",
+      "icon": "\ud83c\udfd6\ufe0f",
       "description": "Estimate how much you need to save for retirement based on age, income and goals.",
-      "keywords": ["retirement calculator", "savings calculator", "retirement planning", "401k"],
+      "keywords": [
+        "retirement calculator",
+        "savings calculator",
+        "retirement planning",
+        "401k"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1475,9 +2122,14 @@
       "name": "Reverse Text",
       "slug": "reverse-text",
       "category": "text-tools",
-      "icon": "⏪",
-      "description": "Reverse text by characters, words or lines — great for puzzles and fun.",
-      "keywords": ["reverse text", "text reverser", "backwards text", "flip text"],
+      "icon": "\u23ea",
+      "description": "Reverse text by characters, words or lines \u2014 great for puzzles and fun.",
+      "keywords": [
+        "reverse text",
+        "text reverser",
+        "backwards text",
+        "flip text"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1486,9 +2138,14 @@
       "name": "Robots.txt Generator",
       "slug": "robots-txt-generator",
       "category": "seo-tools",
-      "icon": "🤖",
+      "icon": "\ud83e\udd16",
       "description": "Generate a robots.txt file with rules for crawlers, sitemaps and disallowed paths.",
-      "keywords": ["robots.txt", "robots generator", "crawler rules", "seo robots"],
+      "keywords": [
+        "robots.txt",
+        "robots generator",
+        "crawler rules",
+        "seo robots"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1497,9 +2154,14 @@
       "name": "Roman Numeral Converter",
       "slug": "roman-numeral-converter",
       "category": "converters",
-      "icon": "🏛️",
+      "icon": "\ud83c\udfdb\ufe0f",
       "description": "Convert between Roman numerals and standard numbers instantly.",
-      "keywords": ["roman numeral", "roman converter", "roman numbers", "roman to number"],
+      "keywords": [
+        "roman numeral",
+        "roman converter",
+        "roman numbers",
+        "roman to number"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1508,9 +2170,14 @@
       "name": "Schema Markup Generator",
       "slug": "schema-markup-generator",
       "category": "seo-tools",
-      "icon": "📋",
+      "icon": "\ud83d\udccb",
       "description": "Generate JSON-LD structured data for articles, products, FAQs and more for rich search results.",
-      "keywords": ["schema markup", "json-ld", "structured data", "rich snippets"],
+      "keywords": [
+        "schema markup",
+        "json-ld",
+        "structured data",
+        "rich snippets"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1519,9 +2186,14 @@
       "name": "Screen Ruler",
       "slug": "screen-ruler",
       "category": "utilities",
-      "icon": "📏",
+      "icon": "\ud83d\udccf",
       "description": "Measure elements on screen in pixels with a draggable overlay ruler.",
-      "keywords": ["screen ruler", "pixel ruler", "measure screen", "on-screen ruler"],
+      "keywords": [
+        "screen ruler",
+        "pixel ruler",
+        "measure screen",
+        "on-screen ruler"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1530,9 +2202,14 @@
       "name": "Sentiment Analyzer",
       "slug": "sentiment-analyzer",
       "category": "ai-tools",
-      "icon": "😊",
+      "icon": "\ud83d\ude0a",
       "description": "Analyze text for positive, negative or neutral sentiment with keyword-level breakdowns.",
-      "keywords": ["sentiment analysis", "text sentiment", "positive negative", "emotion detector"],
+      "keywords": [
+        "sentiment analysis",
+        "text sentiment",
+        "positive negative",
+        "emotion detector"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1541,9 +2218,14 @@
       "name": "Stopwatch",
       "slug": "stopwatch",
       "category": "utilities",
-      "icon": "⏱️",
+      "icon": "\u23f1\ufe0f",
       "description": "Precision stopwatch with lap tracking and millisecond accuracy.",
-      "keywords": ["stopwatch", "lap timer", "chronometer", "time tracker"],
+      "keywords": [
+        "stopwatch",
+        "lap timer",
+        "chronometer",
+        "time tracker"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1552,9 +2234,14 @@
       "name": "Creative Writing Prompts",
       "slug": "story-prompts",
       "category": "text-tools",
-      "icon": "💡",
+      "icon": "\ud83d\udca1",
       "description": "Generate random story ideas with characters, settings, conflicts and genres.",
-      "keywords": ["writing prompts", "story ideas", "creative prompts", "story starter"],
+      "keywords": [
+        "writing prompts",
+        "story ideas",
+        "creative prompts",
+        "story starter"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1565,7 +2252,12 @@
       "category": "text-tools",
       "icon": "~~",
       "description": "Add strikethrough formatting to text for social media, Discord and Markdown.",
-      "keywords": ["strikethrough", "cross out text", "strike text", "delete text"],
+      "keywords": [
+        "strikethrough",
+        "cross out text",
+        "strike text",
+        "delete text"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1574,9 +2266,14 @@
       "name": "Tax Calculator",
       "slug": "tax-calculator",
       "category": "calculators",
-      "icon": "💰",
+      "icon": "\ud83d\udcb0",
       "description": "Calculate sales tax, income tax or VAT from any amount with adjustable rates.",
-      "keywords": ["tax calculator", "sales tax", "income tax", "vat calculator"],
+      "keywords": [
+        "tax calculator",
+        "sales tax",
+        "income tax",
+        "vat calculator"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1585,9 +2282,14 @@
       "name": "Text Diff Checker",
       "slug": "text-diff-checker",
       "category": "text-tools",
-      "icon": "🔍",
+      "icon": "\ud83d\udd0d",
       "description": "Compare two blocks of text side by side and highlight additions, deletions and changes.",
-      "keywords": ["text diff", "diff checker", "compare texts", "text comparison"],
+      "keywords": [
+        "text diff",
+        "diff checker",
+        "compare texts",
+        "text comparison"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1596,9 +2298,14 @@
       "name": "AI Text Humanizer",
       "slug": "text-humanizer",
       "category": "ai-tools",
-      "icon": "🤖",
+      "icon": "\ud83e\udd16",
       "description": "Rewrite AI-generated text to sound more natural, varied and human-like.",
-      "keywords": ["ai humanizer", "humanize text", "ai rewrite", "natural text"],
+      "keywords": [
+        "ai humanizer",
+        "humanize text",
+        "ai rewrite",
+        "natural text"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1607,9 +2314,14 @@
       "name": "Text Repeater",
       "slug": "text-repeater",
       "category": "text-tools",
-      "icon": "🔁",
+      "icon": "\ud83d\udd01",
       "description": "Repeat any text a specified number of times with optional separators.",
-      "keywords": ["text repeater", "repeat text", "duplicate text", "text multiplier"],
+      "keywords": [
+        "text repeater",
+        "repeat text",
+        "duplicate text",
+        "text multiplier"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1618,9 +2330,14 @@
       "name": "Text Summarizer",
       "slug": "text-summarizer",
       "category": "text-tools",
-      "icon": "📝",
+      "icon": "\ud83d\udcdd",
       "description": "Summarize long text into key sentences using extractive analysis.",
-      "keywords": ["text summarizer", "summarize text", "text summary", "shorten text"],
+      "keywords": [
+        "text summarizer",
+        "summarize text",
+        "text summary",
+        "shorten text"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1629,9 +2346,14 @@
       "name": "Time Zone Converter",
       "slug": "time-zone-converter",
       "category": "utilities",
-      "icon": "🌍",
+      "icon": "\ud83c\udf0d",
       "description": "Convert a time between any two time zones with DST awareness.",
-      "keywords": ["time zone converter", "timezone", "world clock", "time conversion"],
+      "keywords": [
+        "time zone converter",
+        "timezone",
+        "world clock",
+        "time conversion"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1640,9 +2362,14 @@
       "name": "Timestamp Converter",
       "slug": "timestamp-converter",
       "category": "converters",
-      "icon": "🕐",
+      "icon": "\ud83d\udd50",
       "description": "Convert Unix timestamps to human-readable dates and back, with timezone options.",
-      "keywords": ["timestamp converter", "unix timestamp", "epoch converter", "date to timestamp"],
+      "keywords": [
+        "timestamp converter",
+        "unix timestamp",
+        "epoch converter",
+        "date to timestamp"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1651,9 +2378,14 @@
       "name": "Tip Calculator",
       "slug": "tip-calculator",
       "category": "calculators",
-      "icon": "💵",
+      "icon": "\ud83d\udcb5",
       "description": "Calculate the tip amount and total bill from any subtotal and tip percentage.",
-      "keywords": ["tip calculator", "gratuity", "tip amount", "restaurant tip"],
+      "keywords": [
+        "tip calculator",
+        "gratuity",
+        "tip amount",
+        "restaurant tip"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1662,9 +2394,14 @@
       "name": "Unit Converter",
       "slug": "unit-converter",
       "category": "converters",
-      "icon": "📏",
+      "icon": "\ud83d\udccf",
       "description": "Convert between common units of length, weight, temperature, volume and more.",
-      "keywords": ["unit converter", "measurement converter", "celsius fahrenheit", "kg to lbs"],
+      "keywords": [
+        "unit converter",
+        "measurement converter",
+        "celsius fahrenheit",
+        "kg to lbs"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1673,9 +2410,14 @@
       "name": "URL Encoder / Decoder",
       "slug": "url-encoder",
       "category": "developer-tools",
-      "icon": "🔗",
+      "icon": "\ud83d\udd17",
       "description": "Encode special characters for safe URLs or decode percent-encoded strings back.",
-      "keywords": ["url encoder", "url decoder", "percent encoding", "url escape"],
+      "keywords": [
+        "url encoder",
+        "url decoder",
+        "percent encoding",
+        "url escape"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1684,9 +2426,14 @@
       "name": "WHOIS Lookup",
       "slug": "whois-lookup",
       "category": "seo-tools",
-      "icon": "🔍",
+      "icon": "\ud83d\udd0d",
       "description": "Look up domain registration details including registrar, creation date and name servers.",
-      "keywords": ["whois", "domain lookup", "domain info", "whois search"],
+      "keywords": [
+        "whois",
+        "domain lookup",
+        "domain info",
+        "whois search"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1695,9 +2442,14 @@
       "name": "XML to JSON",
       "slug": "xml-to-json",
       "category": "converters",
-      "icon": "📄",
+      "icon": "\ud83d\udcc4",
       "description": "Convert XML data to clean, formatted JSON.",
-      "keywords": ["xml to json", "xml converter", "json from xml", "xml parser"],
+      "keywords": [
+        "xml to json",
+        "xml converter",
+        "json from xml",
+        "xml parser"
+      ],
       "featured": false,
       "isNew": true
     },
@@ -1706,11 +2458,24 @@
       "name": "YAML to JSON",
       "slug": "yaml-to-json",
       "category": "converters",
-      "icon": "📋",
+      "icon": "\ud83d\udccb",
       "description": "Convert YAML configuration data to JSON format.",
-      "keywords": ["yaml to json", "yaml converter", "yml to json", "yaml parser"],
+      "keywords": [
+        "yaml to json",
+        "yaml converter",
+        "yml to json",
+        "yaml parser"
+      ],
       "featured": false,
       "isNew": true
+    },
+    {
+      "id": "file-extension-changer",
+      "name": "File Extension Changer",
+      "description": "Batch change and convert file extensions locally in your browser with instant ZIP download.",
+      "category": "converters",
+      "icon": "\ud83d\udcc1",
+      "popular": true
     }
   ]
 }
